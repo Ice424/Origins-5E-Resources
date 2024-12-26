@@ -16,7 +16,7 @@ MODEL = {
     }
 }
 
-def add_power(powers, category, entry, group=None, type=None):
+def add_power(powers, category, entry, group=None, types=None):
     """
     Adds a power entry to the JSON structure if it doesn't already exist.
     
@@ -32,8 +32,8 @@ def add_power(powers, category, entry, group=None, type=None):
 
     if category in powers:
         if group and category == "class":
-            if group in powers["class"] and type in powers["class"][group]:
-                target_list = powers["class"][group][type]
+            if group in powers["class"] and types in powers["class"][group]:
+                target_list = powers["class"][group][types]
             else:
                 return False
         else:
@@ -95,7 +95,7 @@ def generate_json():
             file = file.split("/")
             
             if file[0] == "class":
-                if add_power(powers, "class", {"name": file[3].replace(".json", ""), "predicate": predicate}, group=file[1], type=file[2]):
+                if add_power(powers, "class", {"name": file[3].replace(".json", ""), "predicate": predicate}, group=file[1], types=file[2]):
                     predicate += 1
             else:
                 if add_power(powers, file[0], {"name": file[1].replace(".json", ""), "predicate": predicate}):
@@ -107,7 +107,7 @@ def generate_json():
             
             file = file.split("/")
             if file[0] == "class":
-                if add_power(powers, "class", {"name": file[3].replace(".png", ""), "predicate": predicate}, group=file[1], type=file[2]):
+                if add_power(powers, "class", {"name": file[3].replace(".png", ""), "predicate": predicate}, group=file[1], types=file[2]):
                     predicate += 1
             else:
                 if add_power(powers, file[0], {"name": file[1].replace(".png", ""), "predicate": predicate}):
@@ -147,10 +147,8 @@ def generate_models(path):
                 except:
                     pass
                 out = MODEL
-                out["textures"]["layer0"] = "chill:icons/class/" + \
-                    types + "/" + power
-                file = open(os.path.join(path, "class",
-                            classes, types, power)+".json", "w")
+                out["textures"]["layer0"] = "chill:icons/class/" + classes+ "/" + types + "/" + power
+                file = open(os.path.join(path, "class", classes, types, power)+".json", "w")
                 file.write(json.dumps(out, indent=4))
                 file.close()
 
@@ -199,7 +197,7 @@ def generate_predicates():
     def GetPowers(types):
         for power in powers[types]:
             out.append({"predicate": {"custom_model_data": power["predicate"]},
-                        "model": "chill:" + os.path.join(types, power["name"]).replace("\\", "/")})
+                        "model": "chill:icons/" + os.path.join(types, power["name"]).replace("\\", "/")})
 
     GetPowers("low")
     GetPowers("high")
@@ -208,7 +206,7 @@ def generate_predicates():
         for types in powers["class"][classes]:
             for power in powers["class"][classes][types]:
                 out.append({"predicate": {"custom_model_data": power["predicate"]},
-                            "model": "chill:" + os.path.join("class", classes, types).replace("\\", "/")})
+                            "model": "chill:icons/" + os.path.join("class", classes, types).replace("\\", "/")})
 
     file = open("./resourcepacks/Origins-5E-Reasources/assets/minecraft/models/item/stick.json", "r")
     data = json.load(file)
@@ -223,6 +221,26 @@ def generate_predicates():
     with open("./resourcepacks/Origins-5E-Reasources/assets/minecraft/models/item/stick.json", "w") as file:
         json.dump(data, file, indent=4)
 
+def generate_shop(path):
+    template = """execute if entity @p[tag={tag}] run data modify storage ui mask insert 0 value {{Slot:{slot}b,id:"minecraft:stick","components":{{"custom_model_data": {predicate}, "custom_name": "{{\\"text\\": \\"{name}\\", \\"color\\": \\"{color}\\", \\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}"""
+    
+
+    file = open("./resourcepacks/Origins-5E-Reasources/powers.json", "r")
+    powers = json.loads(file.read())
+    file.close()
+    out = []
+    slot = 20
+    def GetPowers(types):
+        for power in powers[types]:
+            out.append(template.format(tag=power,slot=,predicate=,name=,color=))
+        out = []
+        slot=20
+    GetPowers("low")
+    GetPowers("high")
+    for classes in powers["class"]:
+        for types in powers["class"][classes]:
+            for power in powers["class"][classes][types]:
+                
 
 generate_json()
 
@@ -230,4 +248,6 @@ generate_models("./resourcepacks/Origins-5E-Reasources/assets/chill/models/icons
 
 generate_tags(DATA)
 
-#generate_predicates()
+generate_predicates()
+
+generate_shop()

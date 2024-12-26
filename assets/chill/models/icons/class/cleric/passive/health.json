@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:icons/class/passive/health"
+        "layer0": "chill:icons/class/cleric/passive/health"
     }
 }

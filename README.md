@@ -23,15 +23,15 @@ https://github.com/Ice424/Origins-V5-Data
     - [ ] Passive mobs will attack hostile mob if you are nearby
     - [ ] You are fast in water and on grass blocks
 - [ ] Wizard
-  - [ ] Passive
-    - [ ] Shoot someone to apply glowing,
-    - [ ] 8 hearts
-    - [ ] shift to get ender pearl cooldown 60 secs 
-  - [ ] High
-    - [ ] Shoot fireball that explodes
-    - [ ] Give all mobs in 20 blocks glowing
-    - [ ] Temporarily get frost walker and slow aura
-    - [ ] Use ability to push all mobs back 5 blocks in 10 block radius
+  - [x] ~~Passive~~
+    - [x] ~~Shoot someone to apply glowing,~~
+    - [x] ~~8 hearts~~
+    - [x] ~~shift to get ender pearl cooldown 60 secs~~
+  - [x] ~~High~~
+    - [x] ~~Shoot fireball that explodes~~
+    - [x] ~~Give all mobs in 20 blocks glowing~~
+    - [x] ~~Temporarily get frost walker and slow aura~~
+    - [x] ~~Use ability to push all mobs back 5 blocks in 10 block radius~~
   - [ ] Special
     - [ ] Ability to summon lightning storm on an area
     - [ ] Ability to inflict wither to any mobs within fov
@@ -71,38 +71,38 @@ https://github.com/Ice424/Origins-V5-Data
     - [ ] Rage increased speed dmg for short period? #maybe
     - [ ] block all dmg for 3-5 seconds
 - [ ] Cleric
-  - [x] ~~Passive~~
-    - [x] ~~9 hearts~~
-    - [x] ~~ sneak regen 2 in aoe cooldown 120 seconds~~
+  - [ ] Passive
+    - [ ] 9 hearts
+    - [ ]  sneak regen 2 in aoe cooldown 120 seconds
   - [ ] High
-    - [x] ~~Life steal on melee hit~~
+    - [ ] Life steal on melee hit
     - [ ] Use ability to heal all player in fov
     - [ ] Use ability to teleport to mob looking at
     - [ ] Shifting for 10 seconds resorts hunger and hearts and gives extra hearts
-  - [x] ~~Special~~
-    - [x] ~~Permanent luck~~
-    - [x] ~~Totem of undying-cooldown 10 mins~~
-    - [x] ~~Ability to summon hostile mobs to fight~~
-    - [x] ~~Ability to see all players within 7 blocks~~
-- [x] ~~Fighter~~
-  - [x] ~~Passive~~
-    - [x] ~~14 hearts~~
-    - [x] ~~strength 1~~
-    - [x] ~~haste 1~~
-    - [x] ~~speed 1~~
-  - [x] ~~High~~
-    - [x] ~~Extra reach~~
-    - [x] ~~Permanent speed 2  (doesn't stack w passive)~~
-    - [x] ~~Double damage to hostile mobs~~
-    - [x] ~~Permanent saturation~~
-    - [x] ~~Permanent hero of the village~~
-    - [x] ~~arrows have random harmful effect~~
+  - [ ] Special
+    - [ ] Permanent luck
+    - [ ] Totem of undying-cooldown 10 mins
+    - [ ] Ability to summon hostile mobs to fight
+    - [ ] Ability to see all players within 7 blocks
+- [ ] Fighter
+  - [ ] Passive
+    - [ ] 14 hearts
+    - [ ] strength 1
+    - [ ] haste 1
+    - [ ] speed 1
+  - [ ] High
+    - [ ] Extra reach
+    - [ ] Permanent speed 2  (doesn't stack w passive)
+    - [ ] Double damage to hostile mobs
+    - [ ] Permanent saturation
+    - [ ] Permanent hero of the village
+    - [ ] arrows have random harmful effect
   
-    - [x] ~~gain strength 2 and resistance 2 for 10 seconds~~
-    - [x] ~~ability to heal 10 and get + 10 temp hearts~~ 
-    - [x] ~~ability to get speed 3 for a short duration~~
-    - [x] ~~all tameable mobs get tamed within 4 blocks cooldown 30 minutes~~
-- [x] ~~Low tier~~
+    - [ ] gain strength 2 and resistance 2 for 10 seconds
+    - [ ] ability to heal 10 and get + 10 temp hearts 
+    - [ ] ability to get speed 3 for a short duration
+    - [ ] all tameable mobs get tamed within 4 blocks cooldown 30 minutes
+- [ ] Low tier
   - [x] ~~+ half a heart (to 5 hearts)~~
   - [x] ~~+ xp (20 Levels)~~
   - [x] ~~- hunger loss  (5%, 15, 25%)~~
@@ -110,12 +110,12 @@ https://github.com/Ice424/Origins-V5-Data
   - [x] ~~+ more swim speed (5%, 15%, 25% times)~~
   - [x] ~~+ hunger gain (1.5 hunches)~~
   - [x] ~~+ 1 block needed to proc fall damage (stacks 3 times)~~ 
-  - [x] ~~+ less damage taken from fire (5%, 15%, 25% times)~~
+  - [x] + less damage taken from fire (5%, 15%, 25% times)
   - [x] ~~+ 1 level of luck (to 5)~~
-- [x] ~~General high tier~~
-  - [x] ~~Shift Jump(w out fall dmg from the jump)~~ 
-  - [x] ~~shulk ability (storage space)~~
-  - [x] ~~activate permeation for 10 seconds cooldown 5 minutes~~ 
-  - [x] ~~scan (give all entities in 20 block glowing for 2 seconds)~~
-  - [x] ~~make 1 block taller~~
-  - [x] ~~make half a block shorter but loose 2 hearts (4 health)~~
+- [ ] General high tier
+  - [ ] Shift Jump(w out fall dmg from the jump) 
+  - [ ] shulk ability (storage space)
+  - [ ] activate permeation for 10 seconds cooldown 5 minutes 
+  - [ ] scan (give all entities in 20 block glowing for 2 seconds)
+  - [ ] make 1 block taller
+  - [ ] make half a block shorter but loose 2 hearts (4 health)
