@@ -221,26 +221,28 @@ def generate_predicates():
     with open("./resourcepacks/Origins-5E-Reasources/assets/minecraft/models/item/stick.json", "w") as file:
         json.dump(data, file, indent=4)
 
-def generate_shop(path):
-    template = """execute if entity @p[tag={tag}] run data modify storage ui mask insert 0 value {{Slot:{slot}b,id:"minecraft:stick","components":{{"custom_model_data": {predicate}, "custom_name": "{{\\"text\\": \\"{name}\\", \\"color\\": \\"{color}\\", \\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}"""
-    
+#def generate_shop(path):
+#    template = """execute if entity @p[tag={tag}] run data modify storage ui mask insert 0 value {{Slot:{slot}b,id:"minecraft:stick","components":{{"custom_model_data": #{predicate}, "custom_name": "{{\\"text\\": \\"{name}\\", \\"color\\": \\"{color}\\", \\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}"""
+#    
+#
+#    file = open("./resourcepacks/Origins-5E-Reasources/powers.json", "r")
+#    powers = json.loads(file.read())
+#    file.close()
+#    out = []
+#    slot = 20
+#    def GetPowers(types):
+#        for power in powers[types]:
+#            #out.append(template.format(tag=power,slot=,predicate=,name=,color=))
+#        out = []
+#        slot=20
+#    GetPowers("low")
+#    GetPowers("high")
+#    for classes in powers["class"]:
+#        for types in powers["class"][classes]:
+#            for power in powers["class"][classes][types]:
+#                
 
-    file = open("./resourcepacks/Origins-5E-Reasources/powers.json", "r")
-    powers = json.loads(file.read())
-    file.close()
-    out = []
-    slot = 20
-    def GetPowers(types):
-        for power in powers[types]:
-            out.append(template.format(tag=power,slot=,predicate=,name=,color=))
-        out = []
-        slot=20
-    GetPowers("low")
-    GetPowers("high")
-    for classes in powers["class"]:
-        for types in powers["class"][classes]:
-            for power in powers["class"][classes][types]:
-                
+
 
 generate_json()
 
@@ -250,4 +252,5 @@ generate_tags(DATA)
 
 generate_predicates()
 
-generate_shop()
+#generate_shop()
+

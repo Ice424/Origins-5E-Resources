@@ -33,7 +33,7 @@ https://github.com/Ice424/Origins-V5-Data
     - [x] ~~Temporarily get frost walker and slow aura~~
     - [x] ~~Use ability to push all mobs back 5 blocks in 10 block radius~~
   - [ ] Special
-    - [ ] Ability to summon lightning storm on an area
+    - [x] ~~Ability to summon lightning storm on an area~~
     - [ ] Ability to inflict wither to any mobs within fov
     - [ ] Crouching mid air allows slow falling
     - [ ] Ability to fly for short amount of time
@@ -109,8 +109,8 @@ https://github.com/Ice424/Origins-V5-Data
   - [x] ~~+ more xp gain (5%, 15%, 25% times)~~
   - [x] ~~+ more swim speed (5%, 15%, 25% times)~~
   - [x] ~~+ hunger gain (1.5 hunches)~~
-  - [x] ~~+ 1 block needed to proc fall damage (stacks 3 times)~~ 
-  - [x] + less damage taken from fire (5%, 15%, 25% times)
+  - [ ] + 1 block needed to proc fall damage (stacks 3 times)
+  - [x] ~~+ less damage taken from fire (5%, 15%, 25% times)~~
   - [x] ~~+ 1 level of luck (to 5)~~
 - [ ] General high tier
   - [ ] Shift Jump(w out fall dmg from the jump) 
