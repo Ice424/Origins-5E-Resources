@@ -3,6 +3,7 @@
 
 https://github.com/Ice424/Origins-V5-Data
 
+N.B. largest predicate 113
 # TODO
 
 **Amount of passives active will be changed on a class to class basis**

@@ -241,10 +241,9 @@ def generate_shop():
             out.append(template.format(tag=power["name"], slot=slot,
                        predicate=power["predicate"], name=power["name"], color="dark_gray" if types == "low" else "dark_purple", cmd='"function chill:class/'+types+"/"+power["name"]+'"'))
             slot += 1
-        print(out)
         file = open(os.path.join(RESOURCES, "test"+types+".mcfunction"), "w")
         for item in out:
-            file.write(item+"\n")
+            file.write(item+"\n\n")
 
         file.close()
     GetPowers("low")
@@ -257,11 +256,10 @@ def generate_shop():
             for power in powers["class"][classes][types]:
                 out.append(template.format(tag=power["name"], slot=slot, predicate=power["predicate"], name=power["name"], color="dark_gray" if types == "low" else "dark_purple", cmd='"chill:class/'+types+"/"+power["name"]+'"'))
                 slot += 1
-        print(out)
         file = open(os.path.join(
             RESOURCES, "test"+classes+".mcfunction"), "w")
         for item in out:
-            file.write(item+"\n")
+            file.write(item+"\n\n")
 
 
 generate_json()
