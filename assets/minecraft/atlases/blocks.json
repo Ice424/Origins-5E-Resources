@@ -13,14 +13,6 @@
             "type": "directory",
             "source": "menu",
             "prefix": "menu/"
-        },
-        {
-            "type": "single",
-            "resource": "chill:shop"
-        },
-        {
-            "type": "single",
-            "resource": "chill:essence"
         }
     ]
 }

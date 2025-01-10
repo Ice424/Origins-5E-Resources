@@ -18,7 +18,7 @@ execute if entity @p[tag=health] run data modify storage ui mask insert 0 value 
 
 execute if entity @p[tag=heal_self] run data modify storage ui mask insert 0 value {Slot:18b,id:"minecraft:stick","components":{"custom_model_data": 15, "custom_name": "{\"text\": \"heal_self\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/heal_self"}}}}
 
-execute if entity @p[tag=healing_field] run data modify storage ui mask insert 0 value {Slot:19b,id:"minecraft:stick","components":{"custom_model_data": 100, "custom_name": "{\"text\": \"healing_field\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/healing_field"}}}}
+execute if entity @p[tag=healing_field] run data modify storage ui mask insert 0 value {Slot:19b,id:"minecraft:stick","components":{"custom_model_data": 99, "custom_name": "{\"text\": \"healing_field\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/healing_field"}}}}
 
-execute if entity @p[tag=less_hearts] run data modify storage ui mask insert 0 value {Slot:20b,id:"minecraft:stick","components":{"custom_model_data": 101, "custom_name": "{\"text\": \"less_hearts\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/less_hearts"}}}}
+execute if entity @p[tag=less_hearts] run data modify storage ui mask insert 0 value {Slot:20b,id:"minecraft:stick","components":{"custom_model_data": 100, "custom_name": "{\"text\": \"less_hearts\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/less_hearts"}}}}
 

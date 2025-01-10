@@ -24,11 +24,11 @@ execute if entity @p[tag=health] run data modify storage ui mask insert 0 value 
 
 execute if entity @p[tag=vegiterian] run data modify storage ui mask insert 0 value {Slot:21b,id:"minecraft:stick","components":{"custom_model_data": 27, "custom_name": "{\"text\": \"vegiterian\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/vegiterian"}}}}
 
-execute if entity @p[tag=animals_follow] run data modify storage ui mask insert 0 value {Slot:22b,id:"minecraft:stick","components":{"custom_model_data": 102, "custom_name": "{\"text\": \"animals_follow\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/animals_follow"}}}}
+execute if entity @p[tag=animals_follow] run data modify storage ui mask insert 0 value {Slot:22b,id:"minecraft:stick","components":{"custom_model_data": 101, "custom_name": "{\"text\": \"animals_follow\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/animals_follow"}}}}
 
-execute if entity @p[tag=foliage_heal] run data modify storage ui mask insert 0 value {Slot:23b,id:"minecraft:stick","components":{"custom_model_data": 103, "custom_name": "{\"text\": \"foliage_heal\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/foliage_heal"}}}}
+execute if entity @p[tag=foliage_heal] run data modify storage ui mask insert 0 value {Slot:23b,id:"minecraft:stick","components":{"custom_model_data": 102, "custom_name": "{\"text\": \"foliage_heal\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/foliage_heal"}}}}
 
-execute if entity @p[tag=less_hearts] run data modify storage ui mask insert 0 value {Slot:24b,id:"minecraft:stick","components":{"custom_model_data": 104, "custom_name": "{\"text\": \"less_hearts\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/less_hearts"}}}}
+execute if entity @p[tag=less_hearts] run data modify storage ui mask insert 0 value {Slot:24b,id:"minecraft:stick","components":{"custom_model_data": 103, "custom_name": "{\"text\": \"less_hearts\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/less_hearts"}}}}
 
-execute if entity @p[tag=vegetarian] run data modify storage ui mask insert 0 value {Slot:25b,id:"minecraft:stick","components":{"custom_model_data": 105, "custom_name": "{\"text\": \"vegetarian\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/vegetarian"}}}}
+execute if entity @p[tag=vegetarian] run data modify storage ui mask insert 0 value {Slot:25b,id:"minecraft:stick","components":{"custom_model_data": 104, "custom_name": "{\"text\": \"vegetarian\", \"color\": \"dark_purple\", \"italic\": false}", "minecraft:custom_data":{ui_item:{cmd:"chill:class/passive/vegetarian"}}}}
 

@@ -208,8 +208,8 @@ def generate_predicates():
 
         for types in powers["class"][classes]:
             for power in powers["class"][classes][types]:
-                out.append({"predicate": {"custom_model_data": power["predicate"]},
-                            "model": "chill:icons/" + os.path.join("class", classes, types).replace("\\", "/")})
+                out.append({"predicate": {"custom_model_data": power["predicate"]}, "model": "chill:icons/" + os.path.join(
+                    "class", classes, types, power["name"]).replace("\\", "/")})
 
     file = open(
         "./resourcepacks/Origins-5E-Reasources/assets/minecraft/models/item/stick.json", "r")
@@ -240,6 +240,7 @@ def generate_shop():
         for power in powers[types]:
             out.append(template.format(tag=power["name"], slot=slot,
                        predicate=power["predicate"], name=power["name"], color="dark_gray" if types == "low" else "dark_purple", cmd='"function chill:class/'+types+"/"+power["name"]+'"'))
+            out.append()
             slot += 1
         file = open(os.path.join(RESOURCES, "test"+types+".mcfunction"), "w")
         for item in out:
@@ -262,13 +263,13 @@ def generate_shop():
             file.write(item+"\n\n")
 
 
-generate_json()
-
-generate_models(
-    "./resourcepacks/Origins-5E-Reasources/assets/chill/models/icons/")
-
-generate_tags(DATA)
-
-generate_predicates()
+#generate_json()
+#
+#generate_models(
+#    "./resourcepacks/Origins-5E-Reasources/assets/chill/models/icons/")
+#
+#generate_tags(DATA)
+#
+#generate_predicates()
 
 generate_shop()
