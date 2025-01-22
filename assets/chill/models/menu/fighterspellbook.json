@@ -1,5 +1,5 @@
 {
-  "parent": "chill:menu/overlay",
+  "parent": "chill:menu/underlay",
   "textures": {
     "texture": "chill:menu/fighterspellbook"
   }
