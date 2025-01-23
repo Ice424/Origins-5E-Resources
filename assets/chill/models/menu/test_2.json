@@ -1,0 +1,6 @@
+{
+	"parent": "chill:menu/popup",
+	"textures": {
+		"texture": "chill:menu/test2"
+	}
+}
