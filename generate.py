@@ -263,7 +263,7 @@ def generate_shop():
             file.write(item+"\n\n")
 
 
-#generate_json()
+generate_json()
 #
 #generate_models(
 #    "./resourcepacks/Origins-5E-Reasources/assets/chill/models/icons/")
@@ -272,4 +272,4 @@ def generate_shop():
 #
 #generate_predicates()
 
-generate_shop()
+#generate_shop()
