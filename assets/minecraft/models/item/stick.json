@@ -24,91 +24,103 @@
         },
         {
             "predicate": {
-                "custom_model_data": 90
-            },
-            "model": "chill:icons/low/falldmg"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 91
-            },
-            "model": "chill:icons/low/firedmg"
-        },
-        {
-            "predicate": {
                 "custom_model_data": 92
             },
-            "model": "chill:icons/low/health"
+            "model": "chill:icons/low/15"
         },
         {
             "predicate": {
                 "custom_model_data": 93
             },
-            "model": "chill:icons/low/hunger_gain"
+            "model": "chill:icons/low/25"
         },
         {
             "predicate": {
                 "custom_model_data": 94
             },
-            "model": "chill:icons/low/hunger_loss"
+            "model": "chill:icons/low/5"
         },
         {
             "predicate": {
                 "custom_model_data": 95
             },
-            "model": "chill:icons/low/luck"
+            "model": "chill:icons/low/1"
         },
         {
             "predicate": {
                 "custom_model_data": 96
             },
-            "model": "chill:icons/low/swim_speed"
+            "model": "chill:icons/low/2"
         },
         {
             "predicate": {
                 "custom_model_data": 97
             },
-            "model": "chill:icons/low/xp"
+            "model": "chill:icons/low/3"
         },
         {
             "predicate": {
                 "custom_model_data": 98
             },
-            "model": "chill:icons/low/xp_gain"
+            "model": "chill:icons/low/4"
         },
         {
             "predicate": {
-                "custom_model_data": 84
+                "custom_model_data": 99
+            },
+            "model": "chill:icons/low/xp"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 83
             },
             "model": "chill:icons/high/grow"
         },
         {
             "predicate": {
-                "custom_model_data": 85
+                "custom_model_data": 84
             },
             "model": "chill:icons/high/inventory"
         },
         {
             "predicate": {
+                "custom_model_data": 85
+            },
+            "model": "chill:icons/high/falling"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 86
             },
-            "model": "chill:icons/high/jump"
+            "model": "chill:icons/high/fall_damage"
         },
         {
             "predicate": {
                 "custom_model_data": 87
             },
-            "model": "chill:icons/high/permeation"
+            "model": "chill:icons/high/jump"
         },
         {
             "predicate": {
                 "custom_model_data": 88
             },
-            "model": "chill:icons/high/scan"
+            "model": "chill:icons/high/permeation"
         },
         {
             "predicate": {
                 "custom_model_data": 89
+            },
+            "model": "chill:icons/high/scan"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 90
+            },
+            "model": "chill:icons/high/general"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 91
             },
             "model": "chill:icons/high/shrink"
         },
@@ -174,21 +186,9 @@
         },
         {
             "predicate": {
-                "custom_model_data": 99
-            },
-            "model": "chill:icons/class/cleric/passive/healing_field"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 100
-            },
-            "model": "chill:icons/class/cleric/passive/less_hearts"
-        },
-        {
-            "predicate": {
                 "custom_model_data": 28
             },
-            "model": "chill:icons/class/druid/special/animal_controll"
+            "model": "chill:icons/class/druid/special/animal_control"
         },
         {
             "predicate": {
@@ -259,30 +259,6 @@
         {
             "predicate": {
                 "custom_model_data": 27
-            },
-            "model": "chill:icons/class/druid/passive/vegiterian"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 101
-            },
-            "model": "chill:icons/class/druid/passive/animals_follow"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 102
-            },
-            "model": "chill:icons/class/druid/passive/foliage_heal"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 103
-            },
-            "model": "chill:icons/class/druid/passive/less_hearts"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 104
             },
             "model": "chill:icons/class/druid/passive/vegetarian"
         },
@@ -380,13 +356,13 @@
             "predicate": {
                 "custom_model_data": 55
             },
-            "model": "chill:icons/class/rogue/special/invisability"
+            "model": "chill:icons/class/rogue/special/invisibility"
         },
         {
             "predicate": {
                 "custom_model_data": 56
             },
-            "model": "chill:icons/class/rogue/special/oppertunist"
+            "model": "chill:icons/class/rogue/special/opportunist"
         },
         {
             "predicate": {
@@ -416,7 +392,7 @@
             "predicate": {
                 "custom_model_data": 49
             },
-            "model": "chill:icons/class/rogue/high/stelath_bonus"
+            "model": "chill:icons/class/rogue/high/stealth_bonus"
         },
         {
             "predicate": {
@@ -441,30 +417,6 @@
                 "custom_model_data": 53
             },
             "model": "chill:icons/class/rogue/passive/nametag"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 105
-            },
-            "model": "chill:icons/class/rogue/passive/less_hearts"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 106
-            },
-            "model": "chill:icons/class/rogue/passive/longmob_aggro"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 107
-            },
-            "model": "chill:icons/class/rogue/passive/no_nametag"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 108
-            },
-            "model": "chill:icons/class/rogue/passive/silent_footsteps"
         },
         {
             "predicate": {
@@ -546,27 +498,27 @@
         },
         {
             "predicate": {
-                "custom_model_data": 80
+                "custom_model_data": 79
             },
             "model": "chill:icons/class/wizard/special/fly"
         },
         {
             "predicate": {
-                "custom_model_data": 81
-            },
-            "model": "chill:icons/class/wizard/special/lightning"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 82
+                "custom_model_data": 80
             },
             "model": "chill:icons/class/wizard/special/slow_fall"
         },
         {
             "predicate": {
-                "custom_model_data": 83
+                "custom_model_data": 81
             },
             "model": "chill:icons/class/wizard/special/wither"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 82
+            },
+            "model": "chill:icons/class/wizard/special/lightning"
         },
         {
             "predicate": {
@@ -596,43 +548,19 @@
             "predicate": {
                 "custom_model_data": 76
             },
-            "model": "chill:icons/class/wizard/passive/glow"
+            "model": "chill:icons/class/wizard/passive/glow_arrow"
         },
         {
             "predicate": {
                 "custom_model_data": 77
             },
-            "model": "chill:icons/class/wizard/passive/glow_arrrow"
+            "model": "chill:icons/class/wizard/passive/health"
         },
         {
             "predicate": {
                 "custom_model_data": 78
             },
-            "model": "chill:icons/class/wizard/passive/health"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 79
-            },
             "model": "chill:icons/class/wizard/passive/pearl"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 109
-            },
-            "model": "chill:icons/class/wizard/passive/gain_enderpearl"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 110
-            },
-            "model": "chill:icons/class/wizard/passive/hit_glow"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 111
-            },
-            "model": "chill:icons/class/wizard/passive/less_hearts"
         }
     ]
 }
