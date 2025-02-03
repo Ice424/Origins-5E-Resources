@@ -177,7 +177,7 @@ def generate_models(path):
 
             file = open(os.path.join(path, types, power)+".json", "w")
             out = MODEL
-            out["textures"]["layer0"] = "chill:icons/" + types + "/" + power
+            out["textures"]["layer0"] = "chill:" + types + "/" + power
             file.write(json.dumps(out, indent=4))
             file.close()
     GetPowers("low")
@@ -191,7 +191,7 @@ def generate_models(path):
                 except:
                     pass
                 out = MODEL
-                out["textures"]["layer0"] = "chill:icons/class/" + \
+                out["textures"]["layer0"] = "chill:class/" + \
                     classes + "/" + types + "/" + power
                 file = open(os.path.join(path, "class",
                             classes, types, power)+".json", "w")
@@ -243,7 +243,7 @@ def generate_predicates():
     def GetPowers(types):
         for power in powers[types]:
             out.append({"predicate": {"custom_model_data": power["predicate"]},
-                        "model": "chill:icons/" + os.path.join(types, power["id"]).replace("\\", "/")})
+                        "model": "chill:" + os.path.join(types, power["id"]).replace("\\", "/")})
 
     GetPowers("low")
     GetPowers("high")
@@ -251,7 +251,7 @@ def generate_predicates():
 
         for types in powers["class"][classes]:
             for power in powers["class"][classes][types]:
-                out.append({"predicate": {"custom_model_data": power["predicate"]}, "model": "chill:icons/" + os.path.join(
+                out.append({"predicate": {"custom_model_data": power["predicate"]}, "model": "chill:" + os.path.join(
                     "class", classes, types, power["id"]).replace("\\", "/")})
 
     file = open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "r")
@@ -308,7 +308,7 @@ def generate_shop():
 generate_json()
 #
 generate_models(
-    "./resourcepacks/Origins-5E-Resources/assets/chill/models/icons/")
+    "./resourcepacks/Origins-5E-Resources/assets/chill/models/")
 
 generate_tags(DATA)
 

@@ -6,8 +6,18 @@
         },
         {
             "type": "directory",
-            "source": "icons",
-            "prefix": "icons/"
+            "source": "class",
+            "prefix": "class/"
+        },
+        {
+            "type": "directory",
+            "source": "high",
+            "prefix": "high/"
+        },
+        {
+            "type": "directory",
+            "source": "low",
+            "prefix": "low/"
         },
         {
             "type": "directory",
