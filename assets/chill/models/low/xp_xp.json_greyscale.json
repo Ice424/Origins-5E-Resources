@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "chill:low/xp_xp.json_greyscale"
+    }
+}

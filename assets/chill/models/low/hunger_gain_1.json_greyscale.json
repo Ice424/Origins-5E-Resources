@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "chill:low/hunger_gain_1.json_greyscale"
+    }
+}

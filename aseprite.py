@@ -26,4 +26,4 @@ for path, subdirs, files in os.walk("./aseprite files"):
                     ".ase", ".png").replace("\\", "/")
             print(png)
             mg = Image.open(png).convert('LA')
-            mg.save(png.replace(os.path.basename(png), Path(png).stem+"_grayscale.png"))
+            mg.save(png.replace(os.path.basename(png), Path(png).stem+"_greyscale.png"))

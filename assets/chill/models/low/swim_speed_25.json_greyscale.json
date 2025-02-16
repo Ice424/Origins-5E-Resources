@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "chill:low/swim_speed_25.json_greyscale"
+    }
+}

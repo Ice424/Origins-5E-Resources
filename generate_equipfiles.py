@@ -38,13 +38,13 @@ for classes in powers["class"]:
                 path = f"chill:class/{classes}/{types}/{power["id"]}/secondary"
                 secondary.append(template.format(predicate=power["predicate"], key="secondary", path=path))
 
-primary.append("function ui:menu/main/openspellbook")
-secondary.append("function ui:menu/main/openspellbook")
+primary.append("function ui:menu/main/open_spellbook")
+secondary.append("function ui:menu/main/open_spellbook")
 
-file = open("primary.mcfunction", "w")
+file = open("functions/primary.mcfunction", "w")
 file.write("\n".join(primary))
 file.close()
 
-file = open("secondary.mcfunction", "w")
+file = open("functions/secondary.mcfunction", "w")
 file.write("\n".join(secondary))
 file.close()

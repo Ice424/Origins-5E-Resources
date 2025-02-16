@@ -5,6 +5,10 @@
             "resource": "entity/chest/normal"
         },
         {
+            "type": "single",
+            "resource": "chill:bars"
+        },
+        {
             "type": "directory",
             "source": "class",
             "prefix": "class/"
