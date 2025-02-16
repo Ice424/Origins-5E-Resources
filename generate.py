@@ -7,7 +7,7 @@ Returns:
 import os
 import json
 from pathlib import Path
-os.chdir(Path(__file__).parents[2])
+os.chdir(Path(__file__).parents[1])
 
 RESOURCES = os.path.abspath(
     "./resourcepacks/Origins-5E-Reasources/assets/")
@@ -45,7 +45,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
             "primary.json", "").replace("secondary.json", "")
 
     if "\\low\\" in directory:
-        Id = Path(directory).parts[-2] + "_"+ Path(directory).parts[-1]
+        Id = (Path(directory).parts[-2] + "_"+ Path(directory).parts[-1]).replace(".json", "")
         print(directory)
     else:
         Id = Path(directory).stem.lower()
@@ -158,8 +158,7 @@ def generate_json():
                 if add_power(powers, file[0], predicate, os.path.join(path, name)):
                     predicate += 1
 
-    file = open(os.path.abspath(
-        "./resourcepacks/Origins-5E-Resources/powers.json"), "w")
+    file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
 
     file.write(json.dumps(powers, indent=4))
     file.close()
@@ -167,7 +166,7 @@ def generate_json():
 
 
 def generate_models(path):
-    file = open("./resourcepacks/Origins-5E-Resources/powers.json", "r")
+    file = open("./resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
 
@@ -201,7 +200,7 @@ def generate_models(path):
 
 
 def generate_tags(path):
-    file = open("./resourcepacks/Origins-5E-Resources/powers.json", "r")
+    file = open("./resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
     tag = {
@@ -236,7 +235,7 @@ def generate_tags(path):
 
 
 def generate_predicates():
-    file = open("./resourcepacks/Origins-5E-Resources/powers.json", "r")
+    file = open("./resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
     out = []

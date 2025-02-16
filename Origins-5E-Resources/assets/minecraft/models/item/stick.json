@@ -26,349 +26,349 @@
             "predicate": {
                 "custom_model_data": 92
             },
-            "model": "chill:low/falldmg_15.json"
+            "model": "chill:low/falldmg_15"
         },
         {
             "predicate": {
                 "custom_model_data": 1092
             },
-            "model": "chill:low/falldmg_15.json_greyscale"
+            "model": "chill:low/falldmg_15_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 93
             },
-            "model": "chill:low/falldmg_25.json"
+            "model": "chill:low/falldmg_25"
         },
         {
             "predicate": {
                 "custom_model_data": 1093
             },
-            "model": "chill:low/falldmg_25.json_greyscale"
+            "model": "chill:low/falldmg_25_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 94
             },
-            "model": "chill:low/falldmg_5.json"
+            "model": "chill:low/falldmg_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1094
             },
-            "model": "chill:low/falldmg_5.json_greyscale"
+            "model": "chill:low/falldmg_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 95
             },
-            "model": "chill:low/firedmg_15.json"
+            "model": "chill:low/firedmg_15"
         },
         {
             "predicate": {
                 "custom_model_data": 1095
             },
-            "model": "chill:low/firedmg_15.json_greyscale"
+            "model": "chill:low/firedmg_15_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 96
             },
-            "model": "chill:low/firedmg_25.json"
+            "model": "chill:low/firedmg_25"
         },
         {
             "predicate": {
                 "custom_model_data": 1096
             },
-            "model": "chill:low/firedmg_25.json_greyscale"
+            "model": "chill:low/firedmg_25_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 97
             },
-            "model": "chill:low/firedmg_5.json"
+            "model": "chill:low/firedmg_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1097
             },
-            "model": "chill:low/firedmg_5.json_greyscale"
+            "model": "chill:low/firedmg_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 98
             },
-            "model": "chill:low/health_1.json"
+            "model": "chill:low/health_1"
         },
         {
             "predicate": {
                 "custom_model_data": 1098
             },
-            "model": "chill:low/health_1.json_greyscale"
+            "model": "chill:low/health_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 99
             },
-            "model": "chill:low/health_2.json"
+            "model": "chill:low/health_2"
         },
         {
             "predicate": {
                 "custom_model_data": 1099
             },
-            "model": "chill:low/health_2.json_greyscale"
+            "model": "chill:low/health_2_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 100
             },
-            "model": "chill:low/health_3.json"
+            "model": "chill:low/health_3"
         },
         {
             "predicate": {
                 "custom_model_data": 1100
             },
-            "model": "chill:low/health_3.json_greyscale"
+            "model": "chill:low/health_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 101
             },
-            "model": "chill:low/health_4.json"
+            "model": "chill:low/health_4"
         },
         {
             "predicate": {
                 "custom_model_data": 1101
             },
-            "model": "chill:low/health_4.json_greyscale"
+            "model": "chill:low/health_4_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 102
             },
-            "model": "chill:low/health_5.json"
+            "model": "chill:low/health_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1102
             },
-            "model": "chill:low/health_5.json_greyscale"
+            "model": "chill:low/health_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 103
             },
-            "model": "chill:low/hunger_gain_1.json"
+            "model": "chill:low/hunger_gain_1"
         },
         {
             "predicate": {
                 "custom_model_data": 1103
             },
-            "model": "chill:low/hunger_gain_1.json_greyscale"
+            "model": "chill:low/hunger_gain_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 104
             },
-            "model": "chill:low/hunger_gain_2.json"
+            "model": "chill:low/hunger_gain_2"
         },
         {
             "predicate": {
                 "custom_model_data": 1104
             },
-            "model": "chill:low/hunger_gain_2.json_greyscale"
+            "model": "chill:low/hunger_gain_2_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 105
             },
-            "model": "chill:low/hunger_gain_3.json"
+            "model": "chill:low/hunger_gain_3"
         },
         {
             "predicate": {
                 "custom_model_data": 1105
             },
-            "model": "chill:low/hunger_gain_3.json_greyscale"
+            "model": "chill:low/hunger_gain_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 106
             },
-            "model": "chill:low/hunger_loss_15.json"
+            "model": "chill:low/hunger_loss_15"
         },
         {
             "predicate": {
                 "custom_model_data": 1106
             },
-            "model": "chill:low/hunger_loss_15.json_greyscale"
+            "model": "chill:low/hunger_loss_15_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 107
             },
-            "model": "chill:low/hunger_loss_25.json"
+            "model": "chill:low/hunger_loss_25"
         },
         {
             "predicate": {
                 "custom_model_data": 1107
             },
-            "model": "chill:low/hunger_loss_25.json_greyscale"
+            "model": "chill:low/hunger_loss_25_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 108
             },
-            "model": "chill:low/hunger_loss_5.json"
+            "model": "chill:low/hunger_loss_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1108
             },
-            "model": "chill:low/hunger_loss_5.json_greyscale"
+            "model": "chill:low/hunger_loss_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 109
             },
-            "model": "chill:low/luck_1.json"
+            "model": "chill:low/luck_1"
         },
         {
             "predicate": {
                 "custom_model_data": 1109
             },
-            "model": "chill:low/luck_1.json_greyscale"
+            "model": "chill:low/luck_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 110
             },
-            "model": "chill:low/luck_2.json"
+            "model": "chill:low/luck_2"
         },
         {
             "predicate": {
                 "custom_model_data": 1110
             },
-            "model": "chill:low/luck_2.json_greyscale"
+            "model": "chill:low/luck_2_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 111
             },
-            "model": "chill:low/luck_3.json"
+            "model": "chill:low/luck_3"
         },
         {
             "predicate": {
                 "custom_model_data": 1111
             },
-            "model": "chill:low/luck_3.json_greyscale"
+            "model": "chill:low/luck_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 112
             },
-            "model": "chill:low/luck_4.json"
+            "model": "chill:low/luck_4"
         },
         {
             "predicate": {
                 "custom_model_data": 1112
             },
-            "model": "chill:low/luck_4.json_greyscale"
+            "model": "chill:low/luck_4_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 113
             },
-            "model": "chill:low/luck_5.json"
+            "model": "chill:low/luck_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1113
             },
-            "model": "chill:low/luck_5.json_greyscale"
+            "model": "chill:low/luck_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 114
             },
-            "model": "chill:low/swim_speed_15.json"
+            "model": "chill:low/swim_speed_15"
         },
         {
             "predicate": {
                 "custom_model_data": 1114
             },
-            "model": "chill:low/swim_speed_15.json_greyscale"
+            "model": "chill:low/swim_speed_15_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 115
             },
-            "model": "chill:low/swim_speed_25.json"
+            "model": "chill:low/swim_speed_25"
         },
         {
             "predicate": {
                 "custom_model_data": 1115
             },
-            "model": "chill:low/swim_speed_25.json_greyscale"
+            "model": "chill:low/swim_speed_25_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 116
             },
-            "model": "chill:low/swim_speed_5.json"
+            "model": "chill:low/swim_speed_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1116
             },
-            "model": "chill:low/swim_speed_5.json_greyscale"
+            "model": "chill:low/swim_speed_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 117
             },
-            "model": "chill:low/xp_xp.json"
+            "model": "chill:low/xp_xp"
         },
         {
             "predicate": {
                 "custom_model_data": 1117
             },
-            "model": "chill:low/xp_xp.json_greyscale"
+            "model": "chill:low/xp_xp_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 118
             },
-            "model": "chill:low/xp_gain_15.json"
+            "model": "chill:low/xp_gain_15"
         },
         {
             "predicate": {
                 "custom_model_data": 1118
             },
-            "model": "chill:low/xp_gain_15.json_greyscale"
+            "model": "chill:low/xp_gain_15_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 119
             },
-            "model": "chill:low/xp_gain_25.json"
+            "model": "chill:low/xp_gain_25"
         },
         {
             "predicate": {
                 "custom_model_data": 1119
             },
-            "model": "chill:low/xp_gain_25.json_greyscale"
+            "model": "chill:low/xp_gain_25_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 120
             },
-            "model": "chill:low/xp_gain_5.json"
+            "model": "chill:low/xp_gain_5"
         },
         {
             "predicate": {
                 "custom_model_data": 1120
             },
-            "model": "chill:low/xp_gain_5.json_greyscale"
+            "model": "chill:low/xp_gain_5_greyscale"
         },
         {
             "predicate": {

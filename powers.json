@@ -145,406 +145,406 @@
         {
             "name": "Fall damage",
             "description": "15% less fall damage",
-            "id": "falldmg_15.json",
+            "id": "falldmg_15",
             "predicate": 92,
             "key_activated": false
         },
         {
             "name": "Fall damage",
             "description": "15% less fall damage",
-            "id": "falldmg_15.json_greyscale",
+            "id": "falldmg_15_greyscale",
             "predicate": 1092,
             "key_activated": false
         },
         {
             "name": "Fall damage",
             "description": "25% less fall damage",
-            "id": "falldmg_25.json",
+            "id": "falldmg_25",
             "predicate": 93,
             "key_activated": false
         },
         {
             "name": "Fall damage",
             "description": "25% less fall damage",
-            "id": "falldmg_25.json_greyscale",
+            "id": "falldmg_25_greyscale",
             "predicate": 1093,
             "key_activated": false
         },
         {
             "name": "Fall damage",
             "description": "5% less fall damage",
-            "id": "falldmg_5.json",
+            "id": "falldmg_5",
             "predicate": 94,
             "key_activated": false
         },
         {
             "name": "Fall damage",
             "description": "5% less fall damage",
-            "id": "falldmg_5.json_greyscale",
+            "id": "falldmg_5_greyscale",
             "predicate": 1094,
             "key_activated": false
         },
         {
             "name": "Fire damage",
             "description": "15% less fire damage",
-            "id": "firedmg_15.json",
+            "id": "firedmg_15",
             "predicate": 95,
             "key_activated": false
         },
         {
             "name": "Fire damage",
             "description": "15% less fire damage",
-            "id": "firedmg_15.json_greyscale",
+            "id": "firedmg_15_greyscale",
             "predicate": 1095,
             "key_activated": false
         },
         {
             "name": "Fire damage",
             "description": "25% less fire damage",
-            "id": "firedmg_25.json",
+            "id": "firedmg_25",
             "predicate": 96,
             "key_activated": false
         },
         {
             "name": "Fire damage",
             "description": "25% less fire damage",
-            "id": "firedmg_25.json_greyscale",
+            "id": "firedmg_25_greyscale",
             "predicate": 1096,
             "key_activated": false
         },
         {
             "name": "Fire damage",
             "description": "5% less fire damage",
-            "id": "firedmg_5.json",
+            "id": "firedmg_5",
             "predicate": 97,
             "key_activated": false
         },
         {
             "name": "Fire damage",
             "description": "5% less fire damage",
-            "id": "firedmg_5.json_greyscale",
+            "id": "firedmg_5_greyscale",
             "predicate": 1097,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ half a heart",
-            "id": "health_1.json",
+            "id": "health_1",
             "predicate": 98,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ half a heart",
-            "id": "health_1.json_greyscale",
+            "id": "health_1_greyscale",
             "predicate": 1098,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ a heart",
-            "id": "health_2.json",
+            "id": "health_2",
             "predicate": 99,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ a heart",
-            "id": "health_2.json_greyscale",
+            "id": "health_2_greyscale",
             "predicate": 1099,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ heart and a half",
-            "id": "health_3.json",
+            "id": "health_3",
             "predicate": 100,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ heart and a half",
-            "id": "health_3.json_greyscale",
+            "id": "health_3_greyscale",
             "predicate": 1100,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ 2 hearts",
-            "id": "health_4.json",
+            "id": "health_4",
             "predicate": 101,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ 2 hearts",
-            "id": "health_4.json_greyscale",
+            "id": "health_4_greyscale",
             "predicate": 1101,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ 2 hearts and a half",
-            "id": "health_5.json",
+            "id": "health_5",
             "predicate": 102,
             "key_activated": false
         },
         {
             "name": "Increased health",
             "description": "+ 2 hearts and a half",
-            "id": "health_5.json_greyscale",
+            "id": "health_5_greyscale",
             "predicate": 1102,
             "key_activated": false
         },
         {
             "name": "Increased food points",
             "description": "You gain 3 more hunger hunches and 1 more point of saturation",
-            "id": "hunger_gain_1.json",
+            "id": "hunger_gain_1",
             "predicate": 103,
             "key_activated": false
         },
         {
             "name": "Increased food points",
             "description": "You gain 3 more hunger hunches and 1 more point of saturation",
-            "id": "hunger_gain_1.json_greyscale",
+            "id": "hunger_gain_1_greyscale",
             "predicate": 1103,
             "key_activated": false
         },
         {
             "name": "Increased food points",
             "description": "You gain 6 more hunger hunches and 2 more points of saturation",
-            "id": "hunger_gain_2.json",
+            "id": "hunger_gain_2",
             "predicate": 104,
             "key_activated": false
         },
         {
             "name": "Increased food points",
             "description": "You gain 6 more hunger hunches and 2 more points of saturation",
-            "id": "hunger_gain_2.json_greyscale",
+            "id": "hunger_gain_2_greyscale",
             "predicate": 1104,
             "key_activated": false
         },
         {
             "name": "Increased food points",
             "description": "You gain 9 more hunger hunches and 3 more points of saturation",
-            "id": "hunger_gain_3.json",
+            "id": "hunger_gain_3",
             "predicate": 105,
             "key_activated": false
         },
         {
             "name": "Increased food points",
             "description": "You gain 9 more hunger hunches and 3 more points of saturation",
-            "id": "hunger_gain_3.json_greyscale",
+            "id": "hunger_gain_3_greyscale",
             "predicate": 1105,
             "key_activated": false
         },
         {
             "name": "Hunger loss",
             "description": "hunger is lost 15% slower",
-            "id": "hunger_loss_15.json",
+            "id": "hunger_loss_15",
             "predicate": 106,
             "key_activated": false
         },
         {
             "name": "Hunger loss",
             "description": "hunger is lost 15% slower",
-            "id": "hunger_loss_15.json_greyscale",
+            "id": "hunger_loss_15_greyscale",
             "predicate": 1106,
             "key_activated": false
         },
         {
             "name": "Hunger loss",
             "description": "hunger is lost 25% slower",
-            "id": "hunger_loss_25.json",
+            "id": "hunger_loss_25",
             "predicate": 107,
             "key_activated": false
         },
         {
             "name": "Hunger loss",
             "description": "hunger is lost 25% slower",
-            "id": "hunger_loss_25.json_greyscale",
+            "id": "hunger_loss_25_greyscale",
             "predicate": 1107,
             "key_activated": false
         },
         {
             "name": "Hunger loss",
             "description": "hunger is lost 5% slower",
-            "id": "hunger_loss_5.json",
+            "id": "hunger_loss_5",
             "predicate": 108,
             "key_activated": false
         },
         {
             "name": "Hunger loss",
             "description": "hunger is lost 5% slower",
-            "id": "hunger_loss_5.json_greyscale",
+            "id": "hunger_loss_5_greyscale",
             "predicate": 1108,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "1 level of luck",
-            "id": "luck_1.json",
+            "id": "luck_1",
             "predicate": 109,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "1 level of luck",
-            "id": "luck_1.json_greyscale",
+            "id": "luck_1_greyscale",
             "predicate": 1109,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "2 levels of luck",
-            "id": "luck_2.json",
+            "id": "luck_2",
             "predicate": 110,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "2 levels of luck",
-            "id": "luck_2.json_greyscale",
+            "id": "luck_2_greyscale",
             "predicate": 1110,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "3 levels of luck",
-            "id": "luck_3.json",
+            "id": "luck_3",
             "predicate": 111,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "3 levels of luck",
-            "id": "luck_3.json_greyscale",
+            "id": "luck_3_greyscale",
             "predicate": 1111,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "4 levels of luck",
-            "id": "luck_4.json",
+            "id": "luck_4",
             "predicate": 112,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "4 levels of luck",
-            "id": "luck_4.json_greyscale",
+            "id": "luck_4_greyscale",
             "predicate": 1112,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "5 levels of luck",
-            "id": "luck_5.json",
+            "id": "luck_5",
             "predicate": 113,
             "key_activated": false
         },
         {
             "name": "Luck",
             "description": "5 levels of luck",
-            "id": "luck_5.json_greyscale",
+            "id": "luck_5_greyscale",
             "predicate": 1113,
             "key_activated": false
         },
         {
             "name": "Swim speed",
             "description": "15% increase in swim speed",
-            "id": "swim_speed_15.json",
+            "id": "swim_speed_15",
             "predicate": 114,
             "key_activated": false
         },
         {
             "name": "Swim speed",
             "description": "15% increase in swim speed",
-            "id": "swim_speed_15.json_greyscale",
+            "id": "swim_speed_15_greyscale",
             "predicate": 1114,
             "key_activated": false
         },
         {
             "name": "Swim speed",
             "description": "25% increase in swim speed",
-            "id": "swim_speed_25.json",
+            "id": "swim_speed_25",
             "predicate": 115,
             "key_activated": false
         },
         {
             "name": "Swim speed",
             "description": "25% increase in swim speed",
-            "id": "swim_speed_25.json_greyscale",
+            "id": "swim_speed_25_greyscale",
             "predicate": 1115,
             "key_activated": false
         },
         {
             "name": "Swim speed",
             "description": "5% increase in swim speed",
-            "id": "swim_speed_5.json",
+            "id": "swim_speed_5",
             "predicate": 116,
             "key_activated": false
         },
         {
             "name": "Swim speed",
             "description": "5% increase in swim speed",
-            "id": "swim_speed_5.json_greyscale",
+            "id": "swim_speed_5_greyscale",
             "predicate": 1116,
             "key_activated": false
         },
         {
             "name": "xp",
             "description": "none",
-            "id": "xp_xp.json",
+            "id": "xp_xp",
             "predicate": 117,
             "key_activated": false
         },
         {
             "name": "xp",
             "description": "none",
-            "id": "xp_xp.json_greyscale",
+            "id": "xp_xp_greyscale",
             "predicate": 1117,
             "key_activated": false
         },
         {
             "name": "Xp gain",
             "description": "15% increase to xp gain",
-            "id": "xp_gain_15.json",
+            "id": "xp_gain_15",
             "predicate": 118,
             "key_activated": false
         },
         {
             "name": "Xp gain",
             "description": "15% increase to xp gain",
-            "id": "xp_gain_15.json_greyscale",
+            "id": "xp_gain_15_greyscale",
             "predicate": 1118,
             "key_activated": false
         },
         {
             "name": "Xp gain",
             "description": "25% increase to xp gain",
-            "id": "xp_gain_25.json",
+            "id": "xp_gain_25",
             "predicate": 119,
             "key_activated": false
         },
         {
             "name": "Xp gain",
             "description": "25% increase to xp gain",
-            "id": "xp_gain_25.json_greyscale",
+            "id": "xp_gain_25_greyscale",
             "predicate": 1119,
             "key_activated": false
         },
         {
             "name": "Xp gain",
             "description": "5% increase to xp gain",
-            "id": "xp_gain_5.json",
+            "id": "xp_gain_5",
             "predicate": 120,
             "key_activated": false
         },
         {
             "name": "Xp gain",
             "description": "5% increase to xp gain",
-            "id": "xp_gain_5.json_greyscale",
+            "id": "xp_gain_5_greyscale",
             "predicate": 1120,
             "key_activated": false
         }

@@ -13,7 +13,8 @@ for path, subdirs, files in os.walk("./aseprite files"):
             if path.endswith("unused"):
                 savepath = "test" + path.replace("./aseprite files\\", "").replace("./aseprite files", "")
             else:
-                savepath = "assets\\chill\\textures\\" + path.replace("./aseprite files\\", "") + "/"
+                savepath = "Origins-5E-Resources\\assets\\chill\\textures\\" + \
+                    path.replace("./aseprite files\\", "") + "/"
             print(savepath)
             os.makedirs(os.path.join(savepath), exist_ok=True)
             os.system(ASEPRITE_PATH + " -b \"" + image + "\" -save-as " + savepath + "\\{title}.png")
@@ -21,7 +22,7 @@ for path, subdirs, files in os.walk("./aseprite files"):
                 png = "test"
                 
             else:
-                png = "assets\\chill\\textures\\" + \
+                png = "Origins-5E-Resources\\assets\\chill\\textures\\" + \
                 image.replace("aseprite files\\", "").replace(
                     ".ase", ".png").replace("\\", "/")
             print(png)
