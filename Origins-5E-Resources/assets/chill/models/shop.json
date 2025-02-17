@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "stick",
 	"textures": {
 		"0": "chill:item/library",
 		"particle": "chill:item/library"

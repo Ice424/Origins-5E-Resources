@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:high/inventory_greyscale"
+        "layer0": "chill:item/high/inventory_greyscale"
     }
 }

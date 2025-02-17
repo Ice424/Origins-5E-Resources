@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/tank/special/damage_greyscale"
+        "layer0": "chill:item/class/tank/special/damage_greyscale"
     }
 }

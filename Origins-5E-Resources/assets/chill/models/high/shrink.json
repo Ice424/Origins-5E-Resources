@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:high/shrink"
+        "layer0": "chill:item/high/shrink"
     }
 }

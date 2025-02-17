@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/cleric/special/summon_greyscale"
+        "layer0": "chill:item/class/cleric/special/summon_greyscale"
     }
 }

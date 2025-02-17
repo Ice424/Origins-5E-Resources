@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/fighter/high/ddamgemobs_greyscale"
+        "layer0": "chill:item/class/fighter/high/ddamgemobs_greyscale"
     }
 }

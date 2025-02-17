@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/tank/special/fire_ring_greyscale"
+        "layer0": "chill:item/class/tank/special/fire_ring_greyscale"
     }
 }

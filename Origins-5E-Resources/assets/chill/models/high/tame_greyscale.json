@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:high/tame_greyscale"
+        "layer0": "chill:item/high/tame_greyscale"
     }
 }

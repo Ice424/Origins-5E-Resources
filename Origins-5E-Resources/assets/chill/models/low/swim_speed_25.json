@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:low/swim_speed_25"
+        "layer0": "chill:item/low/swim_speed_25"
     }
 }

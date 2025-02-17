@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:low/xp_gain_15"
+        "layer0": "chill:item/low/xp_gain_15"
     }
 }

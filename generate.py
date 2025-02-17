@@ -79,7 +79,6 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                 except Exception as e:
                     print(e)
             target_list.append({"name": name, "description": description, "id": Id, "predicate": predicate, "key_activated": True})
-            target_list.append({"name": name, "description": description, "id": Id+"_greyscale", "predicate": predicate+1000, "key_activated": True})
             return True
         else:
             with open(directory, 'r') as file:
@@ -102,7 +101,6 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                 file.close()
 
             target_list.append({"name": name, "description": description, "id": Id, "predicate": predicate, "key_activated": False})
-            target_list.append({"name": name, "description": description, "id": Id+"_greyscale", "predicate": predicate+1000, "key_activated": False})
             return True
 
 
@@ -177,7 +175,7 @@ def generate_models(path):
 
             file = open(os.path.join(path, types, power)+".json", "w")
             out = MODEL
-            out["textures"]["layer0"] = "chill:" + types + "/" + power
+            out["textures"]["layer0"] = "chill:item/" + types + "/" + power
             file.write(json.dumps(out, indent=4))
             file.close()
     GetPowers("low")
@@ -191,7 +189,7 @@ def generate_models(path):
                 except:
                     pass
                 out = MODEL
-                out["textures"]["layer0"] = "chill:class/" + \
+                out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power
                 file = open(os.path.join(path, "class",
                             classes, types, power)+".json", "w")
@@ -227,6 +225,10 @@ def generate_tags(path):
                 os.makedirs(os.path.join(path, "class", classes, "passive"))
             except:
                 pass
+        out["entity_action_lost"].append({
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove " + classes
+                })
         file = open(os.path.join(path, "class", classes,
                     "passive", "tag")+".json", "w")
         file.write(json.dumps(out, indent=4))
@@ -274,6 +276,13 @@ def generate_predicates():
         to_write["overrides"].append(override)
 
     with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "w") as file:
+        json.dump(to_write, file, indent=4)
+    for item_dict in to_write["overrides"]:
+        item_dict["model"] = item_dict["model"]+ "_greyscale"
+
+    to_write["textures"]["layer0"] = "minecraft:item/iron_nugget"
+
+    with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/iron_nugget.json", "w") as file:
         json.dump(to_write, file, indent=4)
 
 

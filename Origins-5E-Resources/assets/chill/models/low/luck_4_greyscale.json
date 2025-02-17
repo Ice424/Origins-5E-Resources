@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:low/luck_4_greyscale"
+        "layer0": "chill:item/low/luck_4_greyscale"
     }
 }

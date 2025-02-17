@@ -29,7 +29,7 @@ for classes in powers["class"]:
             for power in powers["class"][classes][types]:
                 out.append(template.format(predicate=power["predicate"], id=power["id"]))
 
-            out.append("""$execute store result score @p $(slot) run data get entity @ e[tag = randomizer, sort = random, limit = 1] Pos[1]
+            out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
 
             file = open(f"functions/{classes}_{types}_slots.mcfunction", "w")

@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/druid/special/freeze"
+        "layer0": "chill:item/class/druid/special/freeze"
     }
 }

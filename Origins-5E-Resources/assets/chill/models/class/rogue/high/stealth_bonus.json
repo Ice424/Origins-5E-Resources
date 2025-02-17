@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/rogue/high/stealth_bonus"
+        "layer0": "chill:item/class/rogue/high/stealth_bonus"
     }
 }

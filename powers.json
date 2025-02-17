@@ -8,24 +8,10 @@
             "key_activated": false
         },
         {
-            "name": "Grow",
-            "description": "You grow a block taller",
-            "id": "grow_greyscale",
-            "predicate": 1082,
-            "key_activated": false
-        },
-        {
             "name": "Inventory",
             "description": "you have 5 extra inventory slots they stay with you on death",
             "id": "inventory",
             "predicate": 83,
-            "key_activated": true
-        },
-        {
-            "name": "Inventory",
-            "description": "you have 5 extra inventory slots they stay with you on death",
-            "id": "inventory_greyscale",
-            "predicate": 1083,
             "key_activated": true
         },
         {
@@ -36,24 +22,10 @@
             "key_activated": false
         },
         {
-            "name": "falling",
-            "description": "none",
-            "id": "falling_greyscale",
-            "predicate": 1084,
-            "key_activated": false
-        },
-        {
             "name": "fall_damage",
             "description": "none",
             "id": "fall_damage",
             "predicate": 85,
-            "key_activated": false
-        },
-        {
-            "name": "fall_damage",
-            "description": "none",
-            "id": "fall_damage_greyscale",
-            "predicate": 1085,
             "key_activated": false
         },
         {
@@ -64,24 +36,10 @@
             "key_activated": false
         },
         {
-            "name": "Jump",
-            "description": "by crouching you can jump high",
-            "id": "jump_greyscale",
-            "predicate": 1086,
-            "key_activated": false
-        },
-        {
             "name": "phasing",
             "description": "you can temporarily phase through walls",
             "id": "permeation",
             "predicate": 87,
-            "key_activated": true
-        },
-        {
-            "name": "phasing",
-            "description": "you can temporarily phase through walls",
-            "id": "permeation_greyscale",
-            "predicate": 1087,
             "key_activated": true
         },
         {
@@ -92,24 +50,10 @@
             "key_activated": true
         },
         {
-            "name": "scan",
-            "description": "reveal all entities in 40 a block radius",
-            "id": "scan_greyscale",
-            "predicate": 1088,
-            "key_activated": true
-        },
-        {
             "name": "general",
             "description": "none",
             "id": "general",
             "predicate": 89,
-            "key_activated": false
-        },
-        {
-            "name": "general",
-            "description": "none",
-            "id": "general_greyscale",
-            "predicate": 1089,
             "key_activated": false
         },
         {
@@ -120,24 +64,10 @@
             "key_activated": false
         },
         {
-            "name": "shrink",
-            "description": "You shrink a block",
-            "id": "shrink_greyscale",
-            "predicate": 1090,
-            "key_activated": false
-        },
-        {
             "name": "Tame",
             "description": "you can tame all tameable mobs in a 4 block radius",
             "id": "tame",
             "predicate": 91,
-            "key_activated": true
-        },
-        {
-            "name": "Tame",
-            "description": "you can tame all tameable mobs in a 4 block radius",
-            "id": "tame_greyscale",
-            "predicate": 1091,
             "key_activated": true
         }
     ],
@@ -151,13 +81,6 @@
         },
         {
             "name": "Fall damage",
-            "description": "15% less fall damage",
-            "id": "falldmg_15_greyscale",
-            "predicate": 1092,
-            "key_activated": false
-        },
-        {
-            "name": "Fall damage",
             "description": "25% less fall damage",
             "id": "falldmg_25",
             "predicate": 93,
@@ -165,23 +88,9 @@
         },
         {
             "name": "Fall damage",
-            "description": "25% less fall damage",
-            "id": "falldmg_25_greyscale",
-            "predicate": 1093,
-            "key_activated": false
-        },
-        {
-            "name": "Fall damage",
             "description": "5% less fall damage",
             "id": "falldmg_5",
             "predicate": 94,
-            "key_activated": false
-        },
-        {
-            "name": "Fall damage",
-            "description": "5% less fall damage",
-            "id": "falldmg_5_greyscale",
-            "predicate": 1094,
             "key_activated": false
         },
         {
@@ -193,13 +102,6 @@
         },
         {
             "name": "Fire damage",
-            "description": "15% less fire damage",
-            "id": "firedmg_15_greyscale",
-            "predicate": 1095,
-            "key_activated": false
-        },
-        {
-            "name": "Fire damage",
             "description": "25% less fire damage",
             "id": "firedmg_25",
             "predicate": 96,
@@ -207,23 +109,9 @@
         },
         {
             "name": "Fire damage",
-            "description": "25% less fire damage",
-            "id": "firedmg_25_greyscale",
-            "predicate": 1096,
-            "key_activated": false
-        },
-        {
-            "name": "Fire damage",
             "description": "5% less fire damage",
             "id": "firedmg_5",
             "predicate": 97,
-            "key_activated": false
-        },
-        {
-            "name": "Fire damage",
-            "description": "5% less fire damage",
-            "id": "firedmg_5_greyscale",
-            "predicate": 1097,
             "key_activated": false
         },
         {
@@ -235,23 +123,9 @@
         },
         {
             "name": "Increased health",
-            "description": "+ half a heart",
-            "id": "health_1_greyscale",
-            "predicate": 1098,
-            "key_activated": false
-        },
-        {
-            "name": "Increased health",
             "description": "+ a heart",
             "id": "health_2",
             "predicate": 99,
-            "key_activated": false
-        },
-        {
-            "name": "Increased health",
-            "description": "+ a heart",
-            "id": "health_2_greyscale",
-            "predicate": 1099,
             "key_activated": false
         },
         {
@@ -263,13 +137,6 @@
         },
         {
             "name": "Increased health",
-            "description": "+ heart and a half",
-            "id": "health_3_greyscale",
-            "predicate": 1100,
-            "key_activated": false
-        },
-        {
-            "name": "Increased health",
             "description": "+ 2 hearts",
             "id": "health_4",
             "predicate": 101,
@@ -277,23 +144,9 @@
         },
         {
             "name": "Increased health",
-            "description": "+ 2 hearts",
-            "id": "health_4_greyscale",
-            "predicate": 1101,
-            "key_activated": false
-        },
-        {
-            "name": "Increased health",
             "description": "+ 2 hearts and a half",
             "id": "health_5",
             "predicate": 102,
-            "key_activated": false
-        },
-        {
-            "name": "Increased health",
-            "description": "+ 2 hearts and a half",
-            "id": "health_5_greyscale",
-            "predicate": 1102,
             "key_activated": false
         },
         {
@@ -305,13 +158,6 @@
         },
         {
             "name": "Increased food points",
-            "description": "You gain 3 more hunger hunches and 1 more point of saturation",
-            "id": "hunger_gain_1_greyscale",
-            "predicate": 1103,
-            "key_activated": false
-        },
-        {
-            "name": "Increased food points",
             "description": "You gain 6 more hunger hunches and 2 more points of saturation",
             "id": "hunger_gain_2",
             "predicate": 104,
@@ -319,23 +165,9 @@
         },
         {
             "name": "Increased food points",
-            "description": "You gain 6 more hunger hunches and 2 more points of saturation",
-            "id": "hunger_gain_2_greyscale",
-            "predicate": 1104,
-            "key_activated": false
-        },
-        {
-            "name": "Increased food points",
             "description": "You gain 9 more hunger hunches and 3 more points of saturation",
             "id": "hunger_gain_3",
             "predicate": 105,
-            "key_activated": false
-        },
-        {
-            "name": "Increased food points",
-            "description": "You gain 9 more hunger hunches and 3 more points of saturation",
-            "id": "hunger_gain_3_greyscale",
-            "predicate": 1105,
             "key_activated": false
         },
         {
@@ -347,13 +179,6 @@
         },
         {
             "name": "Hunger loss",
-            "description": "hunger is lost 15% slower",
-            "id": "hunger_loss_15_greyscale",
-            "predicate": 1106,
-            "key_activated": false
-        },
-        {
-            "name": "Hunger loss",
             "description": "hunger is lost 25% slower",
             "id": "hunger_loss_25",
             "predicate": 107,
@@ -361,23 +186,9 @@
         },
         {
             "name": "Hunger loss",
-            "description": "hunger is lost 25% slower",
-            "id": "hunger_loss_25_greyscale",
-            "predicate": 1107,
-            "key_activated": false
-        },
-        {
-            "name": "Hunger loss",
             "description": "hunger is lost 5% slower",
             "id": "hunger_loss_5",
             "predicate": 108,
-            "key_activated": false
-        },
-        {
-            "name": "Hunger loss",
-            "description": "hunger is lost 5% slower",
-            "id": "hunger_loss_5_greyscale",
-            "predicate": 1108,
             "key_activated": false
         },
         {
@@ -389,23 +200,9 @@
         },
         {
             "name": "Luck",
-            "description": "1 level of luck",
-            "id": "luck_1_greyscale",
-            "predicate": 1109,
-            "key_activated": false
-        },
-        {
-            "name": "Luck",
             "description": "2 levels of luck",
             "id": "luck_2",
             "predicate": 110,
-            "key_activated": false
-        },
-        {
-            "name": "Luck",
-            "description": "2 levels of luck",
-            "id": "luck_2_greyscale",
-            "predicate": 1110,
             "key_activated": false
         },
         {
@@ -417,13 +214,6 @@
         },
         {
             "name": "Luck",
-            "description": "3 levels of luck",
-            "id": "luck_3_greyscale",
-            "predicate": 1111,
-            "key_activated": false
-        },
-        {
-            "name": "Luck",
             "description": "4 levels of luck",
             "id": "luck_4",
             "predicate": 112,
@@ -431,23 +221,9 @@
         },
         {
             "name": "Luck",
-            "description": "4 levels of luck",
-            "id": "luck_4_greyscale",
-            "predicate": 1112,
-            "key_activated": false
-        },
-        {
-            "name": "Luck",
             "description": "5 levels of luck",
             "id": "luck_5",
             "predicate": 113,
-            "key_activated": false
-        },
-        {
-            "name": "Luck",
-            "description": "5 levels of luck",
-            "id": "luck_5_greyscale",
-            "predicate": 1113,
             "key_activated": false
         },
         {
@@ -459,23 +235,9 @@
         },
         {
             "name": "Swim speed",
-            "description": "15% increase in swim speed",
-            "id": "swim_speed_15_greyscale",
-            "predicate": 1114,
-            "key_activated": false
-        },
-        {
-            "name": "Swim speed",
             "description": "25% increase in swim speed",
             "id": "swim_speed_25",
             "predicate": 115,
-            "key_activated": false
-        },
-        {
-            "name": "Swim speed",
-            "description": "25% increase in swim speed",
-            "id": "swim_speed_25_greyscale",
-            "predicate": 1115,
             "key_activated": false
         },
         {
@@ -486,24 +248,10 @@
             "key_activated": false
         },
         {
-            "name": "Swim speed",
-            "description": "5% increase in swim speed",
-            "id": "swim_speed_5_greyscale",
-            "predicate": 1116,
-            "key_activated": false
-        },
-        {
             "name": "xp",
             "description": "none",
             "id": "xp_xp",
             "predicate": 117,
-            "key_activated": false
-        },
-        {
-            "name": "xp",
-            "description": "none",
-            "id": "xp_xp_greyscale",
-            "predicate": 1117,
             "key_activated": false
         },
         {
@@ -515,13 +263,6 @@
         },
         {
             "name": "Xp gain",
-            "description": "15% increase to xp gain",
-            "id": "xp_gain_15_greyscale",
-            "predicate": 1118,
-            "key_activated": false
-        },
-        {
-            "name": "Xp gain",
             "description": "25% increase to xp gain",
             "id": "xp_gain_25",
             "predicate": 119,
@@ -529,23 +270,9 @@
         },
         {
             "name": "Xp gain",
-            "description": "25% increase to xp gain",
-            "id": "xp_gain_25_greyscale",
-            "predicate": 1119,
-            "key_activated": false
-        },
-        {
-            "name": "Xp gain",
             "description": "5% increase to xp gain",
             "id": "xp_gain_5",
             "predicate": 120,
-            "key_activated": false
-        },
-        {
-            "name": "Xp gain",
-            "description": "5% increase to xp gain",
-            "id": "xp_gain_5_greyscale",
-            "predicate": 1120,
             "key_activated": false
         }
     ],
@@ -560,24 +287,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Divine protection",
-                    "description": "you can gain the effects of holding a totem of undying",
-                    "id": "death_greyscale",
-                    "predicate": 1016,
-                    "key_activated": false
-                },
-                {
                     "name": "luck",
                     "description": "+ 3 to your luck",
                     "id": "luck",
                     "predicate": 17,
-                    "key_activated": false
-                },
-                {
-                    "name": "luck",
-                    "description": "+ 3 to your luck",
-                    "id": "luck_greyscale",
-                    "predicate": 1017,
                     "key_activated": false
                 },
                 {
@@ -588,24 +301,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Divine eye",
-                    "description": "you can see mobs in a 10 block area",
-                    "id": "see_greyscale",
-                    "predicate": 1018,
-                    "key_activated": false
-                },
-                {
                     "name": "Summon the dead",
                     "description": "summon 5 zombies to assist you in battle they are friendly towards druids",
                     "id": "summon",
                     "predicate": 19,
-                    "key_activated": true
-                },
-                {
-                    "name": "Summon the dead",
-                    "description": "summon 5 zombies to assist you in battle they are friendly towards druids",
-                    "id": "summon_greyscale",
-                    "predicate": 1019,
                     "key_activated": true
                 }
             ],
@@ -618,24 +317,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "hunger",
-                    "description": "none",
-                    "id": "hunger_greyscale",
-                    "predicate": 1010,
-                    "key_activated": false
-                },
-                {
                     "name": "lifesteal",
                     "description": "none",
                     "id": "lifesteal",
                     "predicate": 11,
-                    "key_activated": false
-                },
-                {
-                    "name": "lifesteal",
-                    "description": "none",
-                    "id": "lifesteal_greyscale",
-                    "predicate": 1011,
                     "key_activated": false
                 },
                 {
@@ -646,24 +331,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "teleport",
-                    "description": "none",
-                    "id": "teleport_greyscale",
-                    "predicate": 1012,
-                    "key_activated": false
-                },
-                {
                     "name": "heal",
                     "description": "none",
                     "id": "heal",
                     "predicate": 13,
-                    "key_activated": true
-                },
-                {
-                    "name": "heal",
-                    "description": "none",
-                    "id": "heal_greyscale",
-                    "predicate": 1013,
                     "key_activated": true
                 }
             ],
@@ -676,24 +347,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "health",
-                    "description": "you have 9 hearts",
-                    "id": "health_greyscale",
-                    "predicate": 1014,
-                    "key_activated": false
-                },
-                {
                     "name": "Regeneration aura",
                     "description": "sneak to heal you and all mobs in a 10 block radius",
                     "id": "heal_self",
                     "predicate": 15,
-                    "key_activated": false
-                },
-                {
-                    "name": "Regeneration aura",
-                    "description": "sneak to heal you and all mobs in a 10 block radius",
-                    "id": "heal_self_greyscale",
-                    "predicate": 1015,
                     "key_activated": false
                 }
             ]
@@ -708,24 +365,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "animal_control",
-                    "description": "none",
-                    "id": "animal_control_greyscale",
-                    "predicate": 1028,
-                    "key_activated": false
-                },
-                {
                     "name": "bone_meal",
                     "description": "none",
                     "id": "bone_meal",
                     "predicate": 29,
-                    "key_activated": false
-                },
-                {
-                    "name": "bone_meal",
-                    "description": "none",
-                    "id": "bone_meal_greyscale",
-                    "predicate": 1029,
                     "key_activated": false
                 },
                 {
@@ -736,13 +379,6 @@
                     "key_activated": false
                 },
                 {
-                    "name": "freeze",
-                    "description": "none",
-                    "id": "freeze_greyscale",
-                    "predicate": 1030,
-                    "key_activated": false
-                },
-                {
                     "name": "skulk",
                     "description": "none",
                     "id": "skulk",
@@ -750,24 +386,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "skulk",
-                    "description": "none",
-                    "id": "skulk_greyscale",
-                    "predicate": 1031,
-                    "key_activated": false
-                },
-                {
                     "name": "speed",
                     "description": "none",
                     "id": "speed",
                     "predicate": 32,
-                    "key_activated": false
-                },
-                {
-                    "name": "speed",
-                    "description": "none",
-                    "id": "speed_greyscale",
-                    "predicate": 1032,
                     "key_activated": false
                 }
             ],
@@ -780,24 +402,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "arrows",
-                    "description": "none",
-                    "id": "arrows_greyscale",
-                    "predicate": 1020,
-                    "key_activated": false
-                },
-                {
                     "name": "poison",
                     "description": "none",
                     "id": "poison",
                     "predicate": 21,
-                    "key_activated": false
-                },
-                {
-                    "name": "poison",
-                    "description": "none",
-                    "id": "poison_greyscale",
-                    "predicate": 1021,
                     "key_activated": false
                 },
                 {
@@ -808,24 +416,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "underwater",
-                    "description": "none",
-                    "id": "underwater_greyscale",
-                    "predicate": 1022,
-                    "key_activated": false
-                },
-                {
                     "name": "wall_climb",
                     "description": "none",
                     "id": "wall_climb",
                     "predicate": 23,
-                    "key_activated": false
-                },
-                {
-                    "name": "wall_climb",
-                    "description": "none",
-                    "id": "wall_climb_greyscale",
-                    "predicate": 1023,
                     "key_activated": false
                 }
             ],
@@ -838,24 +432,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "animal",
-                    "description": "none",
-                    "id": "animal_greyscale",
-                    "predicate": 1024,
-                    "key_activated": false
-                },
-                {
                     "name": "heal",
                     "description": "none",
                     "id": "heal",
                     "predicate": 25,
-                    "key_activated": false
-                },
-                {
-                    "name": "heal",
-                    "description": "none",
-                    "id": "heal_greyscale",
-                    "predicate": 1025,
                     "key_activated": false
                 },
                 {
@@ -866,24 +446,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "health",
-                    "description": "none",
-                    "id": "health_greyscale",
-                    "predicate": 1026,
-                    "key_activated": false
-                },
-                {
                     "name": "vegetarian",
                     "description": "none",
                     "id": "vegetarian",
                     "predicate": 27,
-                    "key_activated": false
-                },
-                {
-                    "name": "vegetarian",
-                    "description": "none",
-                    "id": "vegetarian_greyscale",
-                    "predicate": 1027,
                     "key_activated": false
                 }
             ]
@@ -898,24 +464,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Damage to mobs",
-                    "description": "you deal double damage to hostile mobs",
-                    "id": "ddamgemobs_greyscale",
-                    "predicate": 1033,
-                    "key_activated": false
-                },
-                {
                     "name": "Hero of the village",
                     "description": "you have permanent hero of the village",
                     "id": "hotvillage",
                     "predicate": 34,
-                    "key_activated": false
-                },
-                {
-                    "name": "Hero of the village",
-                    "description": "you have permanent hero of the village",
-                    "id": "hotvillage_greyscale",
-                    "predicate": 1034,
                     "key_activated": false
                 },
                 {
@@ -926,24 +478,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Increased reach",
-                    "description": "you get 6 block reach",
-                    "id": "reach_greyscale",
-                    "predicate": 1035,
-                    "key_activated": false
-                },
-                {
                     "name": "Saturation",
                     "description": "you have permanent saturation",
                     "id": "saturation",
                     "predicate": 36,
-                    "key_activated": false
-                },
-                {
-                    "name": "Saturation",
-                    "description": "you have permanent saturation",
-                    "id": "saturation_greyscale",
-                    "predicate": 1036,
                     "key_activated": false
                 },
                 {
@@ -954,24 +492,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Speed",
-                    "description": "you have permanent speed 2",
-                    "id": "speed_upgrade_greyscale",
-                    "predicate": 1037,
-                    "key_activated": false
-                },
-                {
                     "name": "arrows",
                     "description": "none",
                     "id": "arrows",
                     "predicate": 38,
-                    "key_activated": true
-                },
-                {
-                    "name": "arrows",
-                    "description": "none",
-                    "id": "arrows_greyscale",
-                    "predicate": 1038,
                     "key_activated": true
                 },
                 {
@@ -982,13 +506,6 @@
                     "key_activated": true
                 },
                 {
-                    "name": "Overheal",
-                    "description": "you heal 20 hearts and gain 5 temporary hearts",
-                    "id": "overheal_greyscale",
-                    "predicate": 1039,
-                    "key_activated": true
-                },
-                {
                     "name": "Powered up",
                     "description": "you gain resistance 2 and strength 2 for a short period",
                     "id": "powered",
@@ -996,24 +513,10 @@
                     "key_activated": true
                 },
                 {
-                    "name": "Powered up",
-                    "description": "you gain resistance 2 and strength 2 for a short period",
-                    "id": "powered_greyscale",
-                    "predicate": 1040,
-                    "key_activated": true
-                },
-                {
                     "name": "Swiftness",
                     "description": "you can gain speed 3 for a short period",
                     "id": "speedboost",
                     "predicate": 41,
-                    "key_activated": true
-                },
-                {
-                    "name": "Swiftness",
-                    "description": "you can gain speed 3 for a short period",
-                    "id": "speedboost_greyscale",
-                    "predicate": 1041,
                     "key_activated": true
                 }
             ],
@@ -1026,24 +529,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Haste",
-                    "description": "you have permanent haste 1",
-                    "id": "haste_greyscale",
-                    "predicate": 1042,
-                    "key_activated": false
-                },
-                {
                     "name": "Health increase",
                     "description": "you gain 4 hearts",
                     "id": "hearts",
                     "predicate": 43,
-                    "key_activated": false
-                },
-                {
-                    "name": "Health increase",
-                    "description": "you gain 4 hearts",
-                    "id": "hearts_greyscale",
-                    "predicate": 1043,
                     "key_activated": false
                 },
                 {
@@ -1054,24 +543,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Speed",
-                    "description": "you have permanent speed 1",
-                    "id": "speed_greyscale",
-                    "predicate": 1044,
-                    "key_activated": false
-                },
-                {
                     "name": "Strength",
                     "description": "you have permanent strength 1",
                     "id": "strength",
                     "predicate": 45,
-                    "key_activated": false
-                },
-                {
-                    "name": "Strength",
-                    "description": "you have permanent strength 1",
-                    "id": "strength_greyscale",
-                    "predicate": 1045,
                     "key_activated": false
                 }
             ]
@@ -1086,24 +561,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "dash",
-                    "description": "none",
-                    "id": "dash_greyscale",
-                    "predicate": 1053,
-                    "key_activated": false
-                },
-                {
                     "name": "invisibility",
                     "description": "none",
                     "id": "invisibility",
                     "predicate": 54,
-                    "key_activated": false
-                },
-                {
-                    "name": "invisibility",
-                    "description": "none",
-                    "id": "invisibility_greyscale",
-                    "predicate": 1054,
                     "key_activated": false
                 },
                 {
@@ -1114,13 +575,6 @@
                     "key_activated": false
                 },
                 {
-                    "name": "opportunist",
-                    "description": "none",
-                    "id": "opportunist_greyscale",
-                    "predicate": 1055,
-                    "key_activated": false
-                },
-                {
                     "name": "teleport",
                     "description": "none",
                     "id": "teleport",
@@ -1128,24 +582,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "teleport",
-                    "description": "none",
-                    "id": "teleport_greyscale",
-                    "predicate": 1056,
-                    "key_activated": false
-                },
-                {
                     "name": "wall_climb",
                     "description": "none",
                     "id": "wall_climb",
                     "predicate": 57,
-                    "key_activated": false
-                },
-                {
-                    "name": "wall_climb",
-                    "description": "none",
-                    "id": "wall_climb_greyscale",
-                    "predicate": 1057,
                     "key_activated": false
                 }
             ],
@@ -1158,13 +598,6 @@
                     "key_activated": false
                 },
                 {
-                    "name": "blindness",
-                    "description": "none",
-                    "id": "blindness_greyscale",
-                    "predicate": 1046,
-                    "key_activated": false
-                },
-                {
                     "name": "fall_dmg",
                     "description": "none",
                     "id": "fall_dmg",
@@ -1172,24 +605,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "fall_dmg",
-                    "description": "none",
-                    "id": "fall_dmg_greyscale",
-                    "predicate": 1047,
-                    "key_activated": false
-                },
-                {
                     "name": "stealth_bonus",
                     "description": "none",
                     "id": "stealth_bonus",
                     "predicate": 48,
-                    "key_activated": false
-                },
-                {
-                    "name": "stealth_bonus",
-                    "description": "none",
-                    "id": "stealth_bonus_greyscale",
-                    "predicate": 1048,
                     "key_activated": false
                 }
             ],
@@ -1202,24 +621,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "agro",
-                    "description": "none",
-                    "id": "agro_greyscale",
-                    "predicate": 1049,
-                    "key_activated": false
-                },
-                {
                     "name": "footsteps",
                     "description": "none",
                     "id": "footsteps",
                     "predicate": 50,
-                    "key_activated": false
-                },
-                {
-                    "name": "footsteps",
-                    "description": "none",
-                    "id": "footsteps_greyscale",
-                    "predicate": 1050,
                     "key_activated": false
                 },
                 {
@@ -1230,24 +635,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "hearts",
-                    "description": "none",
-                    "id": "hearts_greyscale",
-                    "predicate": 1051,
-                    "key_activated": false
-                },
-                {
                     "name": "nametag",
                     "description": "none",
                     "id": "nametag",
                     "predicate": 52,
-                    "key_activated": false
-                },
-                {
-                    "name": "nametag",
-                    "description": "none",
-                    "id": "nametag_greyscale",
-                    "predicate": 1052,
                     "key_activated": false
                 }
             ]
@@ -1262,24 +653,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "block",
-                    "description": "none",
-                    "id": "block_greyscale",
-                    "predicate": 1065,
-                    "key_activated": false
-                },
-                {
                     "name": "damage",
                     "description": "none",
                     "id": "damage",
                     "predicate": 66,
-                    "key_activated": false
-                },
-                {
-                    "name": "damage",
-                    "description": "none",
-                    "id": "damage_greyscale",
-                    "predicate": 1066,
                     "key_activated": false
                 },
                 {
@@ -1290,24 +667,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "fire_res",
-                    "description": "none",
-                    "id": "fire_res_greyscale",
-                    "predicate": 1067,
-                    "key_activated": false
-                },
-                {
                     "name": "fire_ring",
                     "description": "none",
                     "id": "fire_ring",
                     "predicate": 68,
-                    "key_activated": false
-                },
-                {
-                    "name": "fire_ring",
-                    "description": "none",
-                    "id": "fire_ring_greyscale",
-                    "predicate": 1068,
                     "key_activated": false
                 },
                 {
@@ -1318,24 +681,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "rage",
-                    "description": "none",
-                    "id": "rage_greyscale",
-                    "predicate": 1069,
-                    "key_activated": false
-                },
-                {
                     "name": "stone",
                     "description": "none",
                     "id": "stone",
                     "predicate": 70,
-                    "key_activated": false
-                },
-                {
-                    "name": "stone",
-                    "description": "none",
-                    "id": "stone_greyscale",
-                    "predicate": 1070,
                     "key_activated": false
                 }
             ],
@@ -1348,24 +697,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "ground_pound",
-                    "description": "none",
-                    "id": "ground_pound_greyscale",
-                    "predicate": 1058,
-                    "key_activated": false
-                },
-                {
                     "name": "hook",
                     "description": "none",
                     "id": "hook",
                     "predicate": 59,
-                    "key_activated": false
-                },
-                {
-                    "name": "hook",
-                    "description": "none",
-                    "id": "hook_greyscale",
-                    "predicate": 1059,
                     "key_activated": false
                 },
                 {
@@ -1376,13 +711,6 @@
                     "key_activated": false
                 },
                 {
-                    "name": "knockback",
-                    "description": "none",
-                    "id": "knockback_greyscale",
-                    "predicate": 1060,
-                    "key_activated": false
-                },
-                {
                     "name": "shield",
                     "description": "none",
                     "id": "shield",
@@ -1390,24 +718,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "shield",
-                    "description": "none",
-                    "id": "shield_greyscale",
-                    "predicate": 1061,
-                    "key_activated": false
-                },
-                {
                     "name": "thorns",
                     "description": "none",
                     "id": "thorns",
                     "predicate": 62,
-                    "key_activated": false
-                },
-                {
-                    "name": "thorns",
-                    "description": "none",
-                    "id": "thorns_greyscale",
-                    "predicate": 1062,
                     "key_activated": false
                 }
             ],
@@ -1420,24 +734,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "resistance",
-                    "description": "none",
-                    "id": "resistance_greyscale",
-                    "predicate": 1063,
-                    "key_activated": false
-                },
-                {
                     "name": "saturation",
                     "description": "none",
                     "id": "saturation",
                     "predicate": 64,
-                    "key_activated": false
-                },
-                {
-                    "name": "saturation",
-                    "description": "none",
-                    "id": "saturation_greyscale",
-                    "predicate": 1064,
                     "key_activated": false
                 }
             ]
@@ -1452,24 +752,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "fly",
-                    "description": "none",
-                    "id": "fly_greyscale",
-                    "predicate": 1078,
-                    "key_activated": false
-                },
-                {
                     "name": "slow_fall",
                     "description": "none",
                     "id": "slow_fall",
                     "predicate": 79,
-                    "key_activated": false
-                },
-                {
-                    "name": "slow_fall",
-                    "description": "none",
-                    "id": "slow_fall_greyscale",
-                    "predicate": 1079,
                     "key_activated": false
                 },
                 {
@@ -1480,24 +766,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "wither",
-                    "description": "none",
-                    "id": "wither_greyscale",
-                    "predicate": 1080,
-                    "key_activated": false
-                },
-                {
                     "name": "lightning",
                     "description": "none",
                     "id": "lightning",
                     "predicate": 81,
-                    "key_activated": true
-                },
-                {
-                    "name": "lightning",
-                    "description": "none",
-                    "id": "lightning_greyscale",
-                    "predicate": 1081,
                     "key_activated": true
                 }
             ],
@@ -1510,24 +782,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "fireball",
-                    "description": "none",
-                    "id": "fireball_greyscale",
-                    "predicate": 1071,
-                    "key_activated": false
-                },
-                {
                     "name": "glow",
                     "description": "none",
                     "id": "glow",
                     "predicate": 72,
-                    "key_activated": false
-                },
-                {
-                    "name": "glow",
-                    "description": "none",
-                    "id": "glow_greyscale",
-                    "predicate": 1072,
                     "key_activated": false
                 },
                 {
@@ -1538,24 +796,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "ice",
-                    "description": "none",
-                    "id": "ice_greyscale",
-                    "predicate": 1073,
-                    "key_activated": false
-                },
-                {
                     "name": "push",
                     "description": "none",
                     "id": "push",
                     "predicate": 74,
-                    "key_activated": false
-                },
-                {
-                    "name": "push",
-                    "description": "none",
-                    "id": "push_greyscale",
-                    "predicate": 1074,
                     "key_activated": false
                 }
             ],
@@ -1568,13 +812,6 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Spectral shot",
-                    "description": "All the projectiles you shoot inflict glowing",
-                    "id": "glow_arrow_greyscale",
-                    "predicate": 1075,
-                    "key_activated": false
-                },
-                {
                     "name": "Health",
                     "description": "you have 9 hearts",
                     "id": "health",
@@ -1582,24 +819,10 @@
                     "key_activated": false
                 },
                 {
-                    "name": "Health",
-                    "description": "you have 9 hearts",
-                    "id": "health_greyscale",
-                    "predicate": 1076,
-                    "key_activated": false
-                },
-                {
                     "name": "pearl",
                     "description": "none",
                     "id": "pearl",
                     "predicate": 77,
-                    "key_activated": false
-                },
-                {
-                    "name": "pearl",
-                    "description": "none",
-                    "id": "pearl_greyscale",
-                    "predicate": 1077,
                     "key_activated": false
                 }
             ]

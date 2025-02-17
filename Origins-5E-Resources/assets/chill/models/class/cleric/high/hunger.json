@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/cleric/high/hunger"
+        "layer0": "chill:item/class/cleric/high/hunger"
     }
 }

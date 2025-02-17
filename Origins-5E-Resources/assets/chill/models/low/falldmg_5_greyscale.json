@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:low/falldmg_5_greyscale"
+        "layer0": "chill:item/low/falldmg_5_greyscale"
     }
 }

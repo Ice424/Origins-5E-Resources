@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/cleric/high/lifesteal_greyscale"
+        "layer0": "chill:item/class/cleric/high/lifesteal_greyscale"
     }
 }

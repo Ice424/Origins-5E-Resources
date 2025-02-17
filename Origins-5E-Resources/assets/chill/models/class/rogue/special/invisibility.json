@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "chill:class/rogue/special/invisibility"
+        "layer0": "chill:item/class/rogue/special/invisibility"
     }
 }
