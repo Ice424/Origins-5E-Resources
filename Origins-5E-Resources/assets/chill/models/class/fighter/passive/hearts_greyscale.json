@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "chill:item/class/fighter/passive/hearts_greyscale"
+    }
+}

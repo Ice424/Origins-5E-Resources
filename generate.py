@@ -7,7 +7,7 @@ Returns:
 import os
 import json
 from pathlib import Path
-os.chdir(Path(__file__).parents[2])
+os.chdir(Path(__file__).parents[1])
 
 RESOURCES = os.path.abspath(
     "./resourcepacks/Origins-5E-Reasources/assets/")
@@ -21,8 +21,6 @@ MODEL = {
         "layer0": ""
     }
 }
-
-
 
 
 def add_power(powers, category, predicate, directory, group=None, types=None):
@@ -40,13 +38,18 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
     bool: True if the power was added successfully, False otherwise.
     """
 
+
     # Remove primary and secondary.json from the end of the directory if they exist
     if directory.endswith("primary.json") or directory.endswith("secondary.json"):
-        directory = directory.replace("primary.json", "").replace("secondary.json", "")
-    
-    Id = Path(directory).stem.lower()
+        directory = directory.replace(
+            "primary.json", "").replace("secondary.json", "")
 
-    
+    if "\\low\\" in directory:
+        Id = (Path(directory).parts[-2] + "_"+ Path(directory).parts[-1]).replace(".json", "")
+        print(directory)
+    else:
+        Id = Path(directory).stem.lower()
+
     if category in powers:
         if group and category == "class":
             if group in powers["class"] and types in powers["class"][group]:
@@ -55,15 +58,11 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                 return False
         else:
             target_list = powers[category]
-        print(target_list)
         if any(item["id"].strip().lower() == Id for item in target_list) or Id == "tag" or Id == "temp":
             return False
 
-
         description = "none"
         name = Path(directory).stem.lower()
-        print(directory)
-        print(os.path.isdir(directory))
         if os.path.isdir(directory):
             with open(os.path.join(directory, "primary.json"), 'r') as file:
                 data = json.load(file)
@@ -100,7 +99,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                 except json.JSONDecodeError:
                     print(f"Failed to decode JSON file: {directory}")
                 file.close()
-                
+
             target_list.append({"name": name, "description": description, "id": Id, "predicate": predicate, "key_activated": False})
             return True
 
@@ -151,22 +150,21 @@ def generate_json():
             file = file.split("/")
 
             if file[0] == "class":
-                print(os.path.join(path, name))
                 if add_power(powers, "class", predicate, os.path.join(path, name), group=file[1], types=file[2]):
                     predicate += 1
             else:
                 if add_power(powers, file[0], predicate, os.path.join(path, name)):
                     predicate += 1
 
-    
-    file = open(os.path.abspath("./resourcepacks/Origins-5E-Resources/powers.json"), "w")
-    
+    file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
+
     file.write(json.dumps(powers, indent=4))
     file.close()
+    print(f"The largest predicate is {predicate}")
 
 
 def generate_models(path):
-    file = open("./resourcepacks/Origins-5E-Resources/powers.json", "r")
+    file = open("./resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
 
@@ -177,7 +175,7 @@ def generate_models(path):
 
             file = open(os.path.join(path, types, power)+".json", "w")
             out = MODEL
-            out["textures"]["layer0"] = "chill:" + types + "/" + power
+            out["textures"]["layer0"] = "chill:item/" + types + "/" + power
             file.write(json.dumps(out, indent=4))
             file.close()
     GetPowers("low")
@@ -191,7 +189,7 @@ def generate_models(path):
                 except:
                     pass
                 out = MODEL
-                out["textures"]["layer0"] = "chill:class/" + \
+                out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power
                 file = open(os.path.join(path, "class",
                             classes, types, power)+".json", "w")
@@ -200,7 +198,7 @@ def generate_models(path):
 
 
 def generate_tags(path):
-    file = open("./resourcepacks/Origins-5E-Resources/powers.json", "r")
+    file = open("./resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
     tag = {
@@ -227,6 +225,10 @@ def generate_tags(path):
                 os.makedirs(os.path.join(path, "class", classes, "passive"))
             except:
                 pass
+        out["entity_action_lost"].append({
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove " + classes
+                })
         file = open(os.path.join(path, "class", classes,
                     "passive", "tag")+".json", "w")
         file.write(json.dumps(out, indent=4))
@@ -235,7 +237,7 @@ def generate_tags(path):
 
 
 def generate_predicates():
-    file = open("./resourcepacks/Origins-5E-Resources/powers.json", "r")
+    file = open("./resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
     out = []
@@ -254,55 +256,34 @@ def generate_predicates():
                 out.append({"predicate": {"custom_model_data": power["predicate"]}, "model": "chill:" + os.path.join(
                     "class", classes, types, power["id"]).replace("\\", "/")})
 
-    file = open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "r")
+    file = open(
+        "./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "r")
     data = json.load(file)
+    file.close()
+    to_write = {
+        "parent": "minecraft:item/handheld",
+        "textures": {
+            "layer0": "minecraft:item/stick"
+        },
+        "overrides": []
+        }
+    for item_dict in data["overrides"]:
+        if item_dict["predicate"]["custom_model_data"] < 10:
+            to_write["overrides"].append(item_dict)
+
 
     for override in out:
-        if override in data["overrides"]:
-            data["overrides"].remove(override)
-
-    for override in out:
-        data["overrides"].append(override)
+        to_write["overrides"].append(override)
 
     with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "w") as file:
-        json.dump(data, file, indent=4)
+        json.dump(to_write, file, indent=4)
+    for item_dict in to_write["overrides"]:
+        item_dict["model"] = item_dict["model"]+ "_greyscale"
 
+    to_write["textures"]["layer0"] = "minecraft:item/iron_nugget"
 
-def generate_shop():
-    template = """execute if entity @p[tag={tag}] run data modify storage ui mask insert 0 value {{Slot:{slot}b,id:"minecraft:stick","components":{{"custom_model_data": {predicate}, "custom_name": "{{\\"text\\": \\"{name}\\", \\"color\\": \\"{color}\\", \\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{cmd:{cmd}}}}}}}}}"""
-
-    file = open("./resourcepacks/Origins-5E-Reasources/powers.json", "r")
-    powers = json.loads(file.read())
-    file.close()
-
-    def GetPowers(types):
-        out = []
-        slot = 9
-
-        for power in powers[types]:
-            out.append(template.format(tag=power["id"], slot=slot,
-                       predicate=power["predicate"], name=power["id"], color="dark_gray" if types == "low" else "dark_purple", cmd='"function chill:class/'+types+"/"+power["id"]+'"'))
-            out.append()
-            slot += 1
-        file = open(os.path.join(RESOURCES, "test"+types+".mcfunction"), "w")
-        for item in out:
-            file.write(item+"\n\n")
-
-        file.close()
-    GetPowers("low")
-    GetPowers("high")
-
-    for classes in powers["class"]:
-        out = []
-        slot = 9
-        for types in powers["class"][classes]:
-            for power in powers["class"][classes][types]:
-                out.append(template.format(tag=power["id"], slot=slot, predicate=power["predicate"], name=power["id"], color="dark_gray" if types == "low" else "dark_purple", cmd='"chill:class/'+types+"/"+power["id"]+'"'))
-                slot += 1
-        file = open(os.path.join(
-            RESOURCES, "test"+classes+".mcfunction"), "w")
-        for item in out:
-            file.write(item+"\n\n")
+    with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/iron_nugget.json", "w") as file:
+        json.dump(to_write, file, indent=4)
 
 
 generate_json()
@@ -314,4 +295,4 @@ generate_tags(DATA)
 
 generate_predicates()
 
-#generate_shop()
+# generate_shop()
