@@ -49,7 +49,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
         print(directory)
     else:
         Id = Path(directory).stem.lower()
-
+    Id = Id.lower().replace(" ", "_")
     if category in powers:
         if group and category == "class":
             if group in powers["class"] and types in powers["class"][group]:
