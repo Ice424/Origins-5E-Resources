@@ -11,7 +11,7 @@ def GetPowers(types):
     for power in powers[types]:
         out.append(template.format(predicate=power["predicate"], id=power["id"]))
 
-    out.append("""$execute store result score @p $(slot) run data get entity @ e[tag = randomizer, sort = random, limit = 1] Pos[1]
+    out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
     file = open(f"functions/{types}_slots.mcfunction", "w")
     file.write("\n".join(out))
