@@ -286,8 +286,47 @@ def generate_predicates():
         json.dump(to_write, file, indent=4)
 
 
+def refactor_predicates():
+    file = open("./resourcepacks/powers.json", "r")
+    powers = json.loads(file.read())
+    file.close()
+    predicate = 10
+    def GetPowers(types, predicate):
+        for power in powers[types]:
+            power["predicate"] = predicate
+            predicate += 1
+            print(predicate)
+        return predicate
+
+
+
+        
+
+
+    predicate = GetPowers("low", predicate)
+    predicate = GetPowers("high", predicate)
+
+    for classes in powers["class"]:
+       
+       for types in powers["class"][classes]:
+               for power in powers["class"][classes][types]:
+                   power["predicate"] = predicate
+                   predicate += 1
+                   print(predicate)
+    file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
+
+    file.write(json.dumps(powers, indent=4))
+    file.close()
+
+
+                
+
+    
 generate_json()
-#
+
+refactor_predicates()
+
+
 generate_models(
     "./resourcepacks/Origins-5E-Resources/assets/chill/models/")
 
