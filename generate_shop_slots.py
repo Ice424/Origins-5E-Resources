@@ -1,6 +1,12 @@
 import json
+import os
+from pathlib import Path
 
-file = open("powers.json", "r")
+
+os.chdir(Path(__file__).parents[1])
+DATA = os.path.abspath(
+    "./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu")
+file = open("resourcepacks/powers.json", "r")
 powers = json.loads(file.read())
 file.close()
 
@@ -13,7 +19,7 @@ def GetPowers(types):
 
     out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
-    file = open(f"functions/{types}_slots.mcfunction", "w")
+    file = open(f"resourcepacks/functions/{types}_slots.mcfunction", "w")
     file.write("\n".join(out))
     file.close()
 
@@ -31,7 +37,6 @@ for classes in powers["class"]:
 
             out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
-
-            file = open(f"functions/{classes}_{types}_slots.mcfunction", "w")
+            file = open(os.path.join(DATA, f"{classes}\\{classes}_{types}_slots.mcfunction"), "w")
             file.write("\n".join(out))
             file.close()

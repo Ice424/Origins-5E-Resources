@@ -1,7 +1,16 @@
 """ generate primary and secondary mcfunctions"""
 import json
+import os
+from pathlib import Path
 
-file = open("powers.json", "r")
+os.chdir(Path(__file__).parents[1])
+
+
+DATA = os.path.abspath(
+    "./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu")
+
+print(os.path.isdir(DATA))
+file = open("./resourcepacks/powers.json", "r")
 powers = json.loads(file.read())
 file.close()
 
@@ -41,10 +50,10 @@ for classes in powers["class"]:
 primary.append("function ui:menu/main/open_spellbook")
 secondary.append("function ui:menu/main/open_spellbook")
 
-file = open("functions/primary.mcfunction", "w")
+file = open(os.path.join(DATA, "main", "primary.mcfunction"), "w")
 file.write("\n".join(primary))
 file.close()
 
-file = open("functions/secondary.mcfunction", "w")
+file = open(os.path.join(DATA, "main", "secondary.mcfunction"), "w")
 file.write("\n".join(secondary))
 file.close()

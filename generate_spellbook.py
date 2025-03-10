@@ -1,6 +1,10 @@
 import json
+import os
+from pathlib import Path
 
-file = open("powers.json", "r")
+os.chdir(Path(__file__).parents[1])
+
+file = open("resourcepacks/powers.json", "r")
 powers = json.loads(file.read())
 file.close()
 
@@ -58,7 +62,7 @@ for classes in powers["class"]:
 
                 
     out.append("\n\n\n" + "\n\n".join(display))
-    file = open(f"functions/{classes}_mask.mcfunction", "w")
+    file = open(f"resourcepacks/functions/{classes}_mask.mcfunction", "w")
     file.write("\n\n".join(out))
     file.close()
 
@@ -80,7 +84,7 @@ def GetPowers(types):
             slot += 1
             
     out.append("\n\n\n"+ "\n\n".join(display))
-    file = open(f"functions/{types}_mask.mcfunction", "w")
+    file = open(f"resourcepacks/functions/{types}_mask.mcfunction", "w")
     file.write("\n\n".join(out))
     file.close()
 
