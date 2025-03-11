@@ -8,6 +8,9 @@ file = open("resourcepacks/powers.json", "r")
 powers = json.loads(file.read())
 file.close()
 
+DATA = os.path.abspath(
+    "./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu")
+
 ClassColours = {
     "cleric": "#fbf236",
     "druid": "#99e550",
@@ -62,7 +65,9 @@ for classes in powers["class"]:
 
                 
     out.append("\n\n\n" + "\n\n".join(display))
-    file = open(f"resourcepacks/functions/{classes}_mask.mcfunction", "w")
+    os.makedirs(os.path.join(DATA, classes, "spellbook"), exist_ok=True)
+    file = open(os.path.join(DATA, classes, "spellbook", "mask.mcfunction"), "w")
+    file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\": \\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 4, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}}] \n\n""")
     file.write("\n\n".join(out))
     file.close()
 
@@ -84,7 +89,9 @@ def GetPowers(types):
             slot += 1
             
     out.append("\n\n\n"+ "\n\n".join(display))
-    file = open(f"resourcepacks/functions/{types}_mask.mcfunction", "w")
+    os.makedirs(os.path.join(DATA, types, "spellbook"), exist_ok=True)
+    file = open(os.path.join(DATA, types, "spellbook", "mask.mcfunction"), "w")
+    file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\": \\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 4, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}}] \n\n""")
     file.write("\n\n".join(out))
     file.close()
 
