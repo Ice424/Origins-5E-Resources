@@ -295,7 +295,6 @@ def refactor_predicates():
         for power in powers[types]:
             power["predicate"] = predicate
             predicate += 1
-            print(predicate)
         return predicate
 
 
@@ -312,7 +311,6 @@ def refactor_predicates():
                for power in powers["class"][classes][types]:
                    power["predicate"] = predicate
                    predicate += 1
-                   print(predicate)
     file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
 
     file.write(json.dumps(powers, indent=4))
@@ -320,18 +318,8 @@ def refactor_predicates():
 
 
                 
-
+DATA
     
-generate_json()
 
-refactor_predicates()
-
-
-generate_models(
-    "./resourcepacks/Origins-5E-Resources/assets/chill/models/")
-
-generate_tags(DATA)
-
-generate_predicates()
 
 # generate_shop()

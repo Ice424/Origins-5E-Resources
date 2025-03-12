@@ -9,4 +9,4 @@ execute if entity @p[tag= !general] run summon armor_stand ~ 46 ~ {Tags: [random
 execute if entity @p[tag= !shrink] run summon armor_stand ~ 47 ~ {Tags: [randomizer], NoGravity: 1b}
 execute if entity @p[tag= !tame] run summon armor_stand ~ 48 ~ {Tags: [randomizer], NoGravity: 1b}
 $execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
-kill @e[tag= randomizer]
+    kill @e[tag= randomizer]

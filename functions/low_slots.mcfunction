@@ -28,4 +28,4 @@ execute if entity @p[tag= !xp_gain_15] run summon armor_stand ~ 36 ~ {Tags: [ran
 execute if entity @p[tag= !xp_gain_25] run summon armor_stand ~ 37 ~ {Tags: [randomizer], NoGravity: 1b}
 execute if entity @p[tag= !xp_gain_5] run summon armor_stand ~ 38 ~ {Tags: [randomizer], NoGravity: 1b}
 $execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
-kill @e[tag= randomizer]
+    kill @e[tag= randomizer]
