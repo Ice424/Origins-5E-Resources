@@ -38,6 +38,7 @@ generate_spellbook_slot_select.generate_spellbook_slot_select()
 generate_spellbook.generate_spellbook()
 
 #image handling
+os.chdir("c:/Users/Ice424/curseforge/minecraft/Instances/Origins 5E Pack/resourcepacks")
 os.system("python aseprite.py")
 generate_unimplemented.generate_unimplemented()
 image.image_overlays()

@@ -160,7 +160,7 @@ def generate_json():
 
     file.write(json.dumps(powers, indent=4))
     file.close()
-    print(f"The largest predicate is {predicate}")
+    
 
 
 def generate_models(path):
@@ -296,12 +296,8 @@ def refactor_predicates():
             power["predicate"] = predicate
             predicate += 1
         return predicate
-
-
-
-        
-
-
+    
+ 
     predicate = GetPowers("low", predicate)
     predicate = GetPowers("high", predicate)
 
@@ -311,6 +307,7 @@ def refactor_predicates():
                for power in powers["class"][classes][types]:
                    power["predicate"] = predicate
                    predicate += 1
+    print(f"The largest predicate is {predicate}")
     file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
 
     file.write(json.dumps(powers, indent=4))
