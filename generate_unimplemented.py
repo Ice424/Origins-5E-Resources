@@ -3,9 +3,9 @@ import re
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-def generate_unimplemented():
+def generate_unimplemented(originaldir):
     done = 0
-    os.chdir("c:\\Users\\Ice424\\curseforge\\minecraft\\Instances\\Origins 5E Pack\\resourcepacks")
+    os.chdir(originaldir)
     file = open("powers.json", "r")
     powers = json.loads(file.read())
     file.close()
