@@ -57,7 +57,7 @@ def generate_spellbook():
                         out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot,     type=classes, description=power["description"], name=power["name"]))
                         high_special_slot += 1
                     elif types == "passive":
-                        out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = low_slot, type=types,     description=power["description"],   name=power["name"], color=color).replace(f"execute if entity @p[tag={power["id"]}] run  ", ""))
+                        out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = low_slot, type=types,     description=power["description"],   name=power["name"], color=color).replace(f"execute if entity @p[tag={power["id"]}] run ", ""))
                         low_slot += 1
                     else:
                         out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot, type=types,    description=power["description"],   name=power["name"], color=color))

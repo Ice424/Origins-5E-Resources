@@ -178,6 +178,12 @@ def generate_models(path):
             out["textures"]["layer0"] = "chill:item/" + types + "/" + power
             file.write(json.dumps(out, indent=4))
             file.close()
+
+            file = open(os.path.join(path, types, power)+"_greyscale.json", "w")
+            out = MODEL
+            out["textures"]["layer0"] = "chill:item/" + types + "/" + power + "_greyscale"
+            file.write(json.dumps(out, indent=4))
+            file.close()
     GetPowers("low")
     GetPowers("high")
     for classes in powers["class"]:
@@ -191,10 +197,16 @@ def generate_models(path):
                 out = MODEL
                 out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power
-                file = open(os.path.join(path, "class",
-                            classes, types, power)+".json", "w")
+                file = open(os.path.join(path, "class", classes, types, power)+".json", "w")
                 file.write(json.dumps(out, indent=4))
                 file.close()
+
+                out["textures"]["layer0"] = "chill:item/class/" + \
+                    classes + "/" + types + "/" + power + "_greyscale"
+                file = open(os.path.join(path, "class", classes, types, power)+"_greyscale.json", "w")
+                file.write(json.dumps(out, indent=4))
+                file.close()
+                
 
 
 def generate_tags(path):

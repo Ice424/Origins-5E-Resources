@@ -22,6 +22,12 @@ shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/textures/item/c
 shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/textures/item/high"), ignore_errors=True)
 shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/textures/item/low"), ignore_errors=True)
 shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/textures/item/menu"), ignore_errors=True)
+
+
+shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/models/class"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/models/high"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/models/low"), ignore_errors=True)
+
 os.chdir(Path(__file__).parents[1])
 #The holy json file
 #generate.generate_json()
@@ -30,7 +36,6 @@ if platform == "linux" or platform == "linux2":
     pass
 elif platform == "win32":
     generate.generate_json()
-
 
 #Resource pack stuff
 generate.refactor_predicates()
