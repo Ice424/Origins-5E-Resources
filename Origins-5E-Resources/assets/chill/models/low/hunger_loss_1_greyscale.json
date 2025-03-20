@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/handheld",
+    "textures": {
+        "layer0": "chill:item/low/hunger_loss_1_greyscale"
+    }
+}

@@ -1,25 +1,44 @@
 import os
 from pathlib import Path
 from PIL import Image
-
+ASEPRITE_PATH = "aseprite"
 
 # -b special\lightning.ase -save-as {title}.png
 
+def low_power(image, savepath, name):
+    os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_iron.ase\" -save-as " + savepath + "/{title}_1.png")
+    os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_copper.ase\" -save-as " + savepath + "/{title}_2.png")
+    os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_gold.ase\" -save-as " + savepath + "/{title}_3.png")
+    os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_emerald.ase\" -save-as " + savepath + "/{title}_4.png")
+    os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_diamond.ase\" -save-as " + savepath + "/{title}_5.png")
+    png = os.path.join(savepath, name.replace("ase", "png"))
+    print(png)
+    png = "Origins-5E-Resources/assets/chill/textures/item/.//low/" + name.replace(".ase", "_1.png")
+    mg = Image.open(png).convert('LA')
+    
+    mg.save(png.replace(".png", "_greyscale.png"))
+    mg.save(png.replace("1.png", "2_greyscale.png"))
+    mg.save(png.replace("1.png", "3_greyscale.png"))
+    mg.save(png.replace("1.png", "4_greyscale.png"))
+    mg.save(png.replace("1.png", "5_greyscale.png"))
 
 def convert_aseprite():
-    ASEPRITE_PATH = "aseprite"
     for path, subdirs, files in os.walk("./aseprite files"):
         for name in files:
-            if name != "pallet.ase":
+            if not "pallet" in name:
                 image = (os.path.join(path, name))
                 if path.endswith("unused"):
                     savepath = os.path.join("testunused")
                 else:
                     savepath = os.path.join("Origins-5E-Resources/assets/chill/textures/item/", image.replace(Path(image).parts[0], "").replace(name, ""))
-                os.system(ASEPRITE_PATH + " -b \"" + image + "\" -save-as " + savepath + "/{title}.png")
+                if not "low" in path:
+                    os.system(ASEPRITE_PATH + " -b \"" + image + "\" -save-as " + savepath + "/{title}.png")
+                    png = os.path.join(savepath, name.replace("ase", "png"))
+                    print(png)
+                    mg = Image.open(png).convert('LA')
+                    mg.save(png.replace(".png", "_greyscale.png"))
+                else:
+                    low_power(image, savepath, name)
 
-                png = os.path.join(savepath, name.replace("ase", "png"))
-                print(png)
-                mg = Image.open(png).convert('LA')
-                mg.save(png.replace(".png", "_greyscale.png"))
+                
 convert_aseprite()

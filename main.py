@@ -32,11 +32,11 @@ os.chdir(Path(__file__).parents[1])
 #The holy json file
 #generate.generate_json()
 
-if platform == "linux" or platform == "linux2":
-    pass
-elif platform == "win32":
-    generate.generate_json()
-
+#if platform == "linux" or platform == "linux2":
+#    pass
+#elif platform == "win32":
+#    generate.generate_json()
+generate.generate_json()
 #Resource pack stuff
 generate.refactor_predicates()
 generate.generate_models("./resourcepacks/Origins-5E-Resources/assets/chill/models/")

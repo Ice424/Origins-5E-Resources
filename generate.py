@@ -44,7 +44,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
         directory = directory.replace(
             "primary.json", "").replace("secondary.json", "")
 
-    if "\\low\\" in directory:
+    if "\\low\\" in directory or "/low/" in directory:
         Id = (Path(directory).parts[-2] + "_"+ Path(directory).parts[-1]).replace(".json", "")
         print(directory)
     else:
@@ -241,6 +241,14 @@ def generate_tags(path):
                     "type": "origins:execute_command",
                     "command": "tag @s remove " + classes
                 })
+        out["entity_action_lost"].append({
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s primary 0"
+                })
+        out["entity_action_lost"].append({
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players set @s seccondary 0"
+                })
         file = open(os.path.join(path, "class", classes,
                     "passive", "tag")+".json", "w")
         file.write(json.dumps(out, indent=4))
@@ -327,8 +335,5 @@ def refactor_predicates():
 
 
                 
-DATA
-    
-
 
 # generate_shop()

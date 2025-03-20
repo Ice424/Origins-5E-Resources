@@ -26,55 +26,55 @@
             "predicate": {
                 "custom_model_data": 10
             },
-            "model": "chill:low/falldmg_15_greyscale"
+            "model": "chill:low/luck_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 11
             },
-            "model": "chill:low/falldmg_25_greyscale"
+            "model": "chill:low/luck_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 12
             },
-            "model": "chill:low/falldmg_5_greyscale"
+            "model": "chill:low/luck_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 13
             },
-            "model": "chill:low/firedmg_15_greyscale"
+            "model": "chill:low/luck_2_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 14
             },
-            "model": "chill:low/firedmg_25_greyscale"
+            "model": "chill:low/luck_4_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 15
             },
-            "model": "chill:low/firedmg_5_greyscale"
+            "model": "chill:low/health_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 16
             },
-            "model": "chill:low/health_1_greyscale"
+            "model": "chill:low/health_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 17
             },
-            "model": "chill:low/health_2_greyscale"
+            "model": "chill:low/health_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 18
             },
-            "model": "chill:low/health_3_greyscale"
+            "model": "chill:low/health_2_greyscale"
         },
         {
             "predicate": {
@@ -86,115 +86,115 @@
             "predicate": {
                 "custom_model_data": 20
             },
-            "model": "chill:low/health_5_greyscale"
+            "model": "chill:low/xp_gain_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 21
             },
-            "model": "chill:low/hunger_gain_1_greyscale"
+            "model": "chill:low/xp_gain_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 22
             },
-            "model": "chill:low/hunger_gain_2_greyscale"
+            "model": "chill:low/xp_gain_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 23
             },
-            "model": "chill:low/hunger_gain_3_greyscale"
+            "model": "chill:low/xp_xp_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 24
             },
-            "model": "chill:low/hunger_loss_15_greyscale"
+            "model": "chill:low/swim_speed_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 25
             },
-            "model": "chill:low/hunger_loss_25_greyscale"
+            "model": "chill:low/swim_speed_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 26
             },
-            "model": "chill:low/hunger_loss_5_greyscale"
+            "model": "chill:low/swim_speed_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 27
             },
-            "model": "chill:low/luck_1_greyscale"
+            "model": "chill:low/hunger_loss_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 28
             },
-            "model": "chill:low/luck_2_greyscale"
+            "model": "chill:low/hunger_loss_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 29
             },
-            "model": "chill:low/luck_3_greyscale"
+            "model": "chill:low/hunger_loss_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 30
             },
-            "model": "chill:low/luck_4_greyscale"
+            "model": "chill:low/fall_dmg_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 31
             },
-            "model": "chill:low/luck_5_greyscale"
+            "model": "chill:low/fall_dmg_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 32
             },
-            "model": "chill:low/swim_speed_15_greyscale"
+            "model": "chill:low/fall_dmg_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 33
             },
-            "model": "chill:low/swim_speed_25_greyscale"
+            "model": "chill:low/hunger_gain_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 34
             },
-            "model": "chill:low/swim_speed_5_greyscale"
+            "model": "chill:low/hunger_gain_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 35
             },
-            "model": "chill:low/xp_xp_greyscale"
+            "model": "chill:low/hunger_gain_1_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 36
             },
-            "model": "chill:low/xp_gain_15_greyscale"
+            "model": "chill:low/fire_dmg_3_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 37
             },
-            "model": "chill:low/xp_gain_25_greyscale"
+            "model": "chill:low/fire_dmg_5_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 38
             },
-            "model": "chill:low/xp_gain_5_greyscale"
+            "model": "chill:low/fire_dmg_1_greyscale"
         },
         {
             "predicate": {
@@ -206,73 +206,73 @@
             "predicate": {
                 "custom_model_data": 40
             },
-            "model": "chill:high/inventory_greyscale"
+            "model": "chill:high/scan_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 41
             },
-            "model": "chill:high/falling_greyscale"
+            "model": "chill:high/shrink_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 42
             },
-            "model": "chill:high/fall_damage_greyscale"
+            "model": "chill:high/general_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 43
             },
-            "model": "chill:high/jump_greyscale"
+            "model": "chill:high/falling_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 44
             },
-            "model": "chill:high/permeation_greyscale"
+            "model": "chill:high/fall_damage_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 45
             },
-            "model": "chill:high/scan_greyscale"
+            "model": "chill:high/jump_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 46
             },
-            "model": "chill:high/general_greyscale"
+            "model": "chill:high/tame_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 47
             },
-            "model": "chill:high/shrink_greyscale"
+            "model": "chill:high/inventory_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 48
             },
-            "model": "chill:high/tame_greyscale"
+            "model": "chill:high/permeation_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 49
             },
-            "model": "chill:class/cleric/special/death_greyscale"
+            "model": "chill:class/cleric/special/luck_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 50
             },
-            "model": "chill:class/cleric/special/luck_greyscale"
+            "model": "chill:class/cleric/special/see_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 51
             },
-            "model": "chill:class/cleric/special/see_greyscale"
+            "model": "chill:class/cleric/special/death_greyscale"
         },
         {
             "predicate": {
@@ -284,13 +284,13 @@
             "predicate": {
                 "custom_model_data": 53
             },
-            "model": "chill:class/cleric/high/hunger_greyscale"
+            "model": "chill:class/cleric/high/lifesteal_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 54
             },
-            "model": "chill:class/cleric/high/lifesteal_greyscale"
+            "model": "chill:class/cleric/high/hunger_greyscale"
         },
         {
             "predicate": {
@@ -320,19 +320,19 @@
             "predicate": {
                 "custom_model_data": 59
             },
-            "model": "chill:class/druid/special/animal_control_greyscale"
+            "model": "chill:class/druid/special/bone_meal_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 60
             },
-            "model": "chill:class/druid/special/bone_meal_greyscale"
+            "model": "chill:class/druid/special/freeze_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 61
             },
-            "model": "chill:class/druid/special/freeze_greyscale"
+            "model": "chill:class/druid/special/animal_control_greyscale"
         },
         {
             "predicate": {
@@ -350,91 +350,91 @@
             "predicate": {
                 "custom_model_data": 64
             },
-            "model": "chill:class/druid/high/arrows_greyscale"
+            "model": "chill:class/druid/high/poison_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 65
             },
-            "model": "chill:class/druid/high/poison_greyscale"
+            "model": "chill:class/druid/high/arrows_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 66
             },
-            "model": "chill:class/druid/high/underwater_greyscale"
+            "model": "chill:class/druid/high/wall_climb_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 67
             },
-            "model": "chill:class/druid/high/wall_climb_greyscale"
+            "model": "chill:class/druid/high/underwater_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 68
             },
-            "model": "chill:class/druid/passive/animal_greyscale"
+            "model": "chill:class/druid/passive/vegetarian_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 69
             },
-            "model": "chill:class/druid/passive/heal_greyscale"
+            "model": "chill:class/druid/passive/health_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 70
             },
-            "model": "chill:class/druid/passive/health_greyscale"
+            "model": "chill:class/druid/passive/animal_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 71
             },
-            "model": "chill:class/druid/passive/vegetarian_greyscale"
+            "model": "chill:class/druid/passive/heal_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 72
             },
-            "model": "chill:class/fighter/high/ddamgemobs_greyscale"
+            "model": "chill:class/fighter/high/hotvillage_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 73
             },
-            "model": "chill:class/fighter/high/hotvillage_greyscale"
+            "model": "chill:class/fighter/high/reach_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 74
             },
-            "model": "chill:class/fighter/high/reach_greyscale"
+            "model": "chill:class/fighter/high/speed_upgrade_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 75
             },
-            "model": "chill:class/fighter/high/saturation_greyscale"
+            "model": "chill:class/fighter/high/ddamgemobs_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 76
             },
-            "model": "chill:class/fighter/high/speed_upgrade_greyscale"
+            "model": "chill:class/fighter/high/saturation_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 77
             },
-            "model": "chill:class/fighter/high/arrows_greyscale"
+            "model": "chill:class/fighter/high/overheal_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 78
             },
-            "model": "chill:class/fighter/high/overheal_greyscale"
+            "model": "chill:class/fighter/high/arrows_greyscale"
         },
         {
             "predicate": {
@@ -464,13 +464,13 @@
             "predicate": {
                 "custom_model_data": 83
             },
-            "model": "chill:class/fighter/passive/speed_greyscale"
+            "model": "chill:class/fighter/passive/strength_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 84
             },
-            "model": "chill:class/fighter/passive/strength_greyscale"
+            "model": "chill:class/fighter/passive/speed_greyscale"
         },
         {
             "predicate": {
@@ -506,7 +506,7 @@
             "predicate": {
                 "custom_model_data": 90
             },
-            "model": "chill:class/rogue/high/blindness_greyscale"
+            "model": "chill:class/rogue/high/stealth_bonus_greyscale"
         },
         {
             "predicate": {
@@ -518,13 +518,13 @@
             "predicate": {
                 "custom_model_data": 92
             },
-            "model": "chill:class/rogue/high/stealth_bonus_greyscale"
+            "model": "chill:class/rogue/high/blindness_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 93
             },
-            "model": "chill:class/rogue/passive/agro_greyscale"
+            "model": "chill:class/rogue/passive/nametag_greyscale"
         },
         {
             "predicate": {
@@ -536,79 +536,79 @@
             "predicate": {
                 "custom_model_data": 95
             },
-            "model": "chill:class/rogue/passive/hearts_greyscale"
+            "model": "chill:class/rogue/passive/agro_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 96
             },
-            "model": "chill:class/rogue/passive/nametag_greyscale"
+            "model": "chill:class/rogue/passive/hearts_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 97
             },
-            "model": "chill:class/tank/special/block_greyscale"
+            "model": "chill:class/tank/special/stone_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 98
             },
-            "model": "chill:class/tank/special/damage_greyscale"
+            "model": "chill:class/tank/special/fire_ring_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 99
             },
-            "model": "chill:class/tank/special/fire_res_greyscale"
+            "model": "chill:class/tank/special/rage_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 100
             },
-            "model": "chill:class/tank/special/fire_ring_greyscale"
+            "model": "chill:class/tank/special/block_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 101
             },
-            "model": "chill:class/tank/special/rage_greyscale"
+            "model": "chill:class/tank/special/damage_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 102
             },
-            "model": "chill:class/tank/special/stone_greyscale"
+            "model": "chill:class/tank/special/fire_res_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 103
             },
-            "model": "chill:class/tank/high/ground_pound_greyscale"
+            "model": "chill:class/tank/high/thorns_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 104
             },
-            "model": "chill:class/tank/high/hook_greyscale"
+            "model": "chill:class/tank/high/knockback_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 105
             },
-            "model": "chill:class/tank/high/knockback_greyscale"
+            "model": "chill:class/tank/high/hook_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 106
             },
-            "model": "chill:class/tank/high/shield_greyscale"
+            "model": "chill:class/tank/high/ground_pound_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 107
             },
-            "model": "chill:class/tank/high/thorns_greyscale"
+            "model": "chill:class/tank/high/shield_greyscale"
         },
         {
             "predicate": {
@@ -626,13 +626,13 @@
             "predicate": {
                 "custom_model_data": 110
             },
-            "model": "chill:class/wizard/special/fly_greyscale"
+            "model": "chill:class/wizard/special/slow_fall_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 111
             },
-            "model": "chill:class/wizard/special/slow_fall_greyscale"
+            "model": "chill:class/wizard/special/fly_greyscale"
         },
         {
             "predicate": {
@@ -650,7 +650,7 @@
             "predicate": {
                 "custom_model_data": 114
             },
-            "model": "chill:class/wizard/high/fireball_greyscale"
+            "model": "chill:class/wizard/high/push_greyscale"
         },
         {
             "predicate": {
@@ -662,31 +662,31 @@
             "predicate": {
                 "custom_model_data": 116
             },
-            "model": "chill:class/wizard/high/ice_greyscale"
+            "model": "chill:class/wizard/high/fireball_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 117
             },
-            "model": "chill:class/wizard/high/push_greyscale"
+            "model": "chill:class/wizard/high/ice_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 118
             },
-            "model": "chill:class/wizard/passive/glow_arrow_greyscale"
+            "model": "chill:class/wizard/passive/health_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 119
             },
-            "model": "chill:class/wizard/passive/health_greyscale"
+            "model": "chill:class/wizard/passive/pearl_greyscale"
         },
         {
             "predicate": {
                 "custom_model_data": 120
             },
-            "model": "chill:class/wizard/passive/pearl_greyscale"
+            "model": "chill:class/wizard/passive/glow_arrow_greyscale"
         }
     ]
 }
