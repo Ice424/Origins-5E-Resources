@@ -311,7 +311,12 @@ def refactor_predicates():
     powers = json.loads(file.read())
     file.close()
     predicate = 10
+
+    
+   
+
     def GetPowers(types, predicate):
+        powers[types].sort(key=lambda x: x["id"])
         for power in powers[types]:
             power["predicate"] = predicate
             predicate += 1
@@ -322,11 +327,12 @@ def refactor_predicates():
     predicate = GetPowers("high", predicate)
 
     for classes in powers["class"]:
-       
-       for types in powers["class"][classes]:
-               for power in powers["class"][classes][types]:
-                   power["predicate"] = predicate
-                   predicate += 1
+        
+        for types in powers["class"][classes]:
+            powers["class"][classes][types].sort(key=lambda x: x["id"])
+            for power in powers["class"][classes][types]:
+                power["predicate"] = predicate
+                predicate += 1
     print(f"The largest predicate is {predicate}")
     file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
 
