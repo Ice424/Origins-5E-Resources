@@ -1,74 +1,53 @@
 {
     "high": [
         {
-            "name": "fall_damage",
-            "description": "none",
-            "id": "fall_damage",
-            "predicate": 39,
-            "key_activated": false
-        },
-        {
-            "name": "falling",
-            "description": "none",
-            "id": "falling",
-            "predicate": 40,
-            "key_activated": false
-        },
-        {
-            "name": "general",
-            "description": "none",
-            "id": "general",
-            "predicate": 41,
-            "key_activated": false
-        },
-        {
             "name": "Grow",
             "description": "You grow a block taller",
             "id": "grow",
-            "predicate": 42,
+            "predicate": 39,
             "key_activated": false
         },
         {
             "name": "Inventory",
             "description": "you have 5 extra inventory slots they stay with you on death",
             "id": "inventory",
-            "predicate": 43,
-            "key_activated": true
+            "predicate": 40,
+            "key_activated": false
         },
         {
             "name": "Jump",
             "description": "by crouching you can jump high",
             "id": "jump",
-            "predicate": 44,
+            "predicate": 41,
             "key_activated": false
         },
         {
-            "name": "phasing",
+            "name": "Phasing",
             "description": "you can temporarily phase through walls",
             "id": "permeation",
-            "predicate": 45,
-            "key_activated": true
+            "predicate": 42,
+            "key_activated": false
         },
         {
-            "name": "scan",
+            "name": "Scan",
             "description": "reveal all entities in 40 a block radius",
             "id": "scan",
-            "predicate": 46,
-            "key_activated": true
+            "predicate": 43,
+            "key_activated": false
         },
         {
-            "name": "shrink",
+            "name": "Shrink",
             "description": "You shrink a block",
             "id": "shrink",
-            "predicate": 47,
+            "predicate": 44,
             "key_activated": false
         },
         {
             "name": "Tame",
             "description": "you can tame all tameable mobs in a 4 block radius",
             "id": "tame",
-            "predicate": 48,
-            "key_activated": true
+            "predicate": 45,
+            "key_activated": false
         }
     ],
     "low": [
@@ -283,58 +262,58 @@
                     "name": "Divine protection",
                     "description": "you can gain the effects of holding a totem of undying",
                     "id": "death",
-                    "predicate": 49,
+                    "predicate": 46,
                     "key_activated": false
                 },
                 {
                     "name": "luck",
                     "description": "+ 3 to your luck",
                     "id": "luck",
-                    "predicate": 50,
+                    "predicate": 47,
                     "key_activated": false
                 },
                 {
                     "name": "Divine eye",
                     "description": "you can see mobs in a 10 block area",
                     "id": "see",
-                    "predicate": 51,
+                    "predicate": 48,
                     "key_activated": false
                 },
                 {
                     "name": "Summon the dead",
                     "description": "summon 5 zombies to assist you in battle they are friendly towards druids",
                     "id": "summon",
-                    "predicate": 52,
-                    "key_activated": true
+                    "predicate": 49,
+                    "key_activated": false
                 }
             ],
             "high": [
                 {
-                    "name": "heal",
+                    "name": "secondary",
                     "description": "none",
                     "id": "heal",
-                    "predicate": 53,
-                    "key_activated": true
+                    "predicate": 50,
+                    "key_activated": false
                 },
                 {
                     "name": "hunger",
                     "description": "none",
                     "id": "hunger",
-                    "predicate": 54,
+                    "predicate": 51,
                     "key_activated": false
                 },
                 {
                     "name": "lifesteal",
                     "description": "none",
                     "id": "lifesteal",
-                    "predicate": 55,
+                    "predicate": 52,
                     "key_activated": false
                 },
                 {
                     "name": "teleport",
                     "description": "none",
                     "id": "teleport",
-                    "predicate": 56,
+                    "predicate": 53,
                     "key_activated": false
                 }
             ],
@@ -343,14 +322,14 @@
                     "name": "Regeneration aura",
                     "description": "sneak to heal you and all mobs in a 10 block radius",
                     "id": "heal_self",
-                    "predicate": 57,
+                    "predicate": 54,
                     "key_activated": false
                 },
                 {
                     "name": "health",
                     "description": "you have 9 hearts",
                     "id": "health",
-                    "predicate": 58,
+                    "predicate": 55,
                     "key_activated": false
                 }
             ]
@@ -361,35 +340,35 @@
                     "name": "animal_control",
                     "description": "none",
                     "id": "animal_control",
-                    "predicate": 59,
+                    "predicate": 56,
                     "key_activated": false
                 },
                 {
                     "name": "bone_meal",
                     "description": "none",
                     "id": "bone_meal",
-                    "predicate": 60,
+                    "predicate": 57,
                     "key_activated": false
                 },
                 {
                     "name": "freeze",
                     "description": "none",
                     "id": "freeze",
-                    "predicate": 61,
+                    "predicate": 58,
                     "key_activated": false
                 },
                 {
                     "name": "skulk",
                     "description": "none",
                     "id": "skulk",
-                    "predicate": 62,
+                    "predicate": 59,
                     "key_activated": false
                 },
                 {
                     "name": "speed",
                     "description": "none",
                     "id": "speed",
-                    "predicate": 63,
+                    "predicate": 60,
                     "key_activated": false
                 }
             ],
@@ -398,28 +377,28 @@
                     "name": "arrows",
                     "description": "none",
                     "id": "arrows",
-                    "predicate": 64,
+                    "predicate": 61,
                     "key_activated": false
                 },
                 {
                     "name": "poison",
                     "description": "none",
                     "id": "poison",
-                    "predicate": 65,
+                    "predicate": 62,
                     "key_activated": false
                 },
                 {
                     "name": "underwater",
                     "description": "none",
                     "id": "underwater",
-                    "predicate": 66,
+                    "predicate": 63,
                     "key_activated": false
                 },
                 {
                     "name": "wall_climb",
                     "description": "none",
                     "id": "wall_climb",
-                    "predicate": 67,
+                    "predicate": 64,
                     "key_activated": false
                 }
             ],
@@ -428,28 +407,28 @@
                     "name": "animal",
                     "description": "none",
                     "id": "animal",
-                    "predicate": 68,
+                    "predicate": 65,
                     "key_activated": false
                 },
                 {
                     "name": "heal",
                     "description": "none",
                     "id": "heal",
-                    "predicate": 69,
+                    "predicate": 66,
                     "key_activated": false
                 },
                 {
                     "name": "health",
                     "description": "none",
                     "id": "health",
-                    "predicate": 70,
+                    "predicate": 67,
                     "key_activated": false
                 },
                 {
                     "name": "vegetarian",
                     "description": "none",
                     "id": "vegetarian",
-                    "predicate": 71,
+                    "predicate": 68,
                     "key_activated": false
                 }
             ]
@@ -457,67 +436,67 @@
         "fighter": {
             "high": [
                 {
-                    "name": "arrows",
+                    "name": "secondary",
                     "description": "none",
                     "id": "arrows",
-                    "predicate": 72,
-                    "key_activated": true
+                    "predicate": 69,
+                    "key_activated": false
                 },
                 {
                     "name": "Damage to mobs",
                     "description": "you deal double damage to hostile mobs",
                     "id": "ddamgemobs",
-                    "predicate": 73,
+                    "predicate": 70,
                     "key_activated": false
                 },
                 {
                     "name": "Hero of the village",
                     "description": "you have permanent hero of the village",
                     "id": "hotvillage",
-                    "predicate": 74,
+                    "predicate": 71,
                     "key_activated": false
                 },
                 {
                     "name": "Overheal",
                     "description": "you heal 20 hearts and gain 5 temporary hearts",
                     "id": "overheal",
-                    "predicate": 75,
-                    "key_activated": true
+                    "predicate": 72,
+                    "key_activated": false
                 },
                 {
                     "name": "Powered up",
                     "description": "you gain resistance 2 and strength 2 for a short period",
                     "id": "powered",
-                    "predicate": 76,
-                    "key_activated": true
+                    "predicate": 73,
+                    "key_activated": false
                 },
                 {
                     "name": "Increased reach",
                     "description": "you get 6 block reach",
                     "id": "reach",
-                    "predicate": 77,
+                    "predicate": 74,
                     "key_activated": false
                 },
                 {
                     "name": "Saturation",
                     "description": "you have permanent saturation",
                     "id": "saturation",
-                    "predicate": 78,
+                    "predicate": 75,
                     "key_activated": false
                 },
                 {
                     "name": "Speed",
                     "description": "you have permanent speed 2",
                     "id": "speed_upgrade",
-                    "predicate": 79,
+                    "predicate": 76,
                     "key_activated": false
                 },
                 {
                     "name": "Swiftness",
                     "description": "you can gain speed 3 for a short period",
                     "id": "speedboost",
-                    "predicate": 80,
-                    "key_activated": true
+                    "predicate": 77,
+                    "key_activated": false
                 }
             ],
             "passive": [
@@ -525,28 +504,28 @@
                     "name": "Haste",
                     "description": "you have permanent haste 1",
                     "id": "haste",
-                    "predicate": 81,
+                    "predicate": 78,
                     "key_activated": false
                 },
                 {
                     "name": "Health increase",
                     "description": "you gain 4 hearts",
                     "id": "hearts",
-                    "predicate": 82,
+                    "predicate": 79,
                     "key_activated": false
                 },
                 {
                     "name": "Speed",
                     "description": "you have permanent speed 1",
                     "id": "speed",
-                    "predicate": 83,
+                    "predicate": 80,
                     "key_activated": false
                 },
                 {
                     "name": "Strength",
                     "description": "you have permanent strength 1",
                     "id": "strength",
-                    "predicate": 84,
+                    "predicate": 81,
                     "key_activated": false
                 }
             ]
@@ -557,35 +536,35 @@
                     "name": "dash",
                     "description": "none",
                     "id": "dash",
-                    "predicate": 85,
+                    "predicate": 82,
                     "key_activated": false
                 },
                 {
                     "name": "invisibility",
                     "description": "none",
                     "id": "invisibility",
-                    "predicate": 86,
+                    "predicate": 83,
                     "key_activated": false
                 },
                 {
                     "name": "opportunist",
                     "description": "none",
                     "id": "opportunist",
-                    "predicate": 87,
+                    "predicate": 84,
                     "key_activated": false
                 },
                 {
                     "name": "teleport",
                     "description": "none",
                     "id": "teleport",
-                    "predicate": 88,
+                    "predicate": 85,
                     "key_activated": false
                 },
                 {
                     "name": "wall_climb",
                     "description": "none",
                     "id": "wall_climb",
-                    "predicate": 89,
+                    "predicate": 86,
                     "key_activated": false
                 }
             ],
@@ -594,21 +573,21 @@
                     "name": "blindness",
                     "description": "none",
                     "id": "blindness",
-                    "predicate": 90,
+                    "predicate": 87,
                     "key_activated": false
                 },
                 {
                     "name": "fall_dmg",
                     "description": "none",
                     "id": "fall_dmg",
-                    "predicate": 91,
+                    "predicate": 88,
                     "key_activated": false
                 },
                 {
                     "name": "stealth_bonus",
                     "description": "none",
                     "id": "stealth_bonus",
-                    "predicate": 92,
+                    "predicate": 89,
                     "key_activated": false
                 }
             ],
@@ -617,28 +596,28 @@
                     "name": "agro",
                     "description": "none",
                     "id": "agro",
-                    "predicate": 93,
+                    "predicate": 90,
                     "key_activated": false
                 },
                 {
                     "name": "footsteps",
                     "description": "none",
                     "id": "footsteps",
-                    "predicate": 94,
+                    "predicate": 91,
                     "key_activated": false
                 },
                 {
                     "name": "hearts",
                     "description": "none",
                     "id": "hearts",
-                    "predicate": 95,
+                    "predicate": 92,
                     "key_activated": false
                 },
                 {
                     "name": "nametag",
                     "description": "none",
                     "id": "nametag",
-                    "predicate": 96,
+                    "predicate": 93,
                     "key_activated": false
                 }
             ]
@@ -649,42 +628,42 @@
                     "name": "block",
                     "description": "none",
                     "id": "block",
-                    "predicate": 97,
+                    "predicate": 94,
                     "key_activated": false
                 },
                 {
                     "name": "damage",
                     "description": "none",
                     "id": "damage",
-                    "predicate": 98,
+                    "predicate": 95,
                     "key_activated": false
                 },
                 {
                     "name": "fire_res",
                     "description": "none",
                     "id": "fire_res",
-                    "predicate": 99,
+                    "predicate": 96,
                     "key_activated": false
                 },
                 {
                     "name": "fire_ring",
                     "description": "none",
                     "id": "fire_ring",
-                    "predicate": 100,
+                    "predicate": 97,
                     "key_activated": false
                 },
                 {
                     "name": "rage",
                     "description": "none",
                     "id": "rage",
-                    "predicate": 101,
+                    "predicate": 98,
                     "key_activated": false
                 },
                 {
                     "name": "stone",
                     "description": "none",
                     "id": "stone",
-                    "predicate": 102,
+                    "predicate": 99,
                     "key_activated": false
                 }
             ],
@@ -693,35 +672,35 @@
                     "name": "ground_pound",
                     "description": "none",
                     "id": "ground_pound",
-                    "predicate": 103,
+                    "predicate": 100,
                     "key_activated": false
                 },
                 {
                     "name": "hook",
                     "description": "none",
                     "id": "hook",
-                    "predicate": 104,
+                    "predicate": 101,
                     "key_activated": false
                 },
                 {
                     "name": "knockback",
                     "description": "none",
                     "id": "knockback",
-                    "predicate": 105,
+                    "predicate": 102,
                     "key_activated": false
                 },
                 {
                     "name": "shield",
                     "description": "none",
                     "id": "shield",
-                    "predicate": 106,
+                    "predicate": 103,
                     "key_activated": false
                 },
                 {
                     "name": "thorns",
                     "description": "none",
                     "id": "thorns",
-                    "predicate": 107,
+                    "predicate": 104,
                     "key_activated": false
                 }
             ],
@@ -730,14 +709,14 @@
                     "name": "resistance",
                     "description": "none",
                     "id": "resistance",
-                    "predicate": 108,
+                    "predicate": 105,
                     "key_activated": false
                 },
                 {
                     "name": "saturation",
                     "description": "none",
                     "id": "saturation",
-                    "predicate": 109,
+                    "predicate": 106,
                     "key_activated": false
                 }
             ]
@@ -748,28 +727,28 @@
                     "name": "fly",
                     "description": "none",
                     "id": "fly",
-                    "predicate": 110,
+                    "predicate": 107,
                     "key_activated": false
                 },
                 {
-                    "name": "lightning",
+                    "name": "secondary",
                     "description": "none",
                     "id": "lightning",
-                    "predicate": 111,
-                    "key_activated": true
+                    "predicate": 108,
+                    "key_activated": false
                 },
                 {
                     "name": "slow_fall",
                     "description": "none",
                     "id": "slow_fall",
-                    "predicate": 112,
+                    "predicate": 109,
                     "key_activated": false
                 },
                 {
                     "name": "wither",
                     "description": "none",
                     "id": "wither",
-                    "predicate": 113,
+                    "predicate": 110,
                     "key_activated": false
                 }
             ],
@@ -778,28 +757,28 @@
                     "name": "fireball",
                     "description": "none",
                     "id": "fireball",
-                    "predicate": 114,
+                    "predicate": 111,
                     "key_activated": false
                 },
                 {
                     "name": "glow",
                     "description": "none",
                     "id": "glow",
-                    "predicate": 115,
+                    "predicate": 112,
                     "key_activated": false
                 },
                 {
                     "name": "ice",
                     "description": "none",
                     "id": "ice",
-                    "predicate": 116,
+                    "predicate": 113,
                     "key_activated": false
                 },
                 {
                     "name": "push",
                     "description": "none",
                     "id": "push",
-                    "predicate": 117,
+                    "predicate": 114,
                     "key_activated": false
                 }
             ],
@@ -808,21 +787,21 @@
                     "name": "Spectral shot",
                     "description": "All the projectiles you shoot inflict glowing",
                     "id": "glow_arrow",
-                    "predicate": 118,
+                    "predicate": 115,
                     "key_activated": false
                 },
                 {
                     "name": "Health",
                     "description": "you have 9 hearts",
                     "id": "health",
-                    "predicate": 119,
+                    "predicate": 116,
                     "key_activated": false
                 },
                 {
                     "name": "pearl",
                     "description": "none",
                     "id": "pearl",
-                    "predicate": 120,
+                    "predicate": 117,
                     "key_activated": false
                 }
             ]

@@ -200,491 +200,473 @@
             "predicate": {
                 "custom_model_data": 39
             },
-            "model": "chill:high/fall_damage"
+            "model": "chill:high/grow"
         },
         {
             "predicate": {
                 "custom_model_data": 40
             },
-            "model": "chill:high/falling"
+            "model": "chill:high/inventory"
         },
         {
             "predicate": {
                 "custom_model_data": 41
             },
-            "model": "chill:high/general"
+            "model": "chill:high/jump"
         },
         {
             "predicate": {
                 "custom_model_data": 42
             },
-            "model": "chill:high/grow"
+            "model": "chill:high/permeation"
         },
         {
             "predicate": {
                 "custom_model_data": 43
             },
-            "model": "chill:high/inventory"
+            "model": "chill:high/scan"
         },
         {
             "predicate": {
                 "custom_model_data": 44
             },
-            "model": "chill:high/jump"
+            "model": "chill:high/shrink"
         },
         {
             "predicate": {
                 "custom_model_data": 45
             },
-            "model": "chill:high/permeation"
+            "model": "chill:high/tame"
         },
         {
             "predicate": {
                 "custom_model_data": 46
             },
-            "model": "chill:high/scan"
+            "model": "chill:class/cleric/special/death"
         },
         {
             "predicate": {
                 "custom_model_data": 47
             },
-            "model": "chill:high/shrink"
+            "model": "chill:class/cleric/special/luck"
         },
         {
             "predicate": {
                 "custom_model_data": 48
             },
-            "model": "chill:high/tame"
+            "model": "chill:class/cleric/special/see"
         },
         {
             "predicate": {
                 "custom_model_data": 49
             },
-            "model": "chill:class/cleric/special/death"
+            "model": "chill:class/cleric/special/summon"
         },
         {
             "predicate": {
                 "custom_model_data": 50
             },
-            "model": "chill:class/cleric/special/luck"
+            "model": "chill:class/cleric/high/heal"
         },
         {
             "predicate": {
                 "custom_model_data": 51
             },
-            "model": "chill:class/cleric/special/see"
+            "model": "chill:class/cleric/high/hunger"
         },
         {
             "predicate": {
                 "custom_model_data": 52
             },
-            "model": "chill:class/cleric/special/summon"
+            "model": "chill:class/cleric/high/lifesteal"
         },
         {
             "predicate": {
                 "custom_model_data": 53
             },
-            "model": "chill:class/cleric/high/heal"
+            "model": "chill:class/cleric/high/teleport"
         },
         {
             "predicate": {
                 "custom_model_data": 54
             },
-            "model": "chill:class/cleric/high/hunger"
+            "model": "chill:class/cleric/passive/heal_self"
         },
         {
             "predicate": {
                 "custom_model_data": 55
             },
-            "model": "chill:class/cleric/high/lifesteal"
+            "model": "chill:class/cleric/passive/health"
         },
         {
             "predicate": {
                 "custom_model_data": 56
             },
-            "model": "chill:class/cleric/high/teleport"
+            "model": "chill:class/druid/special/animal_control"
         },
         {
             "predicate": {
                 "custom_model_data": 57
             },
-            "model": "chill:class/cleric/passive/heal_self"
+            "model": "chill:class/druid/special/bone_meal"
         },
         {
             "predicate": {
                 "custom_model_data": 58
             },
-            "model": "chill:class/cleric/passive/health"
+            "model": "chill:class/druid/special/freeze"
         },
         {
             "predicate": {
                 "custom_model_data": 59
             },
-            "model": "chill:class/druid/special/animal_control"
+            "model": "chill:class/druid/special/skulk"
         },
         {
             "predicate": {
                 "custom_model_data": 60
             },
-            "model": "chill:class/druid/special/bone_meal"
+            "model": "chill:class/druid/special/speed"
         },
         {
             "predicate": {
                 "custom_model_data": 61
             },
-            "model": "chill:class/druid/special/freeze"
+            "model": "chill:class/druid/high/arrows"
         },
         {
             "predicate": {
                 "custom_model_data": 62
             },
-            "model": "chill:class/druid/special/skulk"
+            "model": "chill:class/druid/high/poison"
         },
         {
             "predicate": {
                 "custom_model_data": 63
             },
-            "model": "chill:class/druid/special/speed"
+            "model": "chill:class/druid/high/underwater"
         },
         {
             "predicate": {
                 "custom_model_data": 64
             },
-            "model": "chill:class/druid/high/arrows"
+            "model": "chill:class/druid/high/wall_climb"
         },
         {
             "predicate": {
                 "custom_model_data": 65
             },
-            "model": "chill:class/druid/high/poison"
+            "model": "chill:class/druid/passive/animal"
         },
         {
             "predicate": {
                 "custom_model_data": 66
             },
-            "model": "chill:class/druid/high/underwater"
+            "model": "chill:class/druid/passive/heal"
         },
         {
             "predicate": {
                 "custom_model_data": 67
             },
-            "model": "chill:class/druid/high/wall_climb"
+            "model": "chill:class/druid/passive/health"
         },
         {
             "predicate": {
                 "custom_model_data": 68
             },
-            "model": "chill:class/druid/passive/animal"
+            "model": "chill:class/druid/passive/vegetarian"
         },
         {
             "predicate": {
                 "custom_model_data": 69
             },
-            "model": "chill:class/druid/passive/heal"
+            "model": "chill:class/fighter/high/arrows"
         },
         {
             "predicate": {
                 "custom_model_data": 70
             },
-            "model": "chill:class/druid/passive/health"
+            "model": "chill:class/fighter/high/ddamgemobs"
         },
         {
             "predicate": {
                 "custom_model_data": 71
             },
-            "model": "chill:class/druid/passive/vegetarian"
+            "model": "chill:class/fighter/high/hotvillage"
         },
         {
             "predicate": {
                 "custom_model_data": 72
             },
-            "model": "chill:class/fighter/high/arrows"
+            "model": "chill:class/fighter/high/overheal"
         },
         {
             "predicate": {
                 "custom_model_data": 73
             },
-            "model": "chill:class/fighter/high/ddamgemobs"
+            "model": "chill:class/fighter/high/powered"
         },
         {
             "predicate": {
                 "custom_model_data": 74
             },
-            "model": "chill:class/fighter/high/hotvillage"
+            "model": "chill:class/fighter/high/reach"
         },
         {
             "predicate": {
                 "custom_model_data": 75
             },
-            "model": "chill:class/fighter/high/overheal"
+            "model": "chill:class/fighter/high/saturation"
         },
         {
             "predicate": {
                 "custom_model_data": 76
             },
-            "model": "chill:class/fighter/high/powered"
+            "model": "chill:class/fighter/high/speed_upgrade"
         },
         {
             "predicate": {
                 "custom_model_data": 77
             },
-            "model": "chill:class/fighter/high/reach"
+            "model": "chill:class/fighter/high/speedboost"
         },
         {
             "predicate": {
                 "custom_model_data": 78
             },
-            "model": "chill:class/fighter/high/saturation"
+            "model": "chill:class/fighter/passive/haste"
         },
         {
             "predicate": {
                 "custom_model_data": 79
             },
-            "model": "chill:class/fighter/high/speed_upgrade"
+            "model": "chill:class/fighter/passive/hearts"
         },
         {
             "predicate": {
                 "custom_model_data": 80
             },
-            "model": "chill:class/fighter/high/speedboost"
+            "model": "chill:class/fighter/passive/speed"
         },
         {
             "predicate": {
                 "custom_model_data": 81
             },
-            "model": "chill:class/fighter/passive/haste"
+            "model": "chill:class/fighter/passive/strength"
         },
         {
             "predicate": {
                 "custom_model_data": 82
             },
-            "model": "chill:class/fighter/passive/hearts"
+            "model": "chill:class/rogue/special/dash"
         },
         {
             "predicate": {
                 "custom_model_data": 83
             },
-            "model": "chill:class/fighter/passive/speed"
+            "model": "chill:class/rogue/special/invisibility"
         },
         {
             "predicate": {
                 "custom_model_data": 84
             },
-            "model": "chill:class/fighter/passive/strength"
+            "model": "chill:class/rogue/special/opportunist"
         },
         {
             "predicate": {
                 "custom_model_data": 85
             },
-            "model": "chill:class/rogue/special/dash"
+            "model": "chill:class/rogue/special/teleport"
         },
         {
             "predicate": {
                 "custom_model_data": 86
             },
-            "model": "chill:class/rogue/special/invisibility"
+            "model": "chill:class/rogue/special/wall_climb"
         },
         {
             "predicate": {
                 "custom_model_data": 87
             },
-            "model": "chill:class/rogue/special/opportunist"
+            "model": "chill:class/rogue/high/blindness"
         },
         {
             "predicate": {
                 "custom_model_data": 88
             },
-            "model": "chill:class/rogue/special/teleport"
+            "model": "chill:class/rogue/high/fall_dmg"
         },
         {
             "predicate": {
                 "custom_model_data": 89
             },
-            "model": "chill:class/rogue/special/wall_climb"
+            "model": "chill:class/rogue/high/stealth_bonus"
         },
         {
             "predicate": {
                 "custom_model_data": 90
             },
-            "model": "chill:class/rogue/high/blindness"
+            "model": "chill:class/rogue/passive/agro"
         },
         {
             "predicate": {
                 "custom_model_data": 91
             },
-            "model": "chill:class/rogue/high/fall_dmg"
+            "model": "chill:class/rogue/passive/footsteps"
         },
         {
             "predicate": {
                 "custom_model_data": 92
             },
-            "model": "chill:class/rogue/high/stealth_bonus"
+            "model": "chill:class/rogue/passive/hearts"
         },
         {
             "predicate": {
                 "custom_model_data": 93
             },
-            "model": "chill:class/rogue/passive/agro"
+            "model": "chill:class/rogue/passive/nametag"
         },
         {
             "predicate": {
                 "custom_model_data": 94
             },
-            "model": "chill:class/rogue/passive/footsteps"
+            "model": "chill:class/tank/special/block"
         },
         {
             "predicate": {
                 "custom_model_data": 95
             },
-            "model": "chill:class/rogue/passive/hearts"
+            "model": "chill:class/tank/special/damage"
         },
         {
             "predicate": {
                 "custom_model_data": 96
             },
-            "model": "chill:class/rogue/passive/nametag"
+            "model": "chill:class/tank/special/fire_res"
         },
         {
             "predicate": {
                 "custom_model_data": 97
             },
-            "model": "chill:class/tank/special/block"
+            "model": "chill:class/tank/special/fire_ring"
         },
         {
             "predicate": {
                 "custom_model_data": 98
             },
-            "model": "chill:class/tank/special/damage"
+            "model": "chill:class/tank/special/rage"
         },
         {
             "predicate": {
                 "custom_model_data": 99
             },
-            "model": "chill:class/tank/special/fire_res"
+            "model": "chill:class/tank/special/stone"
         },
         {
             "predicate": {
                 "custom_model_data": 100
             },
-            "model": "chill:class/tank/special/fire_ring"
+            "model": "chill:class/tank/high/ground_pound"
         },
         {
             "predicate": {
                 "custom_model_data": 101
             },
-            "model": "chill:class/tank/special/rage"
+            "model": "chill:class/tank/high/hook"
         },
         {
             "predicate": {
                 "custom_model_data": 102
             },
-            "model": "chill:class/tank/special/stone"
+            "model": "chill:class/tank/high/knockback"
         },
         {
             "predicate": {
                 "custom_model_data": 103
             },
-            "model": "chill:class/tank/high/ground_pound"
+            "model": "chill:class/tank/high/shield"
         },
         {
             "predicate": {
                 "custom_model_data": 104
             },
-            "model": "chill:class/tank/high/hook"
+            "model": "chill:class/tank/high/thorns"
         },
         {
             "predicate": {
                 "custom_model_data": 105
             },
-            "model": "chill:class/tank/high/knockback"
+            "model": "chill:class/tank/passive/resistance"
         },
         {
             "predicate": {
                 "custom_model_data": 106
             },
-            "model": "chill:class/tank/high/shield"
+            "model": "chill:class/tank/passive/saturation"
         },
         {
             "predicate": {
                 "custom_model_data": 107
             },
-            "model": "chill:class/tank/high/thorns"
+            "model": "chill:class/wizard/special/fly"
         },
         {
             "predicate": {
                 "custom_model_data": 108
             },
-            "model": "chill:class/tank/passive/resistance"
+            "model": "chill:class/wizard/special/lightning"
         },
         {
             "predicate": {
                 "custom_model_data": 109
             },
-            "model": "chill:class/tank/passive/saturation"
+            "model": "chill:class/wizard/special/slow_fall"
         },
         {
             "predicate": {
                 "custom_model_data": 110
             },
-            "model": "chill:class/wizard/special/fly"
+            "model": "chill:class/wizard/special/wither"
         },
         {
             "predicate": {
                 "custom_model_data": 111
             },
-            "model": "chill:class/wizard/special/lightning"
+            "model": "chill:class/wizard/high/fireball"
         },
         {
             "predicate": {
                 "custom_model_data": 112
             },
-            "model": "chill:class/wizard/special/slow_fall"
+            "model": "chill:class/wizard/high/glow"
         },
         {
             "predicate": {
                 "custom_model_data": 113
             },
-            "model": "chill:class/wizard/special/wither"
+            "model": "chill:class/wizard/high/ice"
         },
         {
             "predicate": {
                 "custom_model_data": 114
             },
-            "model": "chill:class/wizard/high/fireball"
+            "model": "chill:class/wizard/high/push"
         },
         {
             "predicate": {
                 "custom_model_data": 115
             },
-            "model": "chill:class/wizard/high/glow"
+            "model": "chill:class/wizard/passive/glow_arrow"
         },
         {
             "predicate": {
                 "custom_model_data": 116
             },
-            "model": "chill:class/wizard/high/ice"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 117
-            },
-            "model": "chill:class/wizard/high/push"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 118
-            },
-            "model": "chill:class/wizard/passive/glow_arrow"
-        },
-        {
-            "predicate": {
-                "custom_model_data": 119
-            },
             "model": "chill:class/wizard/passive/health"
         },
         {
             "predicate": {
-                "custom_model_data": 120
+                "custom_model_data": 117
             },
             "model": "chill:class/wizard/passive/pearl"
         }

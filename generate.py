@@ -37,19 +37,18 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
     Returns:
     bool: True if the power was added successfully, False otherwise.
     """
-
+    directories = ["passive", "special", "high"]
 
     # Remove primary and secondary.json from the end of the directory if they exist
-    if directory.endswith("primary.json") or directory.endswith("secondary.json"):
-        directory = directory.replace(
-            "primary.json", "").replace("secondary.json", "")
-
+    
     if "\\low\\" in directory or "/low/" in directory:
         Id = (Path(directory).parts[-2] + "_"+ Path(directory).parts[-1]).replace(".json", "")
-        print(directory)
+    elif Path(directory).parts[-2] not in directories:
+        Id = Path(directory).parts[-2]
     else:
         Id = Path(directory).stem.lower()
     Id = Id.lower().replace(" ", "_")
+
     if category in powers:
         if group and category == "class":
             if group in powers["class"] and types in powers["class"][group]:
@@ -62,7 +61,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
             return False
 
         description = "none"
-        name = Path(directory).stem.lower()
+        name = Id
         if os.path.isdir(directory):
             with open(os.path.join(directory, "primary.json"), 'r') as file:
                 data = json.load(file)
@@ -97,7 +96,8 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                     except Exception as e:
                         print(e)
                 except json.JSONDecodeError:
-                    print(f"Failed to decode JSON file: {directory}")
+                    #print(f"Failed to decode JSON file: {directory}")
+                    pass
                 file.close()
 
             target_list.append({"name": name, "description": description, "id": Id, "predicate": predicate, "key_activated": False})
