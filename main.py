@@ -29,6 +29,15 @@ shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/models/high"), 
 shutil.rmtree(os.path.abspath("Origins-5E-Resources/assets/chill/models/low"), ignore_errors=True)
 
 os.chdir(Path(__file__).parents[1])
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/cleric"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/druid"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/fighter"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/high"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/low"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/rogue"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/tank"), ignore_errors=True)
+shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu/wizard"), ignore_errors=True)
+
 #The holy json file
 #generate.generate_json()
 

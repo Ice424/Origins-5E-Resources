@@ -37,6 +37,7 @@ kill @e[tag= randomizer]""")
 
                 out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
-                file = open(os.path.join(DATA, f"{classes}/{classes}_{types}_slots.mcfunction"), "w")
+                os.makedirs(os.path.join(DATA, f"{classes}/"), exist_ok=True)
+                file = open(os.path.join(DATA, f"{classes}/{types}_slots.mcfunction"), "w")
                 file.write("\n".join(out))
                 file.close()

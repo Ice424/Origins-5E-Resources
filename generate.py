@@ -21,6 +21,7 @@ MODEL = {
         "layer0": ""
     }
 }
+num_completed = 0
 
 
 def add_power(powers, category, predicate, directory, group=None, types=None):
@@ -37,12 +38,13 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
     Returns:
     bool: True if the power was added successfully, False otherwise.
     """
+    global num_completed
     directories = ["passive", "special", "high"]
 
     # Remove primary and secondary.json from the end of the directory if they exist
-    
     if "\\low\\" in directory or "/low/" in directory:
-        Id = (Path(directory).parts[-2] + "_"+ Path(directory).parts[-1]).replace(".json", "")
+        Id = (Path(directory).parts[-2] + "_" +
+              Path(directory).parts[-1]).replace(".json", "")
     elif Path(directory).parts[-2] not in directories:
         Id = Path(directory).parts[-2]
     else:
@@ -62,50 +64,50 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
 
         description = "none"
         name = Id
-        if os.path.isdir(directory):
-            with open(os.path.join(directory, "primary.json"), 'r') as file:
+        completed = False
+        key_activated = False
+        if directory.endswith(".json"):
+            completed = True
+            num_completed += 1
+        
+        with open(directory, 'r') as file:
+            try:
                 data = json.load(file)
                 try:
                     name = data["name"].strip()
                 except KeyError:
-                    name = Path(directory).stem.lower()
+                    name = Id
                 except Exception as e:
                     print(e)
                 try:
                     description = data["description"].strip()
+                    
                 except KeyError:
                     description = "none"
                 except Exception as e:
                     print(e)
-            target_list.append({"name": name, "description": description, "id": Id, "predicate": predicate, "key_activated": True})
-            return True
-        else:
-            with open(directory, 'r') as file:
                 try:
-                    data = json.load(file)
-                    try:
-                        name = data["name"].strip()
-                    except KeyError:
-                        name = Path(directory).stem.lower()
-                    except Exception as e:
-                        print(e)
-                    try:
-                        description = data["description"].strip()
-                    except KeyError:
-                        description = "none"
-                    except Exception as e:
-                        print(e)
-                except json.JSONDecodeError:
-                    #print(f"Failed to decode JSON file: {directory}")
-                    pass
-                file.close()
+                    key_activated = data["key"]
+                    if key_activated == {"key": "key.origins.primary_active"} or key_activated == {"key": "key.origins.secondary_active"}:
+                        key_activated = True
+                except KeyError:
+                    key_activated = False
+                except Exception as e:
+                    print(e)
 
-            target_list.append({"name": name, "description": description, "id": Id, "predicate": predicate, "key_activated": False})
-            return True
+            except json.JSONDecodeError:
+                key_activated = False
+
+                # print(f"Failed to decode JSON file: {directory}")
+                pass
+            file.close()
+        target_list.append({"name": name, "description": description, "id": Id,    "predicate": predicate, "key_activated": key_activated, "completed": completed})
+        return True
 
 
 def generate_json():
     predicate = 10
+
     powers = {
         "high": [],
         "low": [],
@@ -155,12 +157,12 @@ def generate_json():
             else:
                 if add_power(powers, file[0], predicate, os.path.join(path, name)):
                     predicate += 1
+    print(f"powers completed {num_completed}")
 
     file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
 
     file.write(json.dumps(powers, indent=4))
     file.close()
-    
 
 
 def generate_models(path):
@@ -179,9 +181,11 @@ def generate_models(path):
             file.write(json.dumps(out, indent=4))
             file.close()
 
-            file = open(os.path.join(path, types, power)+"_greyscale.json", "w")
+            file = open(os.path.join(path, types, power) +
+                        "_greyscale.json", "w")
             out = MODEL
-            out["textures"]["layer0"] = "chill:item/" + types + "/" + power + "_greyscale"
+            out["textures"]["layer0"] = "chill:item/" + \
+                types + "/" + power + "_greyscale"
             file.write(json.dumps(out, indent=4))
             file.close()
     GetPowers("low")
@@ -197,16 +201,17 @@ def generate_models(path):
                 out = MODEL
                 out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power
-                file = open(os.path.join(path, "class", classes, types, power)+".json", "w")
+                file = open(os.path.join(path, "class",
+                            classes, types, power)+".json", "w")
                 file.write(json.dumps(out, indent=4))
                 file.close()
 
                 out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power + "_greyscale"
-                file = open(os.path.join(path, "class", classes, types, power)+"_greyscale.json", "w")
+                file = open(os.path.join(path, "class", classes,
+                            types, power)+"_greyscale.json", "w")
                 file.write(json.dumps(out, indent=4))
                 file.close()
-                
 
 
 def generate_tags(path):
@@ -238,17 +243,25 @@ def generate_tags(path):
             except:
                 pass
         out["entity_action_lost"].append({
-                    "type": "origins:execute_command",
+            "type": "origins:execute_command",
                     "command": "tag @s remove " + classes
-                })
+        })
         out["entity_action_lost"].append({
-                    "type": "origins:execute_command",
+            "type": "origins:execute_command",
                     "command": "scoreboard players set @s primary 0"
-                })
+        })
         out["entity_action_lost"].append({
-                    "type": "origins:execute_command",
+            "type": "origins:execute_command",
                     "command": "scoreboard players set @s seccondary 0"
-                })
+        })
+        out["entity_action_lost"].append({
+            "type": "origins:execute_command",
+                    "command": "scoreboard players set @s slot_3 0"
+        })
+        out["entity_action_lost"].append({
+            "type": "origins:execute_command",
+                    "command": "scoreboard players set @s slot_4 0"
+        })
         file = open(os.path.join(path, "class", classes,
                     "passive", "tag")+".json", "w")
         file.write(json.dumps(out, indent=4))
@@ -286,11 +299,10 @@ def generate_predicates():
             "layer0": "minecraft:item/stick"
         },
         "overrides": []
-        }
+    }
     for item_dict in data["overrides"]:
         if item_dict["predicate"]["custom_model_data"] < 10:
             to_write["overrides"].append(item_dict)
-
 
     for override in out:
         to_write["overrides"].append(override)
@@ -298,7 +310,7 @@ def generate_predicates():
     with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "w") as file:
         json.dump(to_write, file, indent=4)
     for item_dict in to_write["overrides"]:
-        item_dict["model"] = item_dict["model"]+ "_greyscale"
+        item_dict["model"] = item_dict["model"] + "_greyscale"
 
     to_write["textures"]["layer0"] = "minecraft:item/iron_nugget"
 
@@ -312,22 +324,18 @@ def refactor_predicates():
     file.close()
     predicate = 10
 
-    
-   
-
     def GetPowers(types, predicate):
         powers[types].sort(key=lambda x: x["id"])
         for power in powers[types]:
             power["predicate"] = predicate
             predicate += 1
         return predicate
-    
- 
+
     predicate = GetPowers("low", predicate)
     predicate = GetPowers("high", predicate)
 
     for classes in powers["class"]:
-        
+
         for types in powers["class"][classes]:
             powers["class"][classes][types].sort(key=lambda x: x["id"])
             for power in powers["class"][classes][types]:
@@ -339,7 +347,5 @@ def refactor_predicates():
     file.write(json.dumps(powers, indent=4))
     file.close()
 
-
-                
 
 # generate_shop()

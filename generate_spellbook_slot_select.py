@@ -20,7 +20,7 @@ def generate_spellbook_slot_select():
         "tank": "#2c2d51",
         "wizard": "#5b6ee1"
     }
-    slot_select_template = 'execute if score @p predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:\"minecraft:stick\", \"components\": {{\"custom_model_data\": {predicate}, custom_name:\"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}\", \"minecraft:custom_data\": {{ui_item: {{cmd: \"function ui:menu/main/{key}\"}}}}}}}}'
+    slot_select_template = 'execute if score @p predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:\"minecraft:stick\", \"components\": {{\"custom_model_data\": {predicate}, custom_name:\"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}\", lore:[\'[{{\"color\":\"gray\",\"italic\":false,\"text\":\"Key set to \"}},{{\"color\":\"gray\",\"italic\":false,\"keybind\":\"key.origins.{key}_active\"}}]\'], \"minecraft:custom_data\": {{ui_item: {{cmd: \"function ui:menu/main/{key}\"}}}}}}}}'
 
 
     # generate spellbooks
