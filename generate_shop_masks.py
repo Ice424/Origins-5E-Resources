@@ -21,14 +21,14 @@ def generate_shop_masks():
         "wizard": "#5b6ee1"
     }
 
-    power_display_template = 'execute if score @p {key} matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id: "minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'
+    power_display_template = 'execute if score @p {key} matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id: "minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}","{{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"{cost} Θ\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'
 
     def GetPowers(types):
         for power in powers[types]:
             if types == "low":
-                low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10,     color="dark_gray"))
+                low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="dark_gray", cost="5"))
             elif types == "high":
-                high.append(power_display_template.format(key="slot_2", predicate=power["predicate"], name=power["name"], description=power["description"], slot=12,    color="dark_purple"))
+                high.append(power_display_template.format(key="slot_2", predicate=power["predicate"], name=power["name"], description=power["description"], slot=12, color="dark_purple", cost="10"))
 
     low = []
     high = []
@@ -45,9 +45,9 @@ def generate_shop_masks():
                     color = ClassColours[classes]
                     if types != "passive":
                         if types == "high":
-                            class_high.append(power_display_template.format(key="slot_3", predicate=power["predicate"], name=power["name"], description=power["description"],   slot=14, color=color))
+                            class_high.append(power_display_template.format(key="slot_3", predicate=power["predicate"], name=power["name"], description=power["description"],   slot=14, color=color, cost="15"))
                         else:
-                            special.append(power_display_template.format(key="slot_4", predicate=power["predicate"], name=power["name"], description=power["description"],  slot=16, color=color))
+                            special.append(power_display_template.format(key="slot_4", predicate=power["predicate"], name=power["name"], description=power["description"],  slot=16, color=color, cost="20"))
 
 
 
@@ -55,6 +55,8 @@ def generate_shop_masks():
     file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\": \\"Back\\", \\"color\\": \\"red\\",\\"italic\\": false}","minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}}]""")
     file.write("\n\n")
     file.write("""data modify storage ui mask insert 0 value {Slot: 22b, id: "minecraft:stick", "components": {"custom_model_data": 5, custom_name:"{\\"color\\":\\"dark_gray\\",\\"italic\\":false,\\"text\\":\\"Refresh\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/reset_slots"}}}}""")
+    file.write("\n\n")
+    file.write("""data modify storage ui mask insert 0 value {Slot: 23b, id: "minecraft:stick", "components": {"custom_model_data": 5, custom_name:"{\\"color\\":\\"dark_gray\\",\\"italic\\":false,\\"text\\":\\"Test\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/shop_confirm/open {predicate: 73}"}}}}""")
     file.write("\n\n")
 
     file.write("\n\n".join(low))
