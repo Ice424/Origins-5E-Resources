@@ -1,12 +1,12 @@
 {
     "providers": [
         {
-            "type": "bitmap",
-            "file": "chill:font/essence.png",
-            "height": 14,
-            "chars": ["\u0398"],
-            "ascent": 7t
-        }
+            "type": "ttf",
+            "file": "chill:essence.ttf",
+            "shift": [0, 0],
+			"size": 10.0,
+			"oversample": 10.0
 
-    ]
+        }
+	]
 }
