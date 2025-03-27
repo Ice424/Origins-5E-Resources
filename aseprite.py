@@ -7,7 +7,10 @@ from sys import platform
 if platform == "linux" or platform == "linux2":
     ASEPRITE_PATH = "/home/elliotd/.local/share/Steam/steamapps/common/Aseprite/aseprite"
 elif platform == "win32":
-    ASEPRITE_PATH = "D:/SteamLibrary/steamapps/common/Aseprite/aseprite.exe"
+    if os.getlogin() == "bigfe":
+        ASEPRITE_PATH= "C:/Users/bigfe/Documents/bin/aseprite.exe"
+    else:
+        ASEPRITE_PATH = "D:/SteamLibrary/steamapps/common/Aseprite/aseprite.exe"
 # -b special\lightning.ase -save-as {title}.png
 
 def low_power(image, savepath, name):
