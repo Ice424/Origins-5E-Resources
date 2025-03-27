@@ -337,8 +337,8 @@
                     "completed": true
                 },
                 {
-                    "name": "hunger",
-                    "description": "none",
+                    "name": "Rejuvenation spell",
+                    "description": "Crouching for 10 seconds resorts hunger and hearts and gives extra hearts",
                     "id": "hunger",
                     "predicate": 51,
                     "key_activated": false,
@@ -353,8 +353,8 @@
                     "completed": true
                 },
                 {
-                    "name": "teleport",
-                    "description": "none",
+                    "name": "Teleportation",
+                    "description": "Use your ability to teleport to a mob you're looking at",
                     "id": "teleport",
                     "predicate": 53,
                     "key_activated": false,
@@ -385,40 +385,40 @@
         "druid": {
             "special": [
                 {
-                    "name": "animal_control",
-                    "description": "none",
+                    "name": "Nature's Offence",
+                    "description": "Passive mobs will attack hostile mob if you are nearby",
                     "id": "animal_control",
                     "predicate": 56,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "bone_meal",
-                    "description": "none",
+                    "name": "Earth's gift",
+                    "description": "Get free bone meal",
                     "id": "bone_meal",
                     "predicate": 57,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "freeze",
-                    "description": "none",
+                    "name": "Freeze Life",
+                    "description": "Stop all mobs movement around you",
                     "id": "freeze",
                     "predicate": 58,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "skulk",
-                    "description": "none",
+                    "name": "Fungi's Onslaught",
+                    "description": "Spread sculk to deal damage",
                     "id": "skulk",
                     "predicate": 59,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "speed",
-                    "description": "none",
+                    "name": "Environmental Affinty",
+                    "description": "You are faster when in water or on a grass block",
                     "id": "speed",
                     "predicate": 60,
                     "key_activated": false,
@@ -427,32 +427,32 @@
             ],
             "high": [
                 {
-                    "name": "arrows",
-                    "description": "none",
+                    "name": "Ring of Arrows",
+                    "description": "Use ability to shoot 9 arrows 360 degrees",
                     "id": "arrows",
                     "predicate": 61,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "poison",
-                    "description": "none",
+                    "name": "Decay Spell",
+                    "description": "Give people hunger and poison within 7 blocks far",
                     "id": "poison",
                     "predicate": 62,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "underwater",
-                    "description": "none",
+                    "name": "Wild Shape: Fish",
+                    "description": "Can breathe underwater",
                     "id": "underwater",
                     "predicate": 63,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "wall_climb",
-                    "description": "none",
+                    "name": "Wall Climb",
+                    "description": "Create vines that help you climb walls",
                     "id": "wall_climb",
                     "predicate": 64,
                     "key_activated": false,
@@ -461,32 +461,32 @@
             ],
             "passive": [
                 {
-                    "name": "animal",
-                    "description": "none",
+                    "name": "Nature's Guidance",
+                    "description": "Animals follow you",
                     "id": "animal",
                     "predicate": 65,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "heal",
-                    "description": "none",
+                    "name": "Nature's Healing",
+                    "description": "Standing in tall grass and flowers heal",
                     "id": "heal",
                     "predicate": 66,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "health",
-                    "description": "none",
+                    "name": "Brittle",
+                    "description": "You have 9 hearts",
                     "id": "health",
                     "predicate": 67,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "vegetarian",
-                    "description": "none",
+                    "name": "Vegetarian",
+                    "description": "Can't eat meant",
                     "id": "vegetarian",
                     "predicate": 68,
                     "key_activated": false,
@@ -691,12 +691,12 @@
                     "completed": false
                 },
                 {
-                    "name": "Health",
-                    "description": "you loose 4 hearts",
+                    "name": "hearts",
+                    "description": "none",
                     "id": "hearts",
                     "predicate": 92,
                     "key_activated": false,
-                    "completed": true
+                    "completed": false
                 },
                 {
                     "name": "nametag",
