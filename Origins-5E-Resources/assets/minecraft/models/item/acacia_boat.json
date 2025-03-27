@@ -4,6 +4,9 @@
     "layer0": "minecraft:item/acacia_boat"
   },
   "overrides": [
-    {"predicate": {"custom_model_data": 1}, "model": "chill:menu/slot_select"}
+    {"predicate": {"custom_model_data": 1}, "model": "chill:menu/slot_select"},
+    {"predicate": {"custom_model_data": 2}, "model": "chill:menu/shop_confrim"},
+    {"predicate": {"custom_model_data": 3}, "model": "chill:menu/yes"},
+    {"predicate": {"custom_model_data": 4}, "model": "chill:menu/no"}
   ]
 }

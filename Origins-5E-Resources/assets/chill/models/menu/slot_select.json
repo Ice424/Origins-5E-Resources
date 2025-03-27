@@ -1,6 +1,6 @@
 {
 	"parent": "chill:menu/popup",
 	"textures": {
-		"texture": "chill:menu/slot_select"
+		"texture": "chill:item/menu/slot_select"
 	}
 }
