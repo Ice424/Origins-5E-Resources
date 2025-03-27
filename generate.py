@@ -262,6 +262,10 @@ def generate_tags(path):
             "type": "origins:execute_command",
                     "command": "scoreboard players set @s slot_4 0"
         })
+        out["entity_action_lost"].append({
+            "type": "origins:execute_command",
+                    "command": "power clear @s"
+        })
         file = open(os.path.join(path, "class", classes,
                     "passive", "tag")+".json", "w")
         file.write(json.dumps(out, indent=4))

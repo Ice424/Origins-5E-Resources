@@ -9,6 +9,7 @@ import generate_spellbook
 import generate_unimplemented
 import generate_shop_masks
 import generate
+import generate_power_buy
 import image
 
 
@@ -53,6 +54,8 @@ generate.generate_tags(DATA)
 generate.generate_predicates()
 
 #.mcfunctions
+generate_power_buy.shop_mask()
+generate_power_buy.shop_active()
 generate_shop_masks.generate_shop_masks()
 generate_equipfiles.generate_equipfiles()
 generate_shop_slots.generate_shop_slots()
