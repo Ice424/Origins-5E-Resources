@@ -24,6 +24,20 @@ MODEL = {
 num_completed = 0
 
 
+def key_value_exists(data, target_key, target_value):
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key == target_key and value == target_value:
+                return True
+            if key_value_exists(value, target_key, target_value):
+                return True
+    elif isinstance(data, list):
+        for item in data:
+            if key_value_exists(item, target_key, target_value):
+                return True
+    return False
+
+
 def add_power(powers, category, predicate, directory, group=None, types=None):
     """
     Adds a power entry to the JSON structure if it doesn't already exist.
@@ -69,7 +83,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
         if directory.endswith(".json"):
             completed = True
             num_completed += 1
-        
+
         with open(directory, 'r') as file:
             try:
                 data = json.load(file)
@@ -81,19 +95,16 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                     print(e)
                 try:
                     description = data["description"].strip()
-                    
+
                 except KeyError:
                     description = "none"
                 except Exception as e:
                     print(e)
-                try:
-                    key_activated = data["key"]
-                    if key_activated == {"key": "key.origins.primary_active"} or key_activated == {"key": "key.origins.secondary_active"}:
-                        key_activated = True
-                except KeyError:
+                if key_value_exists(data, "key", "key.origins.primary_active") or key_value_exists(data, "key", "key.origins.secondary_active"):
+                    key_activated = True
+
+                else:
                     key_activated = False
-                except Exception as e:
-                    print(e)
 
             except json.JSONDecodeError:
                 key_activated = False
@@ -101,7 +112,8 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
                 # print(f"Failed to decode JSON file: {directory}")
                 pass
             file.close()
-        target_list.append({"name": name, "description": description, "id": Id,    "predicate": predicate, "key_activated": key_activated, "completed": completed})
+        target_list.append({"name": name, "description": description, "id": Id,
+                           "predicate": predicate, "key_activated": key_activated, "completed": completed})
         return True
 
 
@@ -227,21 +239,33 @@ def generate_tags(path):
         "entity_action_lost": [],
         "hidden": True
     }
-    out = tag
+    
+    def GetPowers(types):
+        for power in powers[types]:
+            power = power["id"]
+            out["entity_action_lost"].append({
+                    "type": "origins:execute_command",
+                    "command": "tag @s remove " + power
+                })
+    
+    
     for classes in powers["class"]:
-
+        out = tag
+        out["entity_action_gained"]["command"] = "tag @s add " + classes
+        GetPowers("low")
+        GetPowers("high")
+        try:
+            os.makedirs(os.path.join(path, "class", classes, "passive"))
+        except:
+            pass
         for types in powers["class"][classes]:
-            out["entity_action_gained"]["command"] = "tag @s add " + classes
             for power in powers["class"][classes][types]:
                 power = power["id"]
                 out["entity_action_lost"].append({
                     "type": "origins:execute_command",
                     "command": "tag @s remove " + power
                 })
-            try:
-                os.makedirs(os.path.join(path, "class", classes, "passive"))
-            except:
-                pass
+        
         out["entity_action_lost"].append({
             "type": "origins:execute_command",
                     "command": "tag @s remove " + classes

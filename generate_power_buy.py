@@ -64,16 +64,18 @@ def shop_mask():
         for power in powers[types]:
             if types == "low":
                 out.append(power_display_template.format(predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="dark_gray", cost="5"))
-                if power["key_activated"] is False:
-                    out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path=f"low/{power["id"]}"))
-                else:
+                if power["key_activated"] is True:
                     out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path="blank"))
+                else:
+                    out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path=f"low/{power["id"][:-2]}/{power["id"][-1]}"))
+                    
             elif types == "high":
                 out.append(power_display_template.format(predicate=power["predicate"], name=power["name"], description=power["description"], slot=12, color="dark_purple", cost="10"))
-                if power["key_activated"] is False:
-                    out.append(yes_button_template.format(predicate=power["predicate"], cost=10, id=power["id"], path=f"high/{power["id"]}"))
-                else:
+                if power["key_activated"] is True:
                     out.append(yes_button_template.format(predicate=power["predicate"], cost=10, id=power["id"],  path="blank"))
+                else:
+                    out.append(yes_button_template.format(predicate=power["predicate"], cost=10, id=power["id"], path=f"high/{power["id"]}"))
+                    
 
 
 
@@ -92,18 +94,18 @@ def shop_mask():
                         if types == "high":
                             out.append(power_display_template.format(predicate=power["predicate"], name=power["name"], description=power["description"],   slot=14, color=color, cost="15"))
                             if power["key_activated"] is True:
-                                out.append(yes_button_template.format(predicate=power["predicate"], cost=15, id=power["id"], path=f"class/{classes}/high/{power["id"]}"))
+                                out.append(yes_button_template.format(predicate=power["predicate"], cost=15, id=power["id"], path="blank"))
                             else:
                                 out.append(yes_button_template.format(predicate=power["predicate"], cost=15, id=power["id"],  path=f"class/{classes}/high/{power["id"]}"))
                         else:
                             out.append(power_display_template.format(predicate=power["predicate"], name=power["name"], description=power["description"],  slot=16, color=color, cost="20"))
                             if power["key_activated"] is True:
-                                out.append(yes_button_template.format(predicate=power["predicate"], cost=20, id=power["id"], path=f"class/{classes}/special/{power["id"]}"))
+                                out.append(yes_button_template.format(predicate=power["predicate"], cost=20, id=power["id"], path="blank"))
                             else:
                                 out.append(yes_button_template.format(predicate=power["predicate"], cost=20, id=power["id"],  path=f"class/{classes}/special/{power["id"]}"))
 
 
     file = open(os.path.join(DATA, "main", "shop_confirm", "mask.mcfunction"), "w",encoding="UTF-8")
-    file.write("\n".join(out))
+    file.write("\n\n".join(out))
     file.close()
 

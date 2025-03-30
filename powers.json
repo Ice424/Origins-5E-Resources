@@ -29,7 +29,7 @@
             "description": "you can temporarily phase through walls",
             "id": "permeation",
             "predicate": 42,
-            "key_activated": false,
+            "key_activated": true,
             "completed": true
         },
         {
@@ -323,7 +323,7 @@
                     "description": "summon 5 zombies to assist you in battle they are friendly towards druids",
                     "id": "summon",
                     "predicate": 49,
-                    "key_activated": false,
+                    "key_activated": true,
                     "completed": true
                 }
             ],
@@ -367,9 +367,7 @@
                     "description": "sneak to heal you and all mobs in a 10 block radius",
                     "id": "heal_self",
                     "predicate": 54,
-                    "key_activated": {
-                        "key": "key.sneak"
-                    },
+                    "key_activated": false,
                     "completed": true
                 },
                 {
@@ -417,7 +415,7 @@
                     "completed": false
                 },
                 {
-                    "name": "Environmental Affinty",
+                    "name": "Environmental Affinity",
                     "description": "You are faster when in water or on a grass block",
                     "id": "speed",
                     "predicate": 60,
@@ -607,40 +605,40 @@
         "rogue": {
             "special": [
                 {
-                    "name": "dash",
-                    "description": "none",
+                    "name": "Dash",
+                    "description": "Get a 6 block dash, scales with momentum",
                     "id": "dash",
                     "predicate": 82,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "invisibility",
-                    "description": "none",
+                    "name": "Vanish",
+                    "description": "Use to get invisibility for 15 secs, 45 sec cooldown",
                     "id": "invisibility",
                     "predicate": 83,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "opportunist",
-                    "description": "none",
+                    "name": "Opportunist",
+                    "description": "Double damage to enemies who have a negative potion effect or are below half health",
                     "id": "opportunist",
                     "predicate": 84,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "teleport",
-                    "description": "none",
+                    "name": "Instant Transmission",
+                    "description": "Ability to teleport where you are looking",
                     "id": "teleport",
                     "predicate": 85,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "wall_climb",
-                    "description": "none",
+                    "name": "Wall Climb",
+                    "description": "Gain the ability to wall climb",
                     "id": "wall_climb",
                     "predicate": 86,
                     "key_activated": false,
@@ -649,24 +647,24 @@
             ],
             "high": [
                 {
-                    "name": "blindness",
-                    "description": "none",
+                    "name": "Smoke Bomb",
+                    "description": "Ability to give blindness to anyone in 5 blocks for 4 seconds",
                     "id": "blindness",
                     "predicate": 87,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "fall_dmg",
-                    "description": "none",
+                    "name": "Slow Fall",
+                    "description": "No fall damage",
                     "id": "fall_dmg",
                     "predicate": 88,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "stealth_bonus",
-                    "description": "none",
+                    "name": "Stealth affinity",
+                    "description": "Use ability to get speed 3 and strength 2",
                     "id": "stealth_bonus",
                     "predicate": 89,
                     "key_activated": false,
@@ -675,32 +673,32 @@
             ],
             "passive": [
                 {
-                    "name": "agro",
-                    "description": "none",
+                    "name": "Evasion",
+                    "description": "Mobs take longer to aggro",
                     "id": "agro",
                     "predicate": 90,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "footsteps",
-                    "description": "none",
+                    "name": "Sneaky",
+                    "description": "Silent footsteps",
                     "id": "footsteps",
                     "predicate": 91,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "hearts",
-                    "description": "none",
+                    "name": "Brittle",
+                    "description": "You have 8 hearts",
                     "id": "hearts",
                     "predicate": 92,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "nametag",
-                    "description": "none",
+                    "name": "Off the Grid",
+                    "description": "You have no name tag",
                     "id": "nametag",
                     "predicate": 93,
                     "key_activated": false,
@@ -711,48 +709,48 @@
         "tank": {
             "special": [
                 {
-                    "name": "block",
-                    "description": "none",
+                    "name": "Unshakeable",
+                    "description": "Become invincible for a short period",
                     "id": "block",
                     "predicate": 94,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "damage",
-                    "description": "none",
+                    "name": "Warrior's Defence",
+                    "description": "Take half damage",
                     "id": "damage",
                     "predicate": 95,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "fire_res",
-                    "description": "none",
+                    "name": "Born From Flame",
+                    "description": "Fire resistance",
                     "id": "fire_res",
                     "predicate": 96,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "fire_ring",
-                    "description": "none",
+                    "name": "Ring Of Fire",
+                    "description": "Able to create a ring of fire around yourself",
                     "id": "fire_ring",
                     "predicate": 97,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "rage",
-                    "description": "none",
+                    "name": "Warrior's Rage",
+                    "description": "When you rage, you get increased speed and damage for a short period",
                     "id": "rage",
                     "predicate": 98,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "stone",
-                    "description": "none",
+                    "name": "Wall Of Stone",
+                    "description": "Gain the ability to create a wall of stone",
                     "id": "stone",
                     "predicate": 99,
                     "key_activated": false,
@@ -761,40 +759,40 @@
             ],
             "high": [
                 {
-                    "name": "ground_pound",
-                    "description": "none",
+                    "name": "Ground Pound",
+                    "description": "When you take fall damage you do a ground pound, the higher you fall, the more damage",
                     "id": "ground_pound",
                     "predicate": 100,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "hook",
-                    "description": "none",
+                    "name": "Chain Hook",
+                    "description": "Throws a hook at a target, pulling them towards you when it connects",
                     "id": "hook",
                     "predicate": 101,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "knockback",
-                    "description": "none",
+                    "name": "Heavy",
+                    "description": "You have knockback resistance",
                     "id": "knockback",
                     "predicate": 102,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "shield",
-                    "description": "none",
+                    "name": "Warrior's Protection",
+                    "description": "Able to deploy a shield that blocks projectiles",
                     "id": "shield",
                     "predicate": 103,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "thorns",
-                    "description": "none",
+                    "name": "Barbed Armour",
+                    "description": "Use ability to toggle thorns",
                     "id": "thorns",
                     "predicate": 104,
                     "key_activated": false,
@@ -803,16 +801,16 @@
             ],
             "passive": [
                 {
-                    "name": "resistance",
-                    "description": "none",
+                    "name": "Warrior's Might",
+                    "description": "Gain resistance 1",
                     "id": "resistance",
                     "predicate": 105,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "saturation",
-                    "description": "none",
+                    "name": "Nourished",
+                    "description": "Saturation",
                     "id": "saturation",
                     "predicate": 106,
                     "key_activated": false,
@@ -823,8 +821,8 @@
         "wizard": {
             "special": [
                 {
-                    "name": "fly",
-                    "description": "none",
+                    "name": "Levitation",
+                    "description": "Gain flight for a short amount of time",
                     "id": "fly",
                     "predicate": 107,
                     "key_activated": false,
@@ -835,20 +833,20 @@
                     "description": "Charges lightning strikes that increase in range as you hold sneak & ability key",
                     "id": "lightning",
                     "predicate": 108,
-                    "key_activated": false,
+                    "key_activated": true,
                     "completed": true
                 },
                 {
-                    "name": "slow_fall",
-                    "description": "none",
+                    "name": "Glide",
+                    "description": "Crouch mid air gives slow falling",
                     "id": "slow_fall",
                     "predicate": 109,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "wither",
-                    "description": "none",
+                    "name": "Deteriorate",
+                    "description": "Inflict wither to mobs within fov",
                     "id": "wither",
                     "predicate": 110,
                     "key_activated": false,
@@ -857,32 +855,32 @@
             ],
             "high": [
                 {
-                    "name": "fireball",
-                    "description": "none",
+                    "name": "Explosive Fireball",
+                    "description": "Shoot a fireball that explodes",
                     "id": "fireball",
                     "predicate": 111,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "glow",
-                    "description": "none",
+                    "name": "Wizard's Knowledge",
+                    "description": "All mobs within 20 blocks glow",
                     "id": "glow",
                     "predicate": 112,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "ice",
-                    "description": "none",
+                    "name": "Ice Walker",
+                    "description": "Temporarily gain frost walker and slow aura",
                     "id": "ice",
                     "predicate": 113,
                     "key_activated": false,
                     "completed": false
                 },
                 {
-                    "name": "push",
-                    "description": "none",
+                    "name": "Force Push",
+                    "description": "Push all mobs back 5 blocks in a 10 block radius",
                     "id": "push",
                     "predicate": 114,
                     "key_activated": false,
@@ -907,8 +905,8 @@
                     "completed": true
                 },
                 {
-                    "name": "pearl",
-                    "description": "none",
+                    "name": "Summon Ender Pearl",
+                    "description": "Crouch to get an ender pearl, 60 secs cooldown",
                     "id": "pearl",
                     "predicate": 117,
                     "key_activated": false,
