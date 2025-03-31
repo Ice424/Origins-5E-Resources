@@ -171,7 +171,7 @@ def generate_json():
                     predicate += 1
     print(f"powers completed {num_completed}")
 
-    file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
+    file = open(os.path.abspath("./resourcepacks/powers.json"), "w", encoding="UTF-8")
 
     file.write(json.dumps(powers, indent=4))
     file.close()
@@ -187,14 +187,14 @@ def generate_models(path):
             power = power["id"]
             os.makedirs(os.path.join(path, types), exist_ok=True)
 
-            file = open(os.path.join(path, types, power)+".json", "w")
+            file = open(os.path.join(path, types, power)+".json", "w", encoding="UTF-8")
             out = MODEL
             out["textures"]["layer0"] = "chill:item/" + types + "/" + power
             file.write(json.dumps(out, indent=4))
             file.close()
 
             file = open(os.path.join(path, types, power) +
-                        "_greyscale.json", "w")
+                        "_greyscale.json", "w", encoding="UTF-8")
             out = MODEL
             out["textures"]["layer0"] = "chill:item/" + \
                 types + "/" + power + "_greyscale"
@@ -214,14 +214,14 @@ def generate_models(path):
                 out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power
                 file = open(os.path.join(path, "class",
-                            classes, types, power)+".json", "w")
+                            classes, types, power)+".json", "w", encoding="UTF-8")
                 file.write(json.dumps(out, indent=4))
                 file.close()
 
                 out["textures"]["layer0"] = "chill:item/class/" + \
                     classes + "/" + types + "/" + power + "_greyscale"
                 file = open(os.path.join(path, "class", classes,
-                            types, power)+"_greyscale.json", "w")
+                            types, power)+"_greyscale.json", "w", encoding="UTF-8")
                 file.write(json.dumps(out, indent=4))
                 file.close()
 
@@ -291,7 +291,7 @@ def generate_tags(path):
                     "command": "power clear @s"
         })
         file = open(os.path.join(path, "class", classes,
-                    "passive", "tag")+".json", "w")
+                    "passive", "tag")+".json", "w", encoding="UTF-8")
         file.write(json.dumps(out, indent=4))
         file.close()
         out["entity_action_lost"] = []
@@ -335,14 +335,14 @@ def generate_predicates():
     for override in out:
         to_write["overrides"].append(override)
 
-    with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "w") as file:
+    with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/stick.json", "w", encoding="UTF-8") as file:
         json.dump(to_write, file, indent=4)
     for item_dict in to_write["overrides"]:
         item_dict["model"] = item_dict["model"] + "_greyscale"
 
     to_write["textures"]["layer0"] = "minecraft:item/iron_nugget"
 
-    with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/iron_nugget.json", "w") as file:
+    with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/iron_nugget.json", "w", encoding="UTF-8") as file:
         json.dump(to_write, file, indent=4)
 
 
@@ -370,7 +370,7 @@ def refactor_predicates():
                 power["predicate"] = predicate
                 predicate += 1
     print(f"The largest predicate is {predicate}")
-    file = open(os.path.abspath("./resourcepacks/powers.json"), "w")
+    file = open(os.path.abspath("./resourcepacks/powers.json"), "w", encoding="UTF-8")
 
     file.write(json.dumps(powers, indent=4))
     file.close()

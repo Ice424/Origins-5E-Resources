@@ -50,10 +50,10 @@ execute if score @p predicate matches {predicate} run power grant @p {path} chil
     primary.append("function ui:menu/main/open_spellbook")
     secondary.append("function ui:menu/main/open_spellbook")
 
-    file = open(os.path.join(DATA, "main", "primary.mcfunction"), "w")
+    file = open(os.path.join(DATA, "main", "primary.mcfunction"), "w", encoding="UTF-8")
     file.write("\n".join(primary))
     file.close()
 
-    file = open(os.path.join(DATA, "main", "secondary.mcfunction"), "w")
+    file = open(os.path.join(DATA, "main", "secondary.mcfunction"), "w", encoding="UTF-8")
     file.write("\n".join(secondary))
     file.close()

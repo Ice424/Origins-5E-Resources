@@ -17,7 +17,7 @@ def generate_shop_slots():
         out.append(template.format(predicate=power["predicate"], id=power["id"]))
     out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
-    file = open(os.path.join(DATA,"main", "high_slots.mcfunction"), "w")
+    file = open(os.path.join(DATA,"main", "high_slots.mcfunction"), "w", encoding="UTF-8")
     file.write("\n".join(out))
     file.close()
 
@@ -40,7 +40,7 @@ kill @e[tag= randomizer]""")
 
     out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
-    file = open(os.path.join(DATA,"main", "low_slots.mcfunction"), "w")
+    file = open(os.path.join(DATA,"main", "low_slots.mcfunction"), "w", encoding="UTF-8")
     file.write("\n".join(out))
     file.close()
     

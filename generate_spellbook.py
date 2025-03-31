@@ -67,12 +67,12 @@ def generate_spellbook():
 
         out.append("\n\n\n" + "\n\n".join(display))
         os.makedirs(os.path.join(DATA, classes, "spellbook"), exist_ok=True)
-        file = open(os.path.join(DATA, classes, "spellbook", "mask.mcfunction"), "w")
+        file = open(os.path.join(DATA, classes, "spellbook", "mask.mcfunction"), "w", encoding="UTF-8")
         file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\",\\"color\\":\\"red\\",\\"italic\\": false}","minecraft:custom_model_data": 4, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}}] \n\n""")
         file.write("\n\n".join(out))
         file.close()
         
-        file = open(os.path.join(DATA, classes, "spellbook", "open.mcfunction"), "w")
+        file = open(os.path.join(DATA, classes, "spellbook", "open.mcfunction"), "w", encoding="UTF-8")
         file.write(f"""function ui:menu/{classes}/spellbook/mask
 data modify storage ui current set from storage ui mask
 execute on passengers run data modify entity @s data.page.mask set value \"function ui:menu/{classes}/spellbook/mask\"""")
@@ -97,12 +97,12 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
 
         out.append("\n\n\n"+ "\n\n".join(display))
         os.makedirs(os.path.join(DATA, types, "spellbook"), exist_ok=True)
-        file = open(os.path.join(DATA, types, "spellbook", "mask.mcfunction"), "w")
+        file = open(os.path.join(DATA, types, "spellbook", "mask.mcfunction"), "w", encoding="UTF-8")
         file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 4, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}}] \n\n""")
         file.write("\n\n".join(out))
         file.close()
         
-        file = open(os.path.join(DATA, types, "spellbook", "open.mcfunction"), "w")
+        file = open(os.path.join(DATA, types, "spellbook", "open.mcfunction"), "w", encoding="UTF-8")
         file.write(f"""function ui:menu/{types}/spellbook/mask
 data modify storage ui current set from storage ui mask
 execute on passengers run data modify entity @s data.page.mask set value \"function ui:menu/{types}/spellbook/mask\"""")

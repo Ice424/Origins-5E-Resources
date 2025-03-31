@@ -29,7 +29,7 @@ def shop_active():
                 for power in powers["class"][classes][types]:
                     if power["key_activated"] is True:
                         out.append(template.format(predicate = power["predicate"]))
-    file = open(os.path.join(DATA, "main", "shop_confirm", "active.mcfunction"), "w")
+    file = open(os.path.join(DATA, "main", "shop_confirm", "active.mcfunction"), "w", encoding="UTF-8")
     file.write("scoreboard players set @p activated 0\n\n")
     file.write("\n".join(out))
     file.close()
@@ -43,7 +43,7 @@ def shop_mask():
     os.chdir(Path(__file__).parents[1])
     DATA = os.path.abspath(
         "./saves/New World/datapacks/Origins-5E-Data/data/ui/function/menu")
-    file = open("resourcepacks/powers.json", "r")
+    file = open("resourcepacks/powers.json", "r", encoding="UTF-8")
     powers = json.loads(file.read())
     file.close()
 

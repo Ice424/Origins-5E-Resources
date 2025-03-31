@@ -694,7 +694,7 @@
                     "id": "hearts",
                     "predicate": 92,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Off the Grid",
