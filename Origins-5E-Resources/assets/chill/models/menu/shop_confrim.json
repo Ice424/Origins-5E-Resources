@@ -1,6 +1,6 @@
 {
 	"parent": "chill:menu/popup",
 	"textures": {
-		"texture": "chill:item/menu/shop_confirm"
+		"1": "chill:item/menu/shop_confirm"
 	}
 }

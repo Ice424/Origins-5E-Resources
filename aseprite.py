@@ -41,9 +41,10 @@ def convert_aseprite():
                 if not "low" in path:
                     os.system(ASEPRITE_PATH + " -b \"" + image + "\" -save-as " + savepath + "/{title}.png")
                     png = os.path.join(savepath, name.replace("ase", "png"))
-                    mg = Image.open(png).convert('LA')
-                    mg.save(png.replace(".png", "_greyscale.png"))
-                else:
+                    if not "menu" in path:
+                        mg = Image.open(png).convert('LA')
+                        mg.save(png.replace(".png", "_greyscale.png"))
+                elif "low" in path:
                     low_power(image, savepath, name)
 
                 

@@ -1,6 +1,6 @@
 {
     "parent": "chill:menu/overlay",
     "textures": {
-      "texture": "chill:item/menu/shop_confirm_underlay"
+      "1": "chill:item/menu/shop_confirm_underlay"
     }
   }

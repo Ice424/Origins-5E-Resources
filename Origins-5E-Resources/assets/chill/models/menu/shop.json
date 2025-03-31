@@ -1,6 +1,6 @@
 {
     "parent": "chill:menu/overlay",
     "textures": {
-      "texture": "chill:item/menu/shop"
+      "1": "chill:item/menu/shop"
     }
   }

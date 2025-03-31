@@ -42,6 +42,10 @@ def generate_spellbook():
 
                         display.append(equipped_display_template.format(slot=5, key="primary", name=power["name"], predicate=power["predicate"],    description=power  ["description"], color=color))
                         display.append(equipped_display_template.format(slot=7, key="secondary", name=power["name"], predicate=power["predicate"],  description=power    ["description"], color=color))
+    for power in powers["high"]:
+            if power["key_activated"] is True:
+                display.append(equipped_display_template.format(slot=5, key="primary", name=power["name"], predicate=power["predicate"],    description=power  ["description"], color="dark_gray" if types == "low" else "dark_purple"))
+                display.append(equipped_display_template.format(slot=7, key="primary", name=power["name"], predicate=power["predicate"],    description=power  ["description"], color="dark_gray" if types == "low" else "dark_purple"))
 
 
     for classes in powers["class"]:
@@ -64,7 +68,7 @@ def generate_spellbook():
                         out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot,     type=types, description=power["description"], name=power["name"]))
                         high_special_slot += 1
 
-
+        
         out.append("\n\n\n" + "\n\n".join(display))
         os.makedirs(os.path.join(DATA, classes, "spellbook"), exist_ok=True)
         file = open(os.path.join(DATA, classes, "spellbook", "mask.mcfunction"), "w", encoding="UTF-8")
@@ -82,7 +86,8 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
 
     def GetPowers(types):
         out = []
-        slot = 9
+        
+        slot = 10
         for power in powers[types]:
             if power["predicate"] <= 1000:
                 if power["key_activated"] == True:
@@ -99,9 +104,9 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
         os.makedirs(os.path.join(DATA, types, "spellbook"), exist_ok=True)
         file = open(os.path.join(DATA, types, "spellbook", "mask.mcfunction"), "w", encoding="UTF-8")
         if types == "high":
-            file.write(f"""data modify storage ui mask set value [{{Slot:0b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 4, "minecraft:custom_data":{{ui_item:{{cmd:"function ui:menu/main/root/open"}}}}}}}},{{Slot:1b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Class Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{cmd:"function ui:menu/{classes}/spellbook/open"}}}}}}}}, {{Slot:8b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Low Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{cmd:"function ui:menu/low/spellbook/open"}}}}}}}}] \n\n""")
+            file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 4, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}},{Slot:1b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Class Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/open_spellbook"}}}}, {Slot:8b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Low Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/low/spellbook/open"}}}}] \n\n""")
         else:
-            file.write(f"""data modify storage ui mask set value [{{Slot:0b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 4, "minecraft:custom_data":{{ui_item:{{cmd:"function ui:menu/main/root/open"}}}}}}}},{{Slot:8b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Class Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{cmd:"function ui:menu/{classes}/spellbook/open"}}}}}}}}, {{Slot:1b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"High Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}}", "minecraft:custom_data":{{ui_item:{{cmd:"function ui:menu/high/spellbook/open"}}}}}}}}] \n\n""")
+            file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 4, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}},{Slot:8b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Class Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/open_spellbook"}}}}, {Slot:1b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"High Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/high/spellbook/open"}}}}] \n\n""")
         file.write("\n\n".join(out))
 
         file.close()

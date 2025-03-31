@@ -1,6 +1,6 @@
 {
   "parent": "chill:menu/overlay",
   "textures": {
-    "texture": "chill:item/menu/fighter_spellbook"
+    "1": "chill:item/menu/fighter_spellbook"
   }
 }
