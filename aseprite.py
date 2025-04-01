@@ -24,10 +24,6 @@ def low_power(image, savepath, name):
     mg = Image.open(png).convert('LA')
     
     mg.save(png.replace(".png", "_greyscale.png"))
-    mg.save(png.replace("1.png", "2_greyscale.png"))
-    mg.save(png.replace("1.png", "3_greyscale.png"))
-    mg.save(png.replace("1.png", "4_greyscale.png"))
-    mg.save(png.replace("1.png", "5_greyscale.png"))
 
 def convert_aseprite():
     for path, subdirs, files in os.walk("./aseprite files"):
