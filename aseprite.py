@@ -9,6 +9,8 @@ if platform == "linux" or platform == "linux2":
 elif platform == "win32":
     if os.getlogin() == "bigfe":
         ASEPRITE_PATH= "C:/Users/bigfe/Documents/bin/aseprite.exe"
+    elif os.getlogin() == "negre":
+        ASEPRITE_PATH = "D:/IsaacMods/Aseprite/Aseprite.exe"
     else:
         ASEPRITE_PATH = "D:/SteamLibrary/steamapps/common/Aseprite/aseprite.exe"
 # -b special\lightning.ase -save-as {title}.png
