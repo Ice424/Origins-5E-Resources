@@ -10,8 +10,8 @@ def generate_shop_slots():
     powers = json.loads(file.read())
     file.close()
 
-    template = "execute if entity @p[tag= !{id}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
-    low_template = "execute if entity @p[tag={id}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
+    template = "execute if entity @p[tag=!{id}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
+    low_template = "execute if entity @p[{line}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
     out = []
     for power in powers["high"]:
         out.append(template.format(predicate=power["predicate"], id=power["id"]))
@@ -28,16 +28,29 @@ kill @e[tag= randomizer]""")
         low_powers[power["name"]] = []
     for power in powers["low"]:
         low_powers[power["name"]].append({"id":power["id"], "predicate": power["predicate"]})
+    #print(low_powers)
 
-    for low_power in low_powers:
-        if low_powers[low_power][0]["id"] != "xp_xp":
+    
+    for group, items in low_powers.items():
+        ids = [item['id'] for item in items]
+        predicates = [item['predicate'] for item in items]
+
+        # Line 1: All negated, predicate of the first item
+        all_negated = [f"tag=!{id_}" for id_ in ids]
+        #print(", ".join(all_negated) + f" {predicates[0]}")
+        out.append(low_template.format(line=", ".join(all_negated), predicate=predicates[0]))
+        # Lines 2 to N-1: One positive tag, others negated
+        for i in range(len(ids) - 1):
+            tags = []
+            for j, id_ in enumerate(ids):
+                if j == i:
+                    tags.append(f"tag={id_}")
+                else:
+                    tags.append(f"tag=!{id_}")
+            #print(", ".join(tags) + f" {predicates[i + 1]}")
+            out.append(low_template.format(line=", ".join(tags), predicate=predicates[i+1]))
+        #print()  # blank line between groups
             
-            out.append(template.format(predicate=low_powers[low_power][0]["predicate"], id=low_powers[low_power][0]["id"]))
-            
-            for i in range(len(low_powers[low_power])-1):
-                out.append(low_template.format(predicate=low_powers[low_power][i]["predicate"]+1, id=low_powers[low_power][i]["id"]))
-
-
     out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
     file = open(os.path.join(DATA,"main", "low_slots.mcfunction"), "w", encoding="UTF-8")
@@ -59,4 +72,3 @@ kill @e[tag= randomizer]""")
                 file = open(os.path.join(DATA, f"{classes}/{types}_slots.mcfunction"), "w")
                 file.write("\n".join(out))
                 file.close()
-generate_shop_slots()

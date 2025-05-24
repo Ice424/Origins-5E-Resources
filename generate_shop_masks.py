@@ -26,7 +26,7 @@ def generate_shop_masks():
     def GetPowers(types):
         for power in powers[types]:
             if types == "low":
-                low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="dark_gray", cost="5"))
+                low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="gray", cost="5"))
             elif types == "high":
                 high.append(power_display_template.format(key="slot_2", predicate=power["predicate"], name=power["name"], description=power["description"], slot=12, color="dark_purple", cost="10"))
 
@@ -56,7 +56,7 @@ def generate_shop_masks():
     file.write("\n\n")
     file.write("""data modify storage ui mask insert 0 value {Slot: 22b, id: "minecraft:stick", "components": {"custom_model_data": 5, custom_name:"{\\"color\\":\\"dark_gray\\",\\"italic\\":false,\\"text\\":\\"Refresh\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/reset_slots"}}}}""")
     file.write("\n\n")
-    file.write("""data modify storage ui mask insert 0 value {Slot: 23b, id: "minecraft:stick", "components": {"custom_model_data": 5, custom_name:"{\\"color\\":\\"dark_gray\\",\\"italic\\":false,\\"text\\":\\"Test\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/shop_confirm/open {predicate: 50}"}}}}""")
+    #file.write("""data modify storage ui mask insert 0 value {Slot: 23b, id: "minecraft:stick", "components": {"custom_model_data": 5, custom_name:"{\\"color\\":\\"dark_gray\\",\\"italic\\":false,\\"text\\":\\"Test\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/shop_confirm/open {predicate: 50}"}}}}""")
     file.write("\n\n")
 
     file.write("\n\n".join(low))

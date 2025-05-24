@@ -248,7 +248,7 @@ def generate_tags(path):
                     "command": "tag @s remove " + power
                 })
     
-    
+
     for classes in powers["class"]:
         out = tag
         out["entity_action_gained"]["command"] = "tag @s add " + classes
@@ -276,7 +276,7 @@ def generate_tags(path):
         })
         out["entity_action_lost"].append({
             "type": "origins:execute_command",
-                    "command": "scoreboard players set @s seccondary 0"
+                    "command": "scoreboard players set @s secondary 0"
         })
         out["entity_action_lost"].append({
             "type": "origins:execute_command",

@@ -124,7 +124,7 @@
         },
         {
             "name": "Increased health",
-            "description": "+ heart and a half",
+            "description": "+ a heart and a half",
             "id": "health_3",
             "predicate": 18,
             "key_activated": false,

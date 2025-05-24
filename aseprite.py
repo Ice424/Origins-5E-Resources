@@ -19,11 +19,11 @@ def low_power(image, savepath, name):
     os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_gold.ase\" -save-as " + savepath + "/{title}_3.png")
     os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_emerald.ase\" -save-as " + savepath + "/{title}_4.png")
     os.system(ASEPRITE_PATH + " -b  \"" + image + "\" --palette \"aseprite files/low/pallet_diamond.ase\" -save-as " + savepath + "/{title}_5.png")
-    png = os.path.join(savepath, name.replace("ase", "png"))
-    png = "Origins-5E-Resources/assets/chill/textures/item/.//low/" + name.replace(".ase", "_1.png")
-    mg = Image.open(png).convert('LA')
     
-    mg.save(png.replace(".png", "_greyscale.png"))
+    os.system(ASEPRITE_PATH + " -b  \"" + image + "\"  -save-as " + "testunused" + "/{title}_1.png")
+    png = os.path.join(savepath, name.replace(".ase", "_1_greyscale.png"))
+    img = Image.open("testunused\\" + name.replace(".ase", "_1.png")).convert('LA')
+    img.save(png)
 
 def convert_aseprite():
     for path, subdirs, files in os.walk("./aseprite files"):
