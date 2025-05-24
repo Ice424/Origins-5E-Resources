@@ -133,18 +133,23 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
         low_powers[power["name"]].append({"id":power["id"], "predicate": power["predicate"], "name": power["name"], "description": power["description"]})
         
     slot = 9
+    print(low_powers)
+    
     for power in low_powers:
-
+        exclusions = []
         if power != "xp_xp":
             for upgrade in low_powers[power]:
                 out.append(passive_power_template.format(predicate=upgrade["predicate"], id=upgrade["id"], slot = slot, type="low", description=upgrade["description"], name=upgrade["name"], color="gray"))
-                out.append(greyscale_powers_template.format(predicate=upgrade["predicate"], id=upgrade["id"], slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
+                exclusions.append(upgrade["id"])
+        
+        out.append(greyscale_powers_template.format(predicate=upgrade["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
+        print(greyscale_powers_template.format(predicate=upgrade["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
         slot += 1
     out.append("\n\n\n"+ "\n\n".join(display))
     os.makedirs(os.path.join(DATA, "low", "spellbook"), exist_ok=True)
     file = open(os.path.join(DATA, "low", "spellbook", "mask.mcfunction"), "w", encoding="UTF-8")
     
-    file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 2, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}},{Slot:8b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Class Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/open_spellbook"}}}}, {Slot:1b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"General Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/high/spellbook/open"}}}}] \n\n""")
+    file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 3, "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/root/open"}}}},{Slot:8b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Class Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/open_spellbook"}}}}, {Slot:1b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"General Powers\\",\\"color\\":\\"blue\\",\\"italic\\": false}", "minecraft:custom_data":{ui_item:{cmd:"function ui:menu/high/spellbook/open"}}}}] \n\n""")
     
         
     file.write("\n\n".join(out))
@@ -157,3 +162,4 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
     file.close()
     
 
+generate_spellbook()
