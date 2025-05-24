@@ -133,7 +133,7 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
         low_powers[power["name"]].append({"id":power["id"], "predicate": power["predicate"], "name": power["name"], "description": power["description"]})
         
     slot = 9
-    print(low_powers)
+    
     
     for power in low_powers:
         exclusions = []
@@ -143,7 +143,6 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
                 exclusions.append(upgrade["id"])
         
         out.append(greyscale_powers_template.format(predicate=upgrade["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
-        print(greyscale_powers_template.format(predicate=upgrade["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
         slot += 1
     out.append("\n\n\n"+ "\n\n".join(display))
     os.makedirs(os.path.join(DATA, "low", "spellbook"), exist_ok=True)
