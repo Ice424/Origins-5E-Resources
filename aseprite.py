@@ -45,5 +45,58 @@ def convert_aseprite():
                 elif "low" in path:
                     low_power(image, savepath, name)
 
+def Check_Power(power_path):
+    os.chdir(Path(__file__).parents[1])
+    DATA = os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/chill/powers")
+    if os.path.exists(os.path.join(DATA, power_path)) or os.path.exists(os.path.join(DATA, power_path + ".json")):
+        return True
+    else:
+        return False
+
+
+
+
+
+def Validate(Data):
+    original_dir = __file__.replace("aseprite.py", "")
+    os.chdir(original_dir)
+    import click
+    valid = True
+
+    for path, subdirs, files in os.walk("./aseprite files"):
+        for name in files:
+            if not "pallet" in name and not path.endswith("unused"):
+                if name.endswith(".aseprite"):
+                    if click.confirm(f"Would you like to convert {name} to ase?", default=True):
+                        os.rename(os.path.join(path, name), os.path.join(path, name.replace(".aseprite", ".ase")))
+                        name = name.replace(".ase", ".aseprite")
+
+                if not name.endswith(".ase"):
+                    print(f"{name} is not an ASE file")
+                    valid = False
+                if "menu" not in path:
+                    power_path = Path(os.path.join(path, Path(name).stem)).parts[1:]
+                    power_path = "/".join(power_path)
+                    if not Check_Power(power_path):
+                        valid = False
+                        print(f"{name} is not a valid power")
+                    os.chdir(original_dir)
+    if valid:
+        print("All textures are valid converting...")
+        convert_aseprite()
+    else:
+        print("Some textures are invalid, please check the logs for more information.")
+
+       
+
+
+
+                    
+                    
+
+                        
                 
-convert_aseprite()
+                        
+
+
+
