@@ -11,6 +11,7 @@ import generate_shop_masks
 import generate
 import generate_power_buy
 import image
+import aseprite
 
 
 originaldir = __file__.replace("main.py", "")
@@ -64,6 +65,6 @@ generate_spellbook.generate_spellbook()
 
 #image handling
 os.chdir(originaldir)
-os.system("python aseprite.py")
+aseprite.Validate(DATA)
 generate_unimplemented.generate_unimplemented(originaldir)
 image.image_overlays()
