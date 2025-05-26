@@ -36,8 +36,8 @@ def shop_active():
 
 def shop_mask():
     out = []
-    out.append('data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 7, "minecraft:custom_data":{ui_item: {cmd:"function ui:menu/main/shop/open"}}}}, {Slot:2b,id:"minecraft:acacia_boat","components":{"custom_name": "{\\"text\\":\\"\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 2, "minecraft:custom_data":{ui_item:{empty:1b}}}}]')
-    out.append('data modify storage ui mask insert 0 value {Slot: 23b, id:"minecraft:acacia_boat", "components": {"custom_model_data": 4, custom_name:"{\\"color\\":\\"red\\",\\"italic\\":false,\\"text\\":\\"No\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/shop/open"}}}}')
+    out.append('data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_name": "{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 7, "minecraft:custom_data":{ui_item: {cmd:"function ui:menu/main/shop/open_after_buy"}}}}, {Slot:2b,id:"minecraft:acacia_boat","components":{"custom_name": "{\\"text\\":\\"\\", \\"color\\": \\"red\\", \\"italic\\": false}","minecraft:custom_model_data": 2, "minecraft:custom_data":{ui_item:{empty:1b}}}}]')
+    out.append('data modify storage ui mask insert 0 value {Slot: 23b, id:"minecraft:acacia_boat", "components": {"custom_model_data": 4, custom_name:"{\\"color\\":\\"red\\",\\"italic\\":false,\\"text\\":\\"No\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/shop/open_after_buy"}}}}')
     out.append("function ui:menu/main/shop_confirm/active")
 
     os.chdir(Path(__file__).parents[1])

@@ -10,6 +10,7 @@
         {"predicate": {"custom_model_data": 4}, "model": "chill:menu/fighter_spellbook"},
         {"predicate": {"custom_model_data": 5}, "model": "chill:menu/popup"},
         {"predicate": {"custom_model_data": 6}, "model": "chill:menu/shop"},
-        {"predicate": {"custom_model_data": 7}, "model": "chill:menu/shop_confirm_underlay"}
+        {"predicate": {"custom_model_data": 7}, "model": "chill:menu/shop_confirm_underlay"},
+        {"predicate": {"custom_model_data": 8}, "model": "chill:menu/high_spellbook_equip"}
     ]
 }

@@ -36,7 +36,7 @@ def convert_aseprite():
                     savepath = os.path.join("testunused")
                 else:
                     savepath = os.path.join("Origins-5E-Resources/assets/chill/textures/item/", image.replace(Path(image).parts[0], "").replace(name, ""))
-                if not "low" in path:
+                if not "low" in path or name == "xp_xp.ase":
                     os.system(ASEPRITE_PATH + " -b \"" + image + "\" -save-as " + savepath + "/{title}.png")
                     png = os.path.join(savepath, name.replace("ase", "png"))
                     if not "menu" in path:
@@ -75,17 +75,18 @@ def Validate(Data):
                     print(f"{name} is not an ASE file")
                     valid = False
                 if "menu" not in path:
-                    power_path = Path(os.path.join(path, Path(name).stem)).parts[1:]
-                    power_path = "/".join(power_path)
-                    if not Check_Power(power_path):
-                        valid = False
-                        print(f"{name} is not a valid power")
-                    os.chdir(original_dir)
+                    if name != "xp_xp.ase":
+                        power_path = Path(os.path.join(path, Path(name).stem)).parts[1:]
+                        power_path = "/".join(power_path)
+                        if not Check_Power(power_path):
+                            valid = False
+                            print(f"{name} is not a valid power")
+                        os.chdir(original_dir)
     if valid:
         print("All textures are valid converting...")
         convert_aseprite()
     else:
-        print("Some textures are invalid, please check the logs for more information.")
+        print("Some textures are invalid, NOT CONVERTING, please check the logs for more information.")
 
        
 

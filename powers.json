@@ -283,8 +283,8 @@
             "completed": true
         },
         {
-            "name": "xp_xp",
-            "description": "none",
+            "name": "XP",
+            "description": "Gain 20 levels",
             "id": "xp_xp",
             "predicate": 38,
             "key_activated": false,

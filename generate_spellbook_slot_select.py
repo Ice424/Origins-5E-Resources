@@ -11,6 +11,15 @@ def generate_spellbook_slot_select():
     file = open("resourcepacks/powers.json", "r")
     powers = json.loads(file.read())
     file.close()
+    ClassMenuPredicates = {
+        "cleric": 4,
+        "druid": 4,
+        "fighter": 4,
+        "rogue": 4,
+        "tank": 4,
+        "wizard": 4
+    }
+
 
     ClassColours = {
         "cleric": "#fbf236",
@@ -26,7 +35,6 @@ def generate_spellbook_slot_select():
     # generate spellbooks
     out = []
     for classes in powers["class"]:
-
         for types in powers["class"][classes]:
             for power in powers["class"][classes][types]:
                 color = ClassColours[classes]
@@ -35,7 +43,7 @@ def generate_spellbook_slot_select():
                     out.append(slot_select_template.format(slot=23, key="secondary", predicate=power["predicate"],  color=color, name = "Secondary"))
         os.makedirs(os.path.join(DATA, f"{classes}/slot_select"), exist_ok=True)
         file = open(os.path.join(DATA, f"{classes}/slot_select/mask.mcfunction"), "w", encoding="UTF-8")
-        file.write(f"""data modify storage ui mask set value [{{Slot:0b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 4, "minecraft:custom_data":{{ui_item: {{cmd:"function ui:menu/{classes}/spellbook/open"}}}}}}}}, {{Slot:2b,id:"minecraft:acacia_boat","components":{{"custom_name": "{{\\"text\\":\\"\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 1, "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}]""")
+        file.write(f"""data modify storage ui mask set value [{{Slot:0b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": {ClassMenuPredicates[classes]}, "minecraft:custom_data":{{ui_item: {{cmd:"function ui:menu/{classes}/spellbook/open"}}}}}}}}, {{Slot:2b,id:"minecraft:acacia_boat","components":{{"custom_name": "{{\\"text\\":\\"\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 1, "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}]""")
         file.write("\n\n")
         file.write("\n\n".join(out))
         file.close()
@@ -59,7 +67,7 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
                     out.append(slot_select_template.format(slot=23, name = "Secondary", key="secondary", predicate=power["predicate"],      color="dark_gray" if types == "low" else"dark_purple"))
         os.makedirs(os.path.join(DATA, f"{types}/slot_select"), exist_ok=True)
         file = open(os.path.join(DATA, f"{types}/slot_select/mask.mcfunction"), "w", encoding="UTF-8")
-        file.write(f"""data modify storage ui mask set value [{{Slot:0b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 4, "minecraft:custom_data":{{ui_item: {{cmd:"function ui:menu/{types}/spellbook/open"}}}}}}}}, {{Slot:2b,id:"minecraft:acacia_boat","components":{{"custom_name": "{{\\"text\\":\\"\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 1, "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}]""")
+        file.write(f"""data modify storage ui mask set value [{{Slot:0b,id:"minecraft:barrier","components":{{"custom_name": "{{\\"text\\":\\"Back\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 8, "minecraft:custom_data":{{ui_item: {{cmd:"function ui:menu/{types}/spellbook/open"}}}}}}}}, {{Slot:2b,id:"minecraft:acacia_boat","components":{{"custom_name": "{{\\"text\\":\\"\\", \\"color\\": \\"red\\", \\"italic\\": false}}","minecraft:custom_model_data": 1, "minecraft:custom_data":{{ui_item:{{empty:1b}}}}}}}}]""")
         file.write("\n\n")
         file.write("\n\n".join(out))
         file.close()
