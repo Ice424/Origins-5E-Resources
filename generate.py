@@ -341,7 +341,7 @@ def generate_predicates():
         item_dict["model"] = item_dict["model"] + "_greyscale"
 
     to_write["textures"]["layer0"] = "minecraft:item/iron_nugget"
-
+    to_write["overrides"] = to_write["overrides"][3:]
     with open("./resourcepacks/Origins-5E-Resources/assets/minecraft/models/item/iron_nugget.json", "w", encoding="UTF-8") as file:
         json.dump(to_write, file, indent=4)
 
