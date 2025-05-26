@@ -1,0 +1,6 @@
+{
+  "parent": "chill:menu/overlay",
+  "textures": {
+    "1": "chill:item/menu/druid_spellbook"
+  }
+}

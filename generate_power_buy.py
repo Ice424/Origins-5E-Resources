@@ -67,7 +67,10 @@ def shop_mask():
                 if power["key_activated"] is True:
                     out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path="blank"))
                 else:
-                    out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path=f"low/{power["id"][:-2]}/{power["id"][-1]}"))
+                    if power["id"] == "xp_xp":
+                        out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path=f"low/xp/xp"))
+                    else:
+                        out.append(yes_button_template.format(predicate=power["predicate"], cost=5, id=power["id"], path=f"low/{power["id"][:-2]}/{power["id"][-1]}"))
                     
             elif types == "high":
                 out.append(power_display_template.format(predicate=power["predicate"], name=power["name"], description=power["description"], slot=13, color="dark_purple", cost="10"))
