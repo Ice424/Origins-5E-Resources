@@ -10,12 +10,13 @@ def generate_shop_slots():
     powers = json.loads(file.read())
     file.close()
 
-    template = "execute if entity @p[tag=!{id}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
-    low_template = "execute if entity @p[{line}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
+    template = "execute at @p if entity @p[tag=!{id}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
+    low_template = "execute at @p if entity @p[{line}] run summon armor_stand ~ {predicate} ~ {{Tags: [randomizer], NoGravity: 1b}}"
     out = []
+    out.append("$scoreboard players set @p $(slot) 38")
     for power in powers["high"]:
         out.append(template.format(predicate=power["predicate"], id=power["id"]))
-    out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
+    out.append("""$execute if entity @e[tag=randomizer] store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
     file = open(os.path.join(DATA,"main", "high_slots.mcfunction"), "w", encoding="UTF-8")
     file.write("\n".join(out))
@@ -23,35 +24,37 @@ kill @e[tag= randomizer]""")
 
 
     out = []
+    out.append("$scoreboard players set @p $(slot) 38")
     low_powers = {}
     for power in powers["low"]:
         low_powers[power["name"]] = []
     for power in powers["low"]:
         low_powers[power["name"]].append({"id":power["id"], "predicate": power["predicate"]})
-    #print(low_powers)
+    
 
     
     for group, items in low_powers.items():
-        ids = [item['id'] for item in items]
-        predicates = [item['predicate'] for item in items]
+        if items[0]["id"] != "xp_xp":
+            ids = [item['id'] for item in items]
+            predicates = [item['predicate'] for item in items]
 
-        # Line 1: All negated, predicate of the first item
-        all_negated = [f"tag=!{id_}" for id_ in ids]
-        #print(", ".join(all_negated) + f" {predicates[0]}")
-        out.append(low_template.format(line=", ".join(all_negated), predicate=predicates[0]))
-        # Lines 2 to N-1: One positive tag, others negated
-        for i in range(len(ids) - 1):
-            tags = []
-            for j, id_ in enumerate(ids):
-                if j == i:
-                    tags.append(f"tag={id_}")
-                else:
-                    tags.append(f"tag=!{id_}")
-            #print(", ".join(tags) + f" {predicates[i + 1]}")
-            out.append(low_template.format(line=", ".join(tags), predicate=predicates[i+1]))
+            # Line 1: All negated, predicate of the first item
+            all_negated = [f"tag=!{id_}" for id_ in ids]
+            #print(", ".join(all_negated) + f" {predicates[0]}")
+            out.append(low_template.format(line=", ".join(all_negated), predicate=predicates[0]))
+            # Lines 2 to N-1: One positive tag, others negated
+            for i in range(len(ids) - 1):
+                tags = []
+                for j, id_ in enumerate(ids):   
+                    if j == i:
+                        tags.append(f"tag={id_}")
+                    else:
+                        tags.append(f"tag=!{id_}")
+                #print(", ".join(tags) + f" {predicates[i + 1]}")
+                out.append(low_template.format(line=", ".join(tags), predicate=predicates[i+1]))
         #print()  # blank line between groups
             
-    out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
+    out.append("""$execute if entity @e[tag=randomizer] store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
     file = open(os.path.join(DATA,"main", "low_slots.mcfunction"), "w", encoding="UTF-8")
     file.write("\n".join(out))
@@ -63,10 +66,11 @@ kill @e[tag= randomizer]""")
         for types in powers["class"][classes]:
             if types != "passive":
                 out = []
+                out.append("$scoreboard players set @p $(slot) 38")
                 for power in powers["class"][classes][types]:
                     out.append(template.format(predicate=power["predicate"], id=power["id"]))
 
-                out.append("""$execute store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
+                out.append("""$execute if entity @e[tag=randomizer] store result score @p $(slot) run data get entity @e[tag = randomizer, sort = random, limit = 1] Pos[1]
 kill @e[tag= randomizer]""")
                 os.makedirs(os.path.join(DATA, f"{classes}/"), exist_ok=True)
                 file = open(os.path.join(DATA, f"{classes}/{types}_slots.mcfunction"), "w")

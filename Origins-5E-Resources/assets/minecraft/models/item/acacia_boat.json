@@ -7,6 +7,8 @@
     {"predicate": {"custom_model_data": 1}, "model": "chill:menu/slot_select"},
     {"predicate": {"custom_model_data": 2}, "model": "chill:menu/shop_confrim"},
     {"predicate": {"custom_model_data": 3}, "model": "chill:menu/yes"},
-    {"predicate": {"custom_model_data": 4}, "model": "chill:menu/no"}
+    {"predicate": {"custom_model_data": 4}, "model": "chill:menu/no"},
+    {"predicate": {"custom_model_data": 39}, "model": "chill:grow_activated"},
+    {"predicate": {"custom_model_data": 44}, "model": "chill:shrink_activated"}
   ]
 }

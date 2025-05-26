@@ -26,7 +26,13 @@ def generate_shop_masks():
     def GetPowers(types):
         for power in powers[types]:
             if types == "low":
-                low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="gray", cost="5"))
+                if power["id"] == "xp_xp":
+                    low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="gray", cost="5"))
+                    high.append(power_display_template.format(key="slot_2", predicate=power["predicate"], name=power["name"], description=power["description"], slot=12, color="gray", cost="5"))
+                    class_high.append(power_display_template.format(key="slot_3", predicate=power["predicate"], name=power["name"], description=power["description"], slot=14, color="gray", cost="5"))
+                    special.append(power_display_template.format(key="slot_4", predicate=power["predicate"], name=power["name"], description=power["description"], slot=16, color="gray", cost="5"))
+                else:
+                    low.append(power_display_template.format(key="slot_1", predicate=power["predicate"], name=power["name"], description=power["description"], slot=10, color="gray", cost="5"))
             elif types == "high":
                 high.append(power_display_template.format(key="slot_2", predicate=power["predicate"], name=power["name"], description=power["description"], slot=12, color="dark_purple", cost="10"))
 

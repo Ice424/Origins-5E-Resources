@@ -102,11 +102,21 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
     slot = 9
     for power in powers["high"]:
         if power["predicate"] <= 1000:
-            if power["key_activated"] == True:
-                out.append(equipped_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high",    description=power["description"], name=power["name"], color="dark_purple"))
+            if power["id"] != "grow" and power["id"] != "shrink":
+                if power["key_activated"] == True:
+                    out.append(equipped_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high",    description=power["description"], name=power["name"], color="dark_purple"))
+                else:
+                    out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high", description=power   ["description"], name=power["name"], color="dark_purple"))
+                
             else:
-                out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high", description=power   ["description"], name=power["name"], color="dark_purple"))
+                if power["id"] == "grow": 
+                    out.append(f"""execute if entity @p[tag={power["id"]}] if score @p size matches 1 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:acacia_boat", "components": {{"enchantment_glint_override":true, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
+                    out.append(f"""execute if entity @p[tag={power["id"]}] unless score @p size matches 1 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"enchantment_glint_override":false, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
+                else:
+                    out.append(f"""execute if entity @p[tag={power["id"]}] if score @p size matches 2 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:acacia_boat", "components": {{"enchantment_glint_override":true, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
+                    out.append(f"""execute if entity @p[tag={power["id"]}] unless score @p size matches 2 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"enchantment_glint_override":false, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
             out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high", description=power    ["description"], name=power["name"]))
+            
             slot += 1
     out.append("\n\n\n"+ "\n\n".join(display))
     os.makedirs(os.path.join(DATA, "high", "spellbook"), exist_ok=True)
@@ -142,7 +152,7 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
                 out.append(passive_power_template.format(predicate=upgrade["predicate"], id=upgrade["id"], slot = slot, type="low", description=upgrade["description"], name=upgrade["name"], color="gray"))
                 exclusions.append(upgrade["id"])
         
-        out.append(greyscale_powers_template.format(predicate=upgrade["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
+            out.append(greyscale_powers_template.format(predicate=low_powers[power][0]["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=low_powers[power][0]["description"], name=low_powers[power][0]["name"]))
         slot += 1
     out.append("\n\n\n"+ "\n\n".join(display))
     os.makedirs(os.path.join(DATA, "low", "spellbook"), exist_ok=True)
