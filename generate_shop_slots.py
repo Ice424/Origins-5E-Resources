@@ -42,7 +42,7 @@ kill @e[tag= randomizer]""")
         # Lines 2 to N-1: One positive tag, others negated
         for i in range(len(ids) - 1):
             tags = []
-            for j, id_ in enumerate(ids):
+            for j, id_ in enumerate(ids):   
                 if j == i:
                     tags.append(f"tag={id_}")
                 else:

@@ -142,7 +142,7 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
                 out.append(passive_power_template.format(predicate=upgrade["predicate"], id=upgrade["id"], slot = slot, type="low", description=upgrade["description"], name=upgrade["name"], color="gray"))
                 exclusions.append(upgrade["id"])
         
-        out.append(greyscale_powers_template.format(predicate=upgrade["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=upgrade["description"], name=upgrade["name"]))
+            out.append(greyscale_powers_template.format(predicate=low_powers[power][0]["predicate"], id=", tag=!".join(exclusions), slot = slot, type="low", description=low_powers[power][0]["description"], name=low_powers[power][0]["name"]))
         slot += 1
     out.append("\n\n\n"+ "\n\n".join(display))
     os.makedirs(os.path.join(DATA, "low", "spellbook"), exist_ok=True)
