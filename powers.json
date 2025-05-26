@@ -505,7 +505,7 @@
                 {
                     "name": "Damage to mobs",
                     "description": "you deal double damage to hostile mobs",
-                    "id": "ddamgemobs",
+                    "id": "ddamagemobs",
                     "predicate": 70,
                     "key_activated": false,
                     "completed": true
