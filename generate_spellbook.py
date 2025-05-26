@@ -25,11 +25,11 @@ def generate_spellbook():
         "high": 2,
         "low": 3,
         "fighter": 4,
-        "cleric": 4,
-        "druid": 4,
-        "rogue": 4,
-        "tank": 4,
-        "wizard": 4
+        "cleric": 8,
+        "druid": 9,
+        "rogue": 10,
+        "tank": 11,
+        "wizard": 12
         
     }
     

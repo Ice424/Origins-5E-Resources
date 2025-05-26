@@ -12,12 +12,12 @@ def generate_spellbook_slot_select():
     powers = json.loads(file.read())
     file.close()
     ClassMenuPredicates = {
-        "cleric": 4,
-        "druid": 4,
+        "cleric": 8,
+        "druid": 9,
         "fighter": 4,
-        "rogue": 4,
-        "tank": 4,
-        "wizard": 4
+        "rogue": 10,
+        "tank": 11,
+        "wizard": 12
     }
 
 

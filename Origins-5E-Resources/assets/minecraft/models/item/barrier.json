@@ -11,6 +11,10 @@
         {"predicate": {"custom_model_data": 5}, "model": "chill:menu/popup"},
         {"predicate": {"custom_model_data": 6}, "model": "chill:menu/shop"},
         {"predicate": {"custom_model_data": 7}, "model": "chill:menu/shop_confirm_underlay"},
-        {"predicate": {"custom_model_data": 8}, "model": "chill:menu/high_spellbook_equip"}
+        {"predicate": {"custom_model_data": 8}, "model": "chill:menu/cleric_spellbook"},
+        {"predicate": {"custom_model_data": 9}, "model": "chill:menu/druid_spelllbook"},
+        {"predicate": {"custom_model_data": 10}, "model": "chill:menu/rogue_spellbook"},
+        {"predicate": {"custom_model_data": 11}, "model": "chill:menu/tank_spellbook"},
+        {"predicate": {"custom_model_data": 12}, "model": "chill:menu/wizard_spellbook"}
     ]
 }
