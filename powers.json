@@ -342,7 +342,7 @@
                     "id": "hunger",
                     "predicate": 51,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "lifesteal",
