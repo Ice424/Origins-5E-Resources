@@ -338,7 +338,7 @@
                 },
                 {
                     "name": "Rejuvenation spell",
-                    "description": "Crouching for 10 seconds resorts hunger and hearts and gives extra hearts",
+                    "description": "Crouching for 10 seconds resorts hunger and hearts",
                     "id": "hunger",
                     "predicate": 51,
                     "key_activated": false,
@@ -357,8 +357,8 @@
                     "description": "Use your ability to teleport to a mob you're looking at",
                     "id": "teleport",
                     "predicate": 53,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 }
             ],
             "passive": [
