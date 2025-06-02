@@ -1,0 +1,9 @@
+{
+  "validators": {
+    "UnusedFileValidator": {
+      "enabled": false,
+      "logLevel": "WARN",
+      "ignore": []
+    }
+  }
+}

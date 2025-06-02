@@ -80,9 +80,7 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
         name = Id
         completed = False
         key_activated = False
-        if directory.endswith(".json"):
-            completed = True
-            num_completed += 1
+        
 
         with open(directory, 'r') as file:
             try:
@@ -105,6 +103,12 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
 
                 else:
                     key_activated = False
+                if directory.endswith(".json"):
+                    completed = True
+                    num_completed += 1
+                else:
+                    with open("./saves/New World/datapacks/Origins-5E-Data/TODO.md", "a") as f:
+                        f.write(f"{group} {Id}: {name}\n{description}\n\n")
 
             except json.JSONDecodeError:
                 key_activated = False
@@ -154,6 +158,8 @@ def generate_json():
                 "passive": []
             },
         }}
+    with open("./saves/New World/datapacks/Origins-5E-Data/TODO.md", "w") as f:
+                f.write("##TO DO\n")
     for path, subdirs, files in os.walk(DATA):
         for name in files:
             if os.name == "nt":

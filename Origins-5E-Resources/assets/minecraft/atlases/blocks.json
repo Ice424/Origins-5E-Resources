@@ -3,10 +3,7 @@
         {
             "type": "single",
             "resource": "entity/chest/normal"
-        },
-        {
-            "type": "single",
-            "resource": "chill:bars"
         }
+        
     ]
 }

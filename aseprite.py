@@ -36,14 +36,18 @@ def convert_aseprite():
                     savepath = os.path.join("testunused")
                 else:
                     savepath = os.path.join("Origins-5E-Resources/assets/chill/textures/item/", image.replace(Path(image).parts[0], "").replace(name, ""))
-                if not "low" in path or name == "xp_xp.ase":
+                
+                if "low" in path and name != "xp_xp.ase":
+                    low_power(image, savepath, name)
+                elif "bars" in path:
+                    os.system(ASEPRITE_PATH + " --layer \"Layer 1\" -b \"" + image + "\" -save-as " + savepath + "/{title}.png")
+                else:
                     os.system(ASEPRITE_PATH + " -b \"" + image + "\" -save-as " + savepath + "/{title}.png")
                     png = os.path.join(savepath, name.replace("ase", "png"))
                     if not "menu" in path:
                         mg = Image.open(png).convert('LA')
                         mg.save(png.replace(".png", "_greyscale.png"))
-                elif "low" in path:
-                    low_power(image, savepath, name)
+                    
 
 def Check_Power(power_path):
     os.chdir(Path(__file__).parents[1])
@@ -65,7 +69,7 @@ def Validate(Data):
 
     for path, subdirs, files in os.walk("./aseprite files"):
         for name in files:
-            if not "pallet" in name and not path.endswith("unused"):
+            if not "pallet" in name and not path.endswith("unused") and not path.endswith("bars"):
                 if name.endswith(".aseprite"):
                     if click.confirm(f"Would you like to convert {name} to ase?", default=True):
                         os.rename(os.path.join(path, name), os.path.join(path, name.replace(".aseprite", ".ase")))

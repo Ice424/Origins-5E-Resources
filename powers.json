@@ -426,19 +426,19 @@
             "high": [
                 {
                     "name": "Ring of Arrows",
-                    "description": "Use ability to shoot 9 arrows 360 degrees",
+                    "description": "Use ability to attempt to shoot 8 arrows 360 degrees (arrows have scuffed physics)",
                     "id": "arrows",
                     "predicate": 61,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
-                    "name": "Decay Spell",
-                    "description": "Give people hunger and poison within 7 blocks far",
+                    "name": "Decay",
+                    "description": "Give people hunger and poison within 8 blocks far",
                     "id": "poison",
                     "predicate": 62,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Wild Shape: Fish",
@@ -495,8 +495,8 @@
         "fighter": {
             "high": [
                 {
-                    "name": "arrows",
-                    "description": "none",
+                    "name": "Arrow",
+                    "description": "Shoots an arrow with a random harmful effect",
                     "id": "arrows",
                     "predicate": 69,
                     "key_activated": true,
@@ -559,7 +559,7 @@
                     "completed": true
                 },
                 {
-                    "name": "Swiftness",
+                    "name": "Speed Boost",
                     "description": "you can gain speed 3 for a short period",
                     "id": "speedboost",
                     "predicate": 77,
