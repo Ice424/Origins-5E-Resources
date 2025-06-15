@@ -320,7 +320,7 @@
                 },
                 {
                     "name": "Summon the dead",
-                    "description": "summon 5 zombies to assist you in battle they are friendly towards druids",
+                    "description": "summon 5 zombies to assist you in battle they are friendly towards clerics",
                     "id": "summon",
                     "predicate": 49,
                     "key_activated": true,
@@ -384,11 +384,11 @@
             "special": [
                 {
                     "name": "Nature's Offence",
-                    "description": "Passive mobs will attack hostile mob if you are nearby",
+                    "description": "Non-tameable mobs can be tamed and act as wolves using red dye on them",
                     "id": "animal_control",
                     "predicate": 56,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Earth's gift",
@@ -396,7 +396,7 @@
                     "id": "bone_meal",
                     "predicate": 57,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Freeze Life",
@@ -472,15 +472,15 @@
                     "id": "health",
                     "predicate": 66,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Vegetarian",
-                    "description": "Can't eat meant",
+                    "description": "Can't eat meat",
                     "id": "vegetarian",
                     "predicate": 67,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ]
         },
