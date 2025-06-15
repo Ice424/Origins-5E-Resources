@@ -403,8 +403,8 @@
                     "description": "Stop all mobs movement around you",
                     "id": "freeze",
                     "predicate": 58,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Fungi's Onslaught",
