@@ -408,11 +408,11 @@
                 },
                 {
                     "name": "Fungi's Onslaught",
-                    "description": "Spread sculk to deal damage",
-                    "id": "skulk",
+                    "description": "Hold sneak and ability to spread sculk to deal damage",
+                    "id": "sculk",
                     "predicate": 59,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Environmental Affinity",
