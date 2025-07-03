@@ -416,11 +416,11 @@
                 },
                 {
                     "name": "Environmental Affinity",
-                    "description": "You are faster when in water or on a grass block",
+                    "description": "You are faster when in water or on dirt",
                     "id": "speed",
                     "predicate": 60,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ],
             "high": [
