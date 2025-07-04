@@ -5,7 +5,7 @@ from sys import platform
 
 
 if platform == "linux" or platform == "linux2":
-    ASEPRITE_PATH = "/home/elliotd/.local/share/Steam/steamapps/common/Aseprite/aseprite"
+    ASEPRITE_PATH = "/usr/bin/aseprite"
 elif platform == "win32":
     if os.getlogin() == "bigfe":
         ASEPRITE_PATH= "C:/Users/bigfe/Documents/bin/aseprite.exe"
@@ -24,7 +24,7 @@ def low_power(image, savepath, name):
     
     os.system(ASEPRITE_PATH + " -b  \"" + image + "\"  -save-as " + "testunused" + "/{title}_1.png")
     png = os.path.join(savepath, name.replace(".ase", "_1_greyscale.png"))
-    img = Image.open("testunused\\" + name.replace(".ase", "_1.png")).convert('LA')
+    img = Image.open("testunused/" + name.replace(".ase", "_1.png")).convert('LA')
     img.save(png)
 
 def convert_aseprite():

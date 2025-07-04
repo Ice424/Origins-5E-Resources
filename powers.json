@@ -640,11 +640,11 @@
             "high": [
                 {
                     "name": "Smoke Bomb",
-                    "description": "Ability to give blindness to anyone in 5 blocks for 4 seconds",
+                    "description": "Ability to give blindness to anyone in 8 blocks for 5 seconds",
                     "id": "blindness",
                     "predicate": 86,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Slow Fall",
