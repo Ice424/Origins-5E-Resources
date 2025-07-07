@@ -10,7 +10,7 @@ def shop_active():
     powers = json.loads(file.read())
     file.close()
 
-    template = "execute if score @p predicate matches {predicate} run scoreboard players set @p activated 1"
+    template = "execute as @a[scores={{ui.id=1..}}] if score @s ui.id = @s ui.id run execute if score @s predicate matches {predicate} run scoreboard players set @s activated 1"
     out = []
 
     def GetPowers(types):
@@ -30,7 +30,7 @@ def shop_active():
                     if power["key_activated"] is True:
                         out.append(template.format(predicate = power["predicate"]))
     file = open(os.path.join(DATA, "main", "shop_confirm", "active.mcfunction"), "w", encoding="UTF-8")
-    file.write("scoreboard players set @p activated 0\n\n")
+    file.write("execute as @a[scores={ui.id=1..}] if score @s ui.id = @s ui.id run scoreboard players set @s activated 0\n\n")
     file.write("\n".join(out))
     file.close()
 
@@ -47,9 +47,9 @@ def shop_mask():
     powers = json.loads(file.read())
     file.close()
 
-    power_display_template = 'execute if score @p predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id: "minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}","{{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"{cost} Θ\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'
+    power_display_template = 'execute as @a[scores={{ui.id=1..}}] if score @s ui.id = @s ui.id run execute if score @s predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id: "minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}","{{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"{cost} Θ\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'
     
-    yes_button_template = 'execute if score @p predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: 21b, id:"minecraft:acacia_boat", "components": {{"custom_model_data": 3, custom_name:"{{\\"color\\":\\"green\\",\\"italic\\":false,\\"text\\":\\"Yes\\"}}", "minecraft:custom_data": {{ui_item: {{cmd: "function ui:menu/main/shop_confirm/buy_power {{cost:{cost},path:\\"{path}\\",id:{id}}}"}}}}}}}}'
+    yes_button_template = 'execute as @a[scores={{ui.id=1..}}] if score @s ui.id = @s ui.id run execute if score @s predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: 21b, id:"minecraft:acacia_boat", "components": {{"custom_model_data": 3, custom_name:"{{\\"color\\":\\"green\\",\\"italic\\":false,\\"text\\":\\"Yes\\"}}", "minecraft:custom_data": {{ui_item: {{cmd: "execute as @a[scores={{ui.id=1..}}] if score @s ui.id = @s ui.id run function ui:menu/main/shop_confirm/buy_power {{cost:{cost},path:\\"{path}\\",id:{id}}}"}}}}}}}}'
     
     ClassColours = {
         "cleric": "#fbf236",

@@ -21,7 +21,7 @@ def generate_shop_masks():
         "wizard": "#5b6ee1"
     }
 
-    power_display_template = 'execute if score @p {key} matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id: "minecraft:stick", "components": {{custom_model_data: {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}","{{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"{cost} Θ\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{cmd: "function ui:menu/main/shop_confirm/open {{predicate:{predicate}}}"}}}}}}}}'
+    power_display_template = 'execute as @a[scores={{ui.id=1..}}] if score @s ui.id = @s ui.id run execute if score @s {key} matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id: "minecraft:stick", "components": {{custom_model_data: {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}","{{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"{cost} Θ\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{cmd: "function ui:menu/main/shop_confirm/open {{predicate:{predicate}}}"}}}}}}}}'
     
     def GetPowers(types):
         for power in powers[types]:
@@ -60,7 +60,7 @@ def generate_shop_masks():
     file = open(os.path.join(DATA, "main", "shop", "mask.mcfunction"), "w", encoding='utf-8')
     file.write("""data modify storage ui mask set value [{Slot:0b,id:"minecraft:barrier","components":{"custom_model_data": 6, "custom_name": "{\\"text\\": \\"Back\\", \\"color\\": \\"red\\",\\"italic\\": false}","minecraft:custom_data":{ui_item:{cmd:"function ui:menu/main/shop/close_shop"}}}}]""")
     file.write("\n\n")
-    file.write("""data modify storage ui mask insert 0 value {Slot: 22b, id: "minecraft:barrier", "components": {"lore":["{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"Re-roll slots 10Θ\\"}"],custom_name:"{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"Refresh\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/reset_slots"}}}}""")
+    file.write("""data modify storage ui mask insert 0 value {Slot: 22b, id: "minecraft:barrier", "components": {"lore":["{\\"color\\":\\"dark_aqua\\",\\"font\\":\\"chill:essence\\",\\"italic\\":false,\\"text\\":\\"Re-roll slots 10Θ\\"}"],custom_name:"{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"Refresh\\"}", "minecraft:custom_data": {ui_item: {cmd: "execute as @a[scores={ui.id=1..}] if score @s ui.id = @s ui.id run function ui:menu/main/reset_slots"}}}}""")
     file.write("\n\n")
     #file.write("""data modify storage ui mask insert 0 value {Slot: 23b, id: "minecraft:stick", "components": {"custom_model_data": 5, custom_name:"{\\"color\\":\\"dark_gray\\",\\"italic\\":false,\\"text\\":\\"Test\\"}", "minecraft:custom_data": {ui_item: {cmd: "function ui:menu/main/shop_confirm/open {predicate: 50}"}}}}""")
     file.write("\n\n")
