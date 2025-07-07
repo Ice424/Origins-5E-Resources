@@ -643,7 +643,7 @@
                     "description": "Ability to give blindness to anyone in 8 blocks for 5 seconds",
                     "id": "blindness",
                     "predicate": 86,
-                    "key_activated": false,
+                    "key_activated": true,
                     "completed": true
                 },
                 {
@@ -670,15 +670,15 @@
                     "id": "agro",
                     "predicate": 89,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Sneaky",
-                    "description": "Silent footsteps",
+                    "description": "Your footsteps don't trigger skulk sensors",
                     "id": "footsteps",
                     "predicate": 90,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Brittle",
@@ -694,7 +694,7 @@
                     "id": "nametag",
                     "predicate": 92,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ]
         },

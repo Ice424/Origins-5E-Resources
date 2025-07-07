@@ -25,7 +25,7 @@ def generate_spellbook_slot_select():
         "cleric": "#fbf236",
         "druid": "#99e550",
         "fighter": "#ac3232",
-        "rogue": "#121212",
+        "rogue": "#403352",
         "tank": "#2c2d51",
         "wizard": "#5b6ee1"
     }
