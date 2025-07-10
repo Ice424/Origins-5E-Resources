@@ -33,13 +33,13 @@ def generate_spellbook():
         
     }
     
-    passive_power_template = 'execute if entity @p[tag={id}] run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'
+    passive_power_template = """function ui:minecart/if_player_selector {{selector:"tag={id}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:[\\'{{"color":"gray","italic":false,"text":"{description}"}}\\'],custom_name:\\'{{"color":"{color}","italic":false,"text":"{name}"}}\\', "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'}}"""
 
-    equipped_power_template = """execute if entity @p[tag={id}] run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/{type}/slot_select/open {{predicate:{predicate}}}"}}}}}}}}"""
+    equipped_power_template = """function ui:minecart/if_player_selector {{selector:"tag={id}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:[\\'{{"color":"gray","italic":false,"text":"{description}"}}\\'],custom_name:\\'{{"color":"{color}","italic":false,"text":"{name}"}}\\', "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/{type}/slot_select/open {{predicate:{predicate}}}"}}}}}}}}'}}"""
 
-    greyscale_powers_template = 'execute if entity @p[tag=!{id}] run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:iron_nugget", "components": {{"custom_model_data": {predicate}, custom_name:"{{\\"color\\":\\"dark_gray\\",\\"italic\\":false, \\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'
+    greyscale_powers_template = """function ui:minecart/if_player_selector {{selector:"tag=!{id}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:iron_nugget", "components": {{"custom_model_data": {predicate}, custom_name:\\'{{"color":"dark_gray","italic":false, "text":"{name}"}}\\', "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}'}}"""
 
-    equipped_display_template = 'execute if score @p {key} matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{description}\\"}}"],custom_name:"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}", "minecraft:custom_data": {{ui_item:{{empty: 1b}}}}}}}}'
+    equipped_display_template = """function ui:minecart/if_player {{objective:"{key}", score:"{predicate}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:[\\'{{"color":"gray","italic":false,"text":"{description}"}}\\'],custom_name:\\'{{"color":"{color}","italic":false,"text":"{name}"}}\\', "minecraft:custom_data": {{ui_item:{{empty: 1b}}}}}}}}'}}"""
 
     # generate spellbooks
     display = []
@@ -69,15 +69,15 @@ def generate_spellbook():
                 color = ClassColours[classes]
                 if power["predicate"] <= 1000:
                     if power["key_activated"] is True:
-                        out.append(equipped_power_template.format(predicate=power["predicate"], id=power["id"], slot=high_special_slot,     type=classes, description=power["description"],  name=power["name"], color=color))
-                        out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot,     type=classes, description=power["description"], name=power["name"]))
+                        out.append(equipped_power_template.format(predicate=power["predicate"], id=power["id"], slot=high_special_slot,     type=classes, description=power["description"].replace("'", "\\'"),  name=power["name"], color=color))
+                        out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot,     type=classes, description=power["description"].replace("'", "\\'"), name=power["name"]))
                         high_special_slot += 1
                     elif types == "passive":
-                        out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = low_slot, type=types,     description=power["description"],   name=power["name"], color=color).replace(f"execute if entity @p[tag={power["id"]}] run ", ""))
+                        out.append("""data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, lore:['{{"color":"gray","italic":false,"text":"{description}"}}'],custom_name:'{{"color":"{color}","italic":false,"text":"{name}"}}', "minecraft:custom_data": {{ui_item: {{empty: 1b}}}}}}}}""".format(predicate=power["predicate"], slot = low_slot,  description=power["description"].replace("'", "\\'"),  name=power["name"], color=color, id=power["id"]))
                         low_slot += 1
                     else:
-                        out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot, type=types,    description=power["description"],   name=power["name"], color=color))
-                        out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot,     type=types, description=power["description"], name=power["name"]))
+                        out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot, type=types,    description=power["description"].replace("'", "\\'"),   name=power["name"], color=color))
+                        out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = high_special_slot,     type=types, description=power["description"].replace("'", "\\'"), name=power["name"]))
                         high_special_slot += 1
 
         
@@ -102,20 +102,23 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
     slot = 9
     for power in powers["high"]:
         if power["predicate"] <= 1000:
+            out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high",    description=power["description"].replace("'", "\\'"), name=power["name"], color="dark_purple"))
             if power["id"] != "grow" and power["id"] != "shrink":
                 if power["key_activated"] == True:
-                    out.append(equipped_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high",    description=power["description"], name=power["name"], color="dark_purple"))
+                    out.append(equipped_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high",    description=power["description"].replace("'", "\\'"), name=power["name"], color="dark_purple"))
                 else:
                     out.append(passive_power_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high", description=power   ["description"], name=power["name"], color="dark_purple"))
-                
             else:
                 if power["id"] == "grow": 
-                    out.append(f"""execute if entity @p[tag={power["id"]}] if score @p size matches 1 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:acacia_boat", "components": {{"enchantment_glint_override":true, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
-                    out.append(f"""execute if entity @p[tag={power["id"]}] unless score @p size matches 1 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"enchantment_glint_override":false, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
+                    
+                    out.append(f"""function ui:minecart/if_player_selector_score {{if: "if", objective:"size", score:"1", selector:"tag={power["id"]}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:acacia_boat", "components": {{"enchantment_glint_override":true, "custom_model_data": {power["predicate"]}, lore:[\\'{{"color":"gray","italic":false,"text":"{power["description"]} click to toggle"}}\\'],custom_name:\\'{{"color":"{"dark_purple"}","italic":false,"text":"{power["name"]}"}}\\', "minecraft:custom_data": {{ui_item:{{cmd:"function ui:minecart/as_player {{cmd:\\'function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}\\' }}"}}}}}}}}'}}""")
+                    
+                    out.append(f"""function ui:minecart/if_player_selector_score {{if: "unless", objective:"size", score:"1", selector:"tag={power["id"]}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"enchantment_glint_override":false, "custom_model_data": {power["predicate"]}, lore:[\\'{{"color":"gray","italic":false,"text":"{power["description"]} click to toggle"}}\\'],custom_name:\\'{{"color":"{"dark_purple"}","italic":false,"text":"{power["name"]}"}}\\', "minecraft:custom_data": {{ui_item:{{cmd:"function ui:minecart/as_player {{cmd:\\'function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}\\' }}"}}}}}}}}'}}""")
+                    
                 else:
-                    out.append(f"""execute if entity @p[tag={power["id"]}] if score @p size matches 2 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:acacia_boat", "components": {{"enchantment_glint_override":true, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
-                    out.append(f"""execute if entity @p[tag={power["id"]}] unless score @p size matches 2 run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"enchantment_glint_override":false, "custom_model_data": {power["predicate"]}, lore:["{{\\"color\\":\\"gray\\",\\"italic\\":false,\\"text\\":\\"{power["description"]} click to toggle\\"}}"],custom_name:"{{\\"color\\":\\"{"dark_purple"}\\",\\"italic\\":false,\\"text\\":\\"{power["name"]}\\"}}", "minecraft:custom_data": {{ui_item:{{cmd:"function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}"}}}}}}}}""")
-            out.append(greyscale_powers_template.format(predicate=power["predicate"], id=power["id"], slot = slot, type="high", description=power    ["description"], name=power["name"]))
+                    out.append(f"""function ui:minecart/if_player_selector_score {{if: "if", objective:"size", score:"2", selector:"tag={power["id"]}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:acacia_boat", "components": {{"enchantment_glint_override":true, "custom_model_data": {power["predicate"]}, lore:[\\'{{"color":"gray","italic":false,"text":"{power["description"]} click to toggle"}}\\'],custom_name:\\'{{"color":"{"dark_purple"}","italic":false,"text":"{power["name"]}"}}\\', "minecraft:custom_data": {{ui_item:{{cmd:"function ui:minecart/as_player {{cmd:\\'function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}\\' }}"}}}}}}}}'}}""")
+                    
+                    out.append(f"""function ui:minecart/if_player_selector_score {{if: "unless", objective:"size", score:"2", selector:"tag={power["id"]}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"enchantment_glint_override":false, "custom_model_data": {power["predicate"]}, lore:[\\'{{"color":"gray","italic":false,"text":"{power["description"]} click to toggle"}}\\'],custom_name:\\'{{"color":"{"dark_purple"}","italic":false,"text":"{power["name"]}"}}\\', "minecraft:custom_data": {{ui_item:{{cmd:"function ui:minecart/as_player {{cmd:\\'function ui:menu/main/size_toggle {{predicate:{power["predicate"]}}}\\' }}"}}}}}}}}'}}""")
             
             slot += 1
     out.append("\n\n\n"+ "\n\n".join(display))

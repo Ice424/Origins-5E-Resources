@@ -86,9 +86,9 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
             try:
                 data = json.load(file)
                 try:
-                    name = data["name"].strip()
+                    name = data["name"].strip().replace("'", "\\'")
                 except KeyError:
-                    name = Id
+                    name = Id.replace("'", "\\'")
                 except Exception as e:
                     print(e)
                 try:

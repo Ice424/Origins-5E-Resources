@@ -29,7 +29,7 @@ def generate_spellbook_slot_select():
         "tank": "#2c2d51",
         "wizard": "#5b6ee1"
     }
-    slot_select_template = 'execute if score @p predicate matches {predicate} run data modify storage ui mask insert 0 value {{Slot: {slot}b, id:\"minecraft:stick\", \"components\": {{\"custom_model_data\": {predicate}, custom_name:\"{{\\"color\\":\\"{color}\\",\\"italic\\":false,\\"text\\":\\"{name}\\"}}\", lore:[\'[{{\"color\":\"gray\",\"italic\":false,\"text\":\"Key set to \"}},{{\"color\":\"gray\",\"italic\":false,\"keybind\":\"key.origins.{key}_active\"}}]\'], \"minecraft:custom_data\": {{ui_item: {{cmd: \"function ui:menu/main/{key}\"}}}}}}}}'
+    slot_select_template = """function ui:minecart/if_player {{objective:"predicate", score:"{predicate}", cmd:'data modify storage ui mask insert 0 value {{Slot: {slot}b, id:"minecraft:stick", "components": {{"custom_model_data": {predicate}, custom_name:\\'{{"color":"{color}","italic":false,"text":"{name}"}}\\', lore:[\\'[{{"color":"gray","italic":false,"text":"Key set to "}},{{"color":"gray","italic":false,"keybind":"key.origins.{key}_active"}}]\\'], "minecraft:custom_data": {{ui_item: {{cmd: "function ui:menu/main/{key}"}}}}}}}}'}}"""
 
 
     # generate spellbooks
@@ -49,7 +49,7 @@ def generate_spellbook_slot_select():
         file.close()
 
         file = open(os.path.join(DATA, f"{classes}/slot_select/open.mcfunction"), "w", encoding="UTF-8")
-        file.write(f"""$scoreboard players set @p predicate $(predicate)
+        file.write(f"""$function ui:minecart/as_player {{cmd:"scoreboard players set @s predicate $(predicate)"}}
 function ui:menu/{classes}/slot_select/mask
 data modify storage ui current set from storage ui mask
 execute on passengers run data modify entity @s data.page.mask set value \"function ui:menu/{classes}/slot_select/mask\"""")
@@ -73,7 +73,7 @@ execute on passengers run data modify entity @s data.page.mask set value \"funct
         file.close()
 
         file = open(os.path.join(DATA, f"{types}/slot_select/open.mcfunction"), "w", encoding="UTF-8")
-        file.write(f"""$scoreboard players set @p predicate $(predicate)
+        file.write(f"""$function ui:minecart/as_player {{cmd:"scoreboard players set @s predicate $(predicate)"}}
 function ui:menu/{types}/slot_select/mask
 data modify storage ui current set from storage ui mask
 execute on passengers run data modify entity @s data.page.mask set value \"function ui:menu/{types}/slot_select/mask\"""")

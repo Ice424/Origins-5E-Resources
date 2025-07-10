@@ -15,11 +15,11 @@ def generate_equipfiles():
     powers = json.loads(file.read())
     file.close()
 
-    template = """execute if score @p predicate matches {predicate} run scoreboard players set @p {key} {predicate}
-execute if score @p predicate matches {predicate} run power grant @p {path} chill:{key}
+    template = """function ui:minecart/as_player {{cmd:'execute if score @s predicate matches {predicate} run scoreboard players set @s {key} {predicate}'}}
+function ui:minecart/as_player {{cmd:'execute if score @s predicate matches {predicate} run power grant @s {path} chill:{key}'}}
     """
-    primary = ["power revoke @p all chill:primary"]
-    secondary = ["power revoke @p all chill:secondary"]
+    primary = ["function ui:minecart/as_player {cmd:\"power revoke @s all chill:primary\"}"]
+    secondary = ["function ui:minecart/as_player {cmd:\"power revoke @s all chill:secondary\"}"]
 
 
     def GetPowers(types):

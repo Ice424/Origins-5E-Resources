@@ -47,7 +47,11 @@ shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/
 #    pass
 #elif platform == "win32":
 #    generate.generate_json()
+
+
 generate.generate_json()
+
+
 #Resource pack stuff
 generate.refactor_predicates()
 generate.generate_models("./resourcepacks/Origins-5E-Resources/assets/chill/models/")
