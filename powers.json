@@ -383,7 +383,7 @@
         "druid": {
             "special": [
                 {
-                    "name": "Nature\\'s Offence",
+                    "name": "Nature\\\\\\'s Offence",
                     "description": "Non-tameable mobs can be tamed and act as wolves using red dye on them",
                     "id": "animal_control",
                     "predicate": 56,
@@ -391,7 +391,7 @@
                     "completed": true
                 },
                 {
-                    "name": "Earth\\'s gift",
+                    "name": "Earth\\\\\\'s gift",
                     "description": "Get free bone meal",
                     "id": "bone_meal",
                     "predicate": 57,
@@ -407,7 +407,7 @@
                     "completed": true
                 },
                 {
-                    "name": "Fungi\\'s Onslaught",
+                    "name": "Fungi\\\\\\'s Onslaught",
                     "description": "Hold sneak and ability to spread sculk to deal damage",
                     "id": "sculk",
                     "predicate": 59,
@@ -459,7 +459,7 @@
             ],
             "passive": [
                 {
-                    "name": "Nature\\'s Healing",
+                    "name": "Nature\\\\\\'s Healing",
                     "description": "Standing near flowers heal",
                     "id": "heal",
                     "predicate": 65,
@@ -717,7 +717,7 @@
                     "completed": false
                 },
                 {
-                    "name": "Warrior\\'s Defence",
+                    "name": "Warrior\\\\\\'s Defence",
                     "description": "Take half damage",
                     "id": "damage",
                     "predicate": 95,
@@ -741,7 +741,7 @@
                     "completed": false
                 },
                 {
-                    "name": "Warrior\\'s Rage",
+                    "name": "Warrior\\\\\\'s Rage",
                     "description": "When you rage, you get increased speed and damage for a short period",
                     "id": "rage",
                     "predicate": 98,
@@ -783,7 +783,7 @@
                     "completed": false
                 },
                 {
-                    "name": "Warrior\\'s Protection",
+                    "name": "Warrior\\\\\\'s Protection",
                     "description": "Able to deploy a shield that blocks projectiles",
                     "id": "shield",
                     "predicate": 103,
@@ -801,7 +801,7 @@
             ],
             "passive": [
                 {
-                    "name": "Warrior\\'s Might",
+                    "name": "Warrior\\\\\\'s Might",
                     "description": "Gain resistance 1",
                     "id": "resistance",
                     "predicate": 105,
@@ -863,7 +863,7 @@
                     "completed": false
                 },
                 {
-                    "name": "Wizard\\'s Knowledge",
+                    "name": "Wizard\\\\\\'s Knowledge",
                     "description": "All mobs within 20 blocks glow",
                     "id": "glow",
                     "predicate": 112,
