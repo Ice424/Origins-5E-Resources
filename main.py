@@ -50,13 +50,14 @@ shutil.rmtree(os.path.abspath("./saves/New World/datapacks/Origins-5E-Data/data/
 
 
 generate.generate_json()
-
+generate.refactor_predicates()
+generate.generate_predicates()
 
 #Resource pack stuff
 generate.refactor_predicates()
 generate.generate_models("./resourcepacks/Origins-5E-Resources/assets/chill/models/")
 generate.generate_tags(DATA)
-generate.generate_predicates()
+
 
 #.mcfunctions
 generate_power_buy.shop_mask()

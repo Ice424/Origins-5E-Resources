@@ -48,12 +48,9 @@ def generate_spellbook():
         for types in powers["class"][classes]:
             for power in powers["class"][classes][types]:
                 color = ClassColours[classes]
-                if power["predicate"] <= 1000:
-
-                    if power["key_activated"] is True:
-
-                        display.append(equipped_display_template.format(slot=5, key="primary", name=power["name"], predicate=power["predicate"],    description=power  ["description"], color=color))
-                        display.append(equipped_display_template.format(slot=7, key="secondary", name=power["name"], predicate=power["predicate"],  description=power    ["description"], color=color))
+                if power["key_activated"] is True:
+                    display.append(equipped_display_template.format(slot=5, key="primary", name=power["name"], predicate=power["predicate"],    description=power  ["description"], color=color))
+                    display.append(equipped_display_template.format(slot=7, key="secondary", name=power["name"], predicate=power["predicate"],  description=power    ["description"], color=color))
     for power in powers["high"]:
             if power["key_activated"] is True:
                 display.append(equipped_display_template.format(slot=5, key="primary", name=power["name"], predicate=power["predicate"],    description=power  ["description"], color="dark_gray" if types == "low" else "dark_purple"))

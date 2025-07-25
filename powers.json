@@ -4,7 +4,7 @@
             "name": "Grow",
             "description": "You grow a block taller",
             "id": "grow",
-            "predicate": 39,
+            "predicate": 42439,
             "key_activated": false,
             "completed": true
         },
@@ -12,7 +12,7 @@
             "name": "Inventory",
             "description": "you have 5 extra inventory slots they stay with you on death",
             "id": "inventory",
-            "predicate": 40,
+            "predicate": 42440,
             "key_activated": true,
             "completed": true
         },
@@ -20,7 +20,7 @@
             "name": "Jump",
             "description": "by crouching you can jump high",
             "id": "jump",
-            "predicate": 41,
+            "predicate": 42441,
             "key_activated": false,
             "completed": true
         },
@@ -28,7 +28,7 @@
             "name": "Phasing",
             "description": "you can temporarily phase through walls",
             "id": "permeation",
-            "predicate": 42,
+            "predicate": 42442,
             "key_activated": true,
             "completed": true
         },
@@ -36,7 +36,7 @@
             "name": "Scan",
             "description": "reveal all entities in 40 a block radius",
             "id": "scan",
-            "predicate": 43,
+            "predicate": 42443,
             "key_activated": true,
             "completed": true
         },
@@ -44,7 +44,7 @@
             "name": "Shrink",
             "description": "You shrink a block",
             "id": "shrink",
-            "predicate": 44,
+            "predicate": 42444,
             "key_activated": false,
             "completed": true
         },
@@ -52,7 +52,7 @@
             "name": "Tame",
             "description": "you can tame all tameable mobs in a 4 block radius",
             "id": "tame",
-            "predicate": 45,
+            "predicate": 42445,
             "key_activated": true,
             "completed": true
         }
@@ -62,7 +62,7 @@
             "name": "Fall damage",
             "description": "5% less fall damage",
             "id": "fall_dmg_1",
-            "predicate": 10,
+            "predicate": 42410,
             "key_activated": false,
             "completed": true
         },
@@ -70,7 +70,7 @@
             "name": "Fall damage",
             "description": "15% less fall damage",
             "id": "fall_dmg_3",
-            "predicate": 11,
+            "predicate": 42411,
             "key_activated": false,
             "completed": true
         },
@@ -78,7 +78,7 @@
             "name": "Fall damage",
             "description": "25% less fall damage",
             "id": "fall_dmg_5",
-            "predicate": 12,
+            "predicate": 42412,
             "key_activated": false,
             "completed": true
         },
@@ -86,7 +86,7 @@
             "name": "Fire damage",
             "description": "5% less fire damage",
             "id": "fire_dmg_1",
-            "predicate": 13,
+            "predicate": 42413,
             "key_activated": false,
             "completed": true
         },
@@ -94,7 +94,7 @@
             "name": "Fire damage",
             "description": "15% less fire damage",
             "id": "fire_dmg_3",
-            "predicate": 14,
+            "predicate": 42414,
             "key_activated": false,
             "completed": true
         },
@@ -102,7 +102,7 @@
             "name": "Fire damage",
             "description": "25% less fire damage",
             "id": "fire_dmg_5",
-            "predicate": 15,
+            "predicate": 42415,
             "key_activated": false,
             "completed": true
         },
@@ -110,7 +110,7 @@
             "name": "Increased health",
             "description": "+ half a heart",
             "id": "health_1",
-            "predicate": 16,
+            "predicate": 42416,
             "key_activated": false,
             "completed": true
         },
@@ -118,7 +118,7 @@
             "name": "Increased health",
             "description": "+ a heart",
             "id": "health_2",
-            "predicate": 17,
+            "predicate": 42417,
             "key_activated": false,
             "completed": true
         },
@@ -126,7 +126,7 @@
             "name": "Increased health",
             "description": "+ a heart and a half",
             "id": "health_3",
-            "predicate": 18,
+            "predicate": 42418,
             "key_activated": false,
             "completed": true
         },
@@ -134,7 +134,7 @@
             "name": "Increased health",
             "description": "+ 2 hearts",
             "id": "health_4",
-            "predicate": 19,
+            "predicate": 42419,
             "key_activated": false,
             "completed": true
         },
@@ -142,7 +142,7 @@
             "name": "Increased health",
             "description": "+ 2 hearts and a half",
             "id": "health_5",
-            "predicate": 20,
+            "predicate": 42420,
             "key_activated": false,
             "completed": true
         },
@@ -150,7 +150,7 @@
             "name": "Increased food points",
             "description": "You gain 3 more hunger hunches and 1 more point of saturation",
             "id": "hunger_gain_1",
-            "predicate": 21,
+            "predicate": 42421,
             "key_activated": false,
             "completed": true
         },
@@ -158,7 +158,7 @@
             "name": "Increased food points",
             "description": "You gain 6 more hunger hunches and 2 more points of saturation",
             "id": "hunger_gain_3",
-            "predicate": 22,
+            "predicate": 42422,
             "key_activated": false,
             "completed": true
         },
@@ -166,7 +166,7 @@
             "name": "Increased food points",
             "description": "You gain 9 more hunger hunches and 3 more points of saturation",
             "id": "hunger_gain_5",
-            "predicate": 23,
+            "predicate": 42423,
             "key_activated": false,
             "completed": true
         },
@@ -174,7 +174,7 @@
             "name": "Hunger loss",
             "description": "hunger is lost 5% slower",
             "id": "hunger_loss_1",
-            "predicate": 24,
+            "predicate": 42424,
             "key_activated": false,
             "completed": true
         },
@@ -182,7 +182,7 @@
             "name": "Hunger loss",
             "description": "hunger is lost 15% slower",
             "id": "hunger_loss_3",
-            "predicate": 25,
+            "predicate": 42425,
             "key_activated": false,
             "completed": true
         },
@@ -190,7 +190,7 @@
             "name": "Hunger loss",
             "description": "hunger is lost 25% slower",
             "id": "hunger_loss_5",
-            "predicate": 26,
+            "predicate": 42426,
             "key_activated": false,
             "completed": true
         },
@@ -198,7 +198,7 @@
             "name": "Luck",
             "description": "1 level of luck",
             "id": "luck_1",
-            "predicate": 27,
+            "predicate": 42427,
             "key_activated": false,
             "completed": true
         },
@@ -206,7 +206,7 @@
             "name": "Luck",
             "description": "2 levels of luck",
             "id": "luck_2",
-            "predicate": 28,
+            "predicate": 42428,
             "key_activated": false,
             "completed": true
         },
@@ -214,7 +214,7 @@
             "name": "Luck",
             "description": "3 levels of luck",
             "id": "luck_3",
-            "predicate": 29,
+            "predicate": 42429,
             "key_activated": false,
             "completed": true
         },
@@ -222,7 +222,7 @@
             "name": "Luck",
             "description": "4 levels of luck",
             "id": "luck_4",
-            "predicate": 30,
+            "predicate": 42430,
             "key_activated": false,
             "completed": true
         },
@@ -230,7 +230,7 @@
             "name": "Luck",
             "description": "5 levels of luck",
             "id": "luck_5",
-            "predicate": 31,
+            "predicate": 42431,
             "key_activated": false,
             "completed": true
         },
@@ -238,7 +238,7 @@
             "name": "Swim speed",
             "description": "5% increase in swim speed",
             "id": "swim_speed_1",
-            "predicate": 32,
+            "predicate": 42432,
             "key_activated": false,
             "completed": true
         },
@@ -246,7 +246,7 @@
             "name": "Swim speed",
             "description": "15% increase in swim speed",
             "id": "swim_speed_3",
-            "predicate": 33,
+            "predicate": 42433,
             "key_activated": false,
             "completed": true
         },
@@ -254,7 +254,7 @@
             "name": "Swim speed",
             "description": "25% increase in swim speed",
             "id": "swim_speed_5",
-            "predicate": 34,
+            "predicate": 42434,
             "key_activated": false,
             "completed": true
         },
@@ -262,7 +262,7 @@
             "name": "Xp gain",
             "description": "5% increase to xp gain",
             "id": "xp_gain_1",
-            "predicate": 35,
+            "predicate": 42435,
             "key_activated": false,
             "completed": true
         },
@@ -270,7 +270,7 @@
             "name": "Xp gain",
             "description": "15% increase to xp gain",
             "id": "xp_gain_3",
-            "predicate": 36,
+            "predicate": 42436,
             "key_activated": false,
             "completed": true
         },
@@ -278,7 +278,7 @@
             "name": "Xp gain",
             "description": "25% increase to xp gain",
             "id": "xp_gain_5",
-            "predicate": 37,
+            "predicate": 42437,
             "key_activated": false,
             "completed": true
         },
@@ -286,7 +286,7 @@
             "name": "XP",
             "description": "Gain 20 levels",
             "id": "xp_xp",
-            "predicate": 38,
+            "predicate": 42438,
             "key_activated": false,
             "completed": true
         }
@@ -298,7 +298,7 @@
                     "name": "Divine protection",
                     "description": "you can gain the effects of holding a totem of undying",
                     "id": "death",
-                    "predicate": 46,
+                    "predicate": 42446,
                     "key_activated": false,
                     "completed": true
                 },
@@ -306,7 +306,7 @@
                     "name": "luck",
                     "description": "+ 3 to your luck",
                     "id": "luck",
-                    "predicate": 47,
+                    "predicate": 42447,
                     "key_activated": false,
                     "completed": true
                 },
@@ -314,7 +314,7 @@
                     "name": "Divine eye",
                     "description": "you can see mobs in a 10 block area",
                     "id": "see",
-                    "predicate": 48,
+                    "predicate": 42448,
                     "key_activated": false,
                     "completed": true
                 },
@@ -322,7 +322,7 @@
                     "name": "Summon the dead",
                     "description": "summon 5 zombies to assist you in battle they are friendly towards clerics",
                     "id": "summon",
-                    "predicate": 49,
+                    "predicate": 42449,
                     "key_activated": true,
                     "completed": true
                 }
@@ -332,7 +332,7 @@
                     "name": "Heal Players",
                     "description": "Heals entities in FOV",
                     "id": "heal",
-                    "predicate": 50,
+                    "predicate": 42450,
                     "key_activated": true,
                     "completed": true
                 },
@@ -340,7 +340,7 @@
                     "name": "Rejuvenation spell",
                     "description": "Crouching for 10 seconds resorts hunger and hearts",
                     "id": "hunger",
-                    "predicate": 51,
+                    "predicate": 42451,
                     "key_activated": false,
                     "completed": true
                 },
@@ -348,7 +348,7 @@
                     "name": "lifesteal",
                     "description": "none",
                     "id": "lifesteal",
-                    "predicate": 52,
+                    "predicate": 42452,
                     "key_activated": false,
                     "completed": true
                 },
@@ -356,7 +356,7 @@
                     "name": "Teleportation",
                     "description": "Use your ability to teleport to a mob you are looking at",
                     "id": "teleport",
-                    "predicate": 53,
+                    "predicate": 42453,
                     "key_activated": true,
                     "completed": true
                 }
@@ -366,7 +366,7 @@
                     "name": "Regeneration aura",
                     "description": "sneak to heal you and all mobs in a 10 block radius",
                     "id": "heal_self",
-                    "predicate": 54,
+                    "predicate": 42454,
                     "key_activated": false,
                     "completed": true
                 },
@@ -374,7 +374,7 @@
                     "name": "Health",
                     "description": "you have 9 hearts",
                     "id": "health",
-                    "predicate": 55,
+                    "predicate": 42455,
                     "key_activated": false,
                     "completed": true
                 }
@@ -386,7 +386,7 @@
                     "name": "Nature\\\\\\'s Offence",
                     "description": "Non-tameable mobs can be tamed and act as wolves using red dye on them",
                     "id": "animal_control",
-                    "predicate": 56,
+                    "predicate": 42456,
                     "key_activated": false,
                     "completed": true
                 },
@@ -394,7 +394,7 @@
                     "name": "Earth\\\\\\'s gift",
                     "description": "Get free bone meal",
                     "id": "bone_meal",
-                    "predicate": 57,
+                    "predicate": 42457,
                     "key_activated": false,
                     "completed": true
                 },
@@ -402,7 +402,7 @@
                     "name": "Freeze Life",
                     "description": "Stop all mobs movement around you",
                     "id": "freeze",
-                    "predicate": 58,
+                    "predicate": 42458,
                     "key_activated": true,
                     "completed": true
                 },
@@ -410,7 +410,7 @@
                     "name": "Fungi\\\\\\'s Onslaught",
                     "description": "Hold sneak and ability to spread sculk to deal damage",
                     "id": "sculk",
-                    "predicate": 59,
+                    "predicate": 42459,
                     "key_activated": true,
                     "completed": true
                 },
@@ -418,7 +418,7 @@
                     "name": "Environmental Affinity",
                     "description": "You are faster when in water or on dirt",
                     "id": "speed",
-                    "predicate": 60,
+                    "predicate": 42460,
                     "key_activated": false,
                     "completed": true
                 }
@@ -428,7 +428,7 @@
                     "name": "Ring of Arrows",
                     "description": "Use ability to attempt to shoot 8 arrows 360 degrees (arrows have scuffed physics)",
                     "id": "arrows",
-                    "predicate": 61,
+                    "predicate": 42461,
                     "key_activated": true,
                     "completed": true
                 },
@@ -436,7 +436,7 @@
                     "name": "Decay",
                     "description": "Give people hunger and poison within 8 blocks far",
                     "id": "poison",
-                    "predicate": 62,
+                    "predicate": 42462,
                     "key_activated": true,
                     "completed": true
                 },
@@ -444,7 +444,7 @@
                     "name": "Wild Shape: Fish",
                     "description": "Can breathe underwater",
                     "id": "underwater",
-                    "predicate": 63,
+                    "predicate": 42463,
                     "key_activated": false,
                     "completed": true
                 },
@@ -452,7 +452,7 @@
                     "name": "Wall Climb",
                     "description": "Create vines that help you climb walls",
                     "id": "wall_climb",
-                    "predicate": 64,
+                    "predicate": 42464,
                     "key_activated": false,
                     "completed": true
                 }
@@ -462,7 +462,7 @@
                     "name": "Nature\\\\\\'s Healing",
                     "description": "Standing near flowers heal",
                     "id": "heal",
-                    "predicate": 65,
+                    "predicate": 42465,
                     "key_activated": false,
                     "completed": true
                 },
@@ -470,7 +470,7 @@
                     "name": "Brittle",
                     "description": "You have 9 hearts",
                     "id": "health",
-                    "predicate": 66,
+                    "predicate": 42466,
                     "key_activated": false,
                     "completed": true
                 },
@@ -478,7 +478,7 @@
                     "name": "Vegetarian",
                     "description": "Can't eat meat",
                     "id": "vegetarian",
-                    "predicate": 67,
+                    "predicate": 42467,
                     "key_activated": false,
                     "completed": true
                 }
@@ -490,7 +490,7 @@
                     "name": "Arrow",
                     "description": "Shoots an arrow with a random harmful effect",
                     "id": "arrows",
-                    "predicate": 68,
+                    "predicate": 42468,
                     "key_activated": true,
                     "completed": true
                 },
@@ -498,7 +498,7 @@
                     "name": "Damage to mobs",
                     "description": "you deal double damage to hostile mobs",
                     "id": "ddamagemobs",
-                    "predicate": 69,
+                    "predicate": 42469,
                     "key_activated": false,
                     "completed": true
                 },
@@ -506,7 +506,7 @@
                     "name": "Hero of the village",
                     "description": "you have permanent hero of the village",
                     "id": "hotvillage",
-                    "predicate": 70,
+                    "predicate": 42470,
                     "key_activated": false,
                     "completed": true
                 },
@@ -514,7 +514,7 @@
                     "name": "Overheal",
                     "description": "you heal 20 hearts and gain 5 temporary hearts",
                     "id": "overheal",
-                    "predicate": 71,
+                    "predicate": 42471,
                     "key_activated": true,
                     "completed": true
                 },
@@ -522,7 +522,7 @@
                     "name": "Powered up",
                     "description": "you gain resistance 2 and strength 2 for a short period",
                     "id": "powered",
-                    "predicate": 72,
+                    "predicate": 42472,
                     "key_activated": true,
                     "completed": true
                 },
@@ -530,7 +530,7 @@
                     "name": "Increased reach",
                     "description": "you get 6 block reach",
                     "id": "reach",
-                    "predicate": 73,
+                    "predicate": 42473,
                     "key_activated": false,
                     "completed": true
                 },
@@ -538,7 +538,7 @@
                     "name": "Saturation",
                     "description": "you have permanent saturation",
                     "id": "saturation",
-                    "predicate": 74,
+                    "predicate": 42474,
                     "key_activated": false,
                     "completed": true
                 },
@@ -546,7 +546,7 @@
                     "name": "Speed",
                     "description": "you have permanent speed 2",
                     "id": "speed_upgrade",
-                    "predicate": 75,
+                    "predicate": 42475,
                     "key_activated": false,
                     "completed": true
                 },
@@ -554,7 +554,7 @@
                     "name": "Speed Boost",
                     "description": "you can gain speed 3 for a short period",
                     "id": "speedboost",
-                    "predicate": 76,
+                    "predicate": 42476,
                     "key_activated": true,
                     "completed": true
                 }
@@ -564,7 +564,7 @@
                     "name": "Haste",
                     "description": "you have permanent haste 1",
                     "id": "haste",
-                    "predicate": 77,
+                    "predicate": 42477,
                     "key_activated": false,
                     "completed": true
                 },
@@ -572,7 +572,7 @@
                     "name": "Health",
                     "description": "you gain 4 hearts",
                     "id": "hearts",
-                    "predicate": 78,
+                    "predicate": 42478,
                     "key_activated": false,
                     "completed": true
                 },
@@ -580,7 +580,7 @@
                     "name": "Speed",
                     "description": "you have permanent speed 1",
                     "id": "speed",
-                    "predicate": 79,
+                    "predicate": 42479,
                     "key_activated": false,
                     "completed": true
                 },
@@ -588,7 +588,7 @@
                     "name": "Strength",
                     "description": "you have permanent strength 1",
                     "id": "strength",
-                    "predicate": 80,
+                    "predicate": 42480,
                     "key_activated": false,
                     "completed": true
                 }
@@ -600,7 +600,7 @@
                     "name": "Dash",
                     "description": "Get a 6 block dash, scales with momentum",
                     "id": "dash",
-                    "predicate": 81,
+                    "predicate": 42481,
                     "key_activated": false,
                     "completed": false
                 },
@@ -608,7 +608,7 @@
                     "name": "Vanish",
                     "description": "Use to get invisibility for 15 secs, 45 sec cooldown",
                     "id": "invisibility",
-                    "predicate": 82,
+                    "predicate": 42482,
                     "key_activated": false,
                     "completed": false
                 },
@@ -616,7 +616,7 @@
                     "name": "Opportunist",
                     "description": "Double damage to enemies who have a negative potion effect or are below half health",
                     "id": "opportunist",
-                    "predicate": 83,
+                    "predicate": 42483,
                     "key_activated": false,
                     "completed": false
                 },
@@ -624,7 +624,7 @@
                     "name": "Instant Transmission",
                     "description": "Ability to teleport where you are looking",
                     "id": "teleport",
-                    "predicate": 84,
+                    "predicate": 42484,
                     "key_activated": false,
                     "completed": false
                 },
@@ -632,7 +632,7 @@
                     "name": "Wall Climb",
                     "description": "Gain the ability to wall climb",
                     "id": "wall_climb",
-                    "predicate": 85,
+                    "predicate": 42485,
                     "key_activated": false,
                     "completed": false
                 }
@@ -642,7 +642,7 @@
                     "name": "Smoke Bomb",
                     "description": "Ability to give blindness to anyone in 8 blocks for 5 seconds",
                     "id": "blindness",
-                    "predicate": 86,
+                    "predicate": 42486,
                     "key_activated": true,
                     "completed": true
                 },
@@ -650,7 +650,7 @@
                     "name": "Feather Fall",
                     "description": "No fall damage",
                     "id": "fall_dmg",
-                    "predicate": 87,
+                    "predicate": 42487,
                     "key_activated": false,
                     "completed": true
                 },
@@ -658,7 +658,7 @@
                     "name": "Grappling Hook",
                     "description": "Made by finn_nerd, originally for Origins 1.20.1.",
                     "id": "grapple_hook",
-                    "predicate": 88,
+                    "predicate": 42488,
                     "key_activated": true,
                     "completed": true
                 },
@@ -666,7 +666,7 @@
                     "name": "Stealth affinity",
                     "description": "Use ability to get speed 3 and strength 2",
                     "id": "stealth_bonus",
-                    "predicate": 89,
+                    "predicate": 42489,
                     "key_activated": false,
                     "completed": false
                 }
@@ -676,7 +676,7 @@
                     "name": "Evasion",
                     "description": "Mobs take longer to aggro",
                     "id": "agro",
-                    "predicate": 90,
+                    "predicate": 42490,
                     "key_activated": false,
                     "completed": true
                 },
@@ -684,7 +684,7 @@
                     "name": "Sneaky",
                     "description": "Your footsteps don't trigger skulk sensors",
                     "id": "footsteps",
-                    "predicate": 91,
+                    "predicate": 42491,
                     "key_activated": false,
                     "completed": true
                 },
@@ -692,7 +692,7 @@
                     "name": "Brittle",
                     "description": "You have 8 hearts",
                     "id": "hearts",
-                    "predicate": 92,
+                    "predicate": 42492,
                     "key_activated": false,
                     "completed": true
                 },
@@ -700,7 +700,7 @@
                     "name": "Off the Grid",
                     "description": "You have no name tag",
                     "id": "nametag",
-                    "predicate": 93,
+                    "predicate": 42493,
                     "key_activated": false,
                     "completed": true
                 }
@@ -712,7 +712,7 @@
                     "name": "Unshakeable",
                     "description": "Become invincible for a short period",
                     "id": "block",
-                    "predicate": 94,
+                    "predicate": 42494,
                     "key_activated": false,
                     "completed": false
                 },
@@ -720,7 +720,7 @@
                     "name": "Warrior\\\\\\'s Defence",
                     "description": "Take half damage",
                     "id": "damage",
-                    "predicate": 95,
+                    "predicate": 42495,
                     "key_activated": false,
                     "completed": false
                 },
@@ -728,7 +728,7 @@
                     "name": "Born From Flame",
                     "description": "Fire resistance",
                     "id": "fire_res",
-                    "predicate": 96,
+                    "predicate": 42496,
                     "key_activated": false,
                     "completed": false
                 },
@@ -736,7 +736,7 @@
                     "name": "Ring Of Fire",
                     "description": "Able to create a ring of fire around yourself",
                     "id": "fire_ring",
-                    "predicate": 97,
+                    "predicate": 42497,
                     "key_activated": false,
                     "completed": false
                 },
@@ -744,7 +744,7 @@
                     "name": "Warrior\\\\\\'s Rage",
                     "description": "When you rage, you get increased speed and damage for a short period",
                     "id": "rage",
-                    "predicate": 98,
+                    "predicate": 42498,
                     "key_activated": false,
                     "completed": false
                 },
@@ -752,7 +752,7 @@
                     "name": "Wall Of Stone",
                     "description": "Gain the ability to create a wall of stone",
                     "id": "stone",
-                    "predicate": 99,
+                    "predicate": 42499,
                     "key_activated": false,
                     "completed": false
                 }
@@ -762,7 +762,7 @@
                     "name": "Ground Pound",
                     "description": "When you take fall damage you do a ground pound, the higher you fall, the more damage",
                     "id": "ground_pound",
-                    "predicate": 100,
+                    "predicate": 424100,
                     "key_activated": false,
                     "completed": false
                 },
@@ -770,7 +770,7 @@
                     "name": "Chain Hook",
                     "description": "Throws a hook at a target, pulling them towards you when it connects",
                     "id": "hook",
-                    "predicate": 101,
+                    "predicate": 424101,
                     "key_activated": false,
                     "completed": false
                 },
@@ -778,7 +778,7 @@
                     "name": "Heavy",
                     "description": "You have knockback resistance",
                     "id": "knockback",
-                    "predicate": 102,
+                    "predicate": 424102,
                     "key_activated": false,
                     "completed": false
                 },
@@ -786,7 +786,7 @@
                     "name": "Warrior\\\\\\'s Protection",
                     "description": "Able to deploy a shield that blocks projectiles",
                     "id": "shield",
-                    "predicate": 103,
+                    "predicate": 424103,
                     "key_activated": false,
                     "completed": false
                 },
@@ -794,7 +794,7 @@
                     "name": "Barbed Armour",
                     "description": "Use ability to toggle thorns",
                     "id": "thorns",
-                    "predicate": 104,
+                    "predicate": 424104,
                     "key_activated": false,
                     "completed": false
                 }
@@ -804,7 +804,7 @@
                     "name": "Warrior\\\\\\'s Might",
                     "description": "Gain resistance 1",
                     "id": "resistance",
-                    "predicate": 105,
+                    "predicate": 424105,
                     "key_activated": false,
                     "completed": false
                 },
@@ -812,7 +812,7 @@
                     "name": "Nourished",
                     "description": "Saturation",
                     "id": "saturation",
-                    "predicate": 106,
+                    "predicate": 424106,
                     "key_activated": false,
                     "completed": false
                 }
@@ -824,7 +824,7 @@
                     "name": "Levitation",
                     "description": "Gain flight for a short amount of time",
                     "id": "fly",
-                    "predicate": 107,
+                    "predicate": 424107,
                     "key_activated": false,
                     "completed": false
                 },
@@ -832,7 +832,7 @@
                     "name": "Summon storms",
                     "description": "Charges lightning strikes that increase in range as you hold sneak & ability key",
                     "id": "lightning",
-                    "predicate": 108,
+                    "predicate": 424108,
                     "key_activated": true,
                     "completed": true
                 },
@@ -840,7 +840,7 @@
                     "name": "Glide",
                     "description": "Crouch mid air gives slow falling",
                     "id": "slow_fall",
-                    "predicate": 109,
+                    "predicate": 424109,
                     "key_activated": false,
                     "completed": false
                 },
@@ -848,7 +848,7 @@
                     "name": "Deteriorate",
                     "description": "Inflict wither to mobs within fov",
                     "id": "wither",
-                    "predicate": 110,
+                    "predicate": 424110,
                     "key_activated": false,
                     "completed": false
                 }
@@ -858,7 +858,7 @@
                     "name": "Explosive Fireball",
                     "description": "Shoot a fireball that explodes",
                     "id": "fireball",
-                    "predicate": 111,
+                    "predicate": 424111,
                     "key_activated": false,
                     "completed": false
                 },
@@ -866,7 +866,7 @@
                     "name": "Wizard\\\\\\'s Knowledge",
                     "description": "All mobs within 20 blocks glow",
                     "id": "glow",
-                    "predicate": 112,
+                    "predicate": 424112,
                     "key_activated": false,
                     "completed": false
                 },
@@ -874,7 +874,7 @@
                     "name": "Ice Walker",
                     "description": "Temporarily gain frost walker and slow aura",
                     "id": "ice",
-                    "predicate": 113,
+                    "predicate": 424113,
                     "key_activated": false,
                     "completed": false
                 },
@@ -882,7 +882,7 @@
                     "name": "Force Push",
                     "description": "Push all mobs back 5 blocks in a 10 block radius",
                     "id": "push",
-                    "predicate": 114,
+                    "predicate": 424114,
                     "key_activated": false,
                     "completed": false
                 }
@@ -892,7 +892,7 @@
                     "name": "Spectral shot",
                     "description": "All the projectiles you shoot inflict glowing",
                     "id": "glow_arrow",
-                    "predicate": 115,
+                    "predicate": 424115,
                     "key_activated": false,
                     "completed": true
                 },
@@ -900,7 +900,7 @@
                     "name": "Health",
                     "description": "you have 9 hearts",
                     "id": "health",
-                    "predicate": 116,
+                    "predicate": 424116,
                     "key_activated": false,
                     "completed": true
                 },
@@ -908,7 +908,7 @@
                     "name": "Summon Ender Pearl",
                     "description": "Crouch to get an ender pearl, 60 secs cooldown",
                     "id": "pearl",
-                    "predicate": 117,
+                    "predicate": 424117,
                     "key_activated": false,
                     "completed": false
                 }
