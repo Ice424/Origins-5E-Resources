@@ -335,7 +335,7 @@ def generate_predicates():
         "overrides": []
     }
     for item_dict in data["overrides"]:
-        if item_dict["predicate"]["custom_model_data"] < 42410:
+        if item_dict["predicate"]["custom_model_data"] < 10:
             to_write["overrides"].append(item_dict)
 
     for override in out:
@@ -361,8 +361,7 @@ def refactor_predicates():
     def GetPowers(types, predicate):
         powers[types].sort(key=lambda x: x["id"])
         for power in powers[types]:
-            
-            power["predicate"] = power["predicate"] = int("424" + str(predicate))
+            power["predicate"] = predicate
             predicate += 1
         return predicate
 
@@ -374,7 +373,7 @@ def refactor_predicates():
         for types in powers["class"][classes]:
             powers["class"][classes][types].sort(key=lambda x: x["id"])
             for power in powers["class"][classes][types]:
-                power["predicate"] = int("424" + str(predicate))
+                power["predicate"] = predicate
                 predicate += 1
     print(f"The largest predicate is {predicate}")
     file = open(os.path.abspath("./resourcepacks/powers.json"), "w", encoding="UTF-8")
@@ -382,5 +381,5 @@ def refactor_predicates():
     file.write(json.dumps(powers, indent=4))
     file.close()
 
-refactor_predicates()
+
 # generate_shop()
