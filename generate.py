@@ -382,4 +382,5 @@ def refactor_predicates():
     file.close()
 
 
+
 # generate_shop()

@@ -6,6 +6,24 @@
     "overrides": [
         {
             "predicate": {
+                "custom_model_data": 1
+            },
+            "model": "chill:shop"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 2
+            },
+            "model": "chill:icons/shop"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 3
+            },
+            "model": "chill:icons/spellbook"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 10
             },
             "model": "chill:low/fall_dmg_1"

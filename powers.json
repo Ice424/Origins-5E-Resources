@@ -598,11 +598,11 @@
             "special": [
                 {
                     "name": "Dash",
-                    "description": "Get a 6 block dash, scales with momentum",
+                    "description": "You can dash in the direction you look",
                     "id": "dash",
                     "predicate": 81,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Vanish",
@@ -610,7 +610,7 @@
                     "id": "invisibility",
                     "predicate": 82,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Opportunist",
@@ -618,15 +618,15 @@
                     "id": "opportunist",
                     "predicate": 83,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
-                    "name": "Instant Transmission",
-                    "description": "Ability to teleport where you are looking",
+                    "name": "Teleportation",
+                    "description": "Use your ability to teleport to a mob you are looking at",
                     "id": "teleport",
                     "predicate": 84,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Wall Climb",
@@ -634,7 +634,7 @@
                     "id": "wall_climb",
                     "predicate": 85,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ],
             "high": [
@@ -667,8 +667,8 @@
                     "description": "Use ability to get speed 3 and strength 2",
                     "id": "stealth_bonus",
                     "predicate": 89,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 }
             ],
             "passive": [

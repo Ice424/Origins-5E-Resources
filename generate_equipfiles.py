@@ -18,7 +18,7 @@ def generate_equipfiles():
     template = """function ui:minecart/as_player {{cmd:'execute if score @s predicate matches {predicate} run scoreboard players set @s {key} {predicate}'}}
 function ui:minecart/as_player {{cmd:'execute if score @s predicate matches {predicate} run power grant @s {path} chill:{key}'}}
     """
-    general_template = "execute if score @s predicate matches {predicate} run power grant @s chill:{path} chill:shop"
+    general_template = "execute if score @s predicate matches {predicate} run power grant @s chill:{path} chill:passive"
     primary = ["function ui:minecart/as_player {cmd:\"power revoke @s all chill:primary\"}"]
     secondary = ["function ui:minecart/as_player {cmd:\"power revoke @s all chill:secondary\"}"]
     equip = []

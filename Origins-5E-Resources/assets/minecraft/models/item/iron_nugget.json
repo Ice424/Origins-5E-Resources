@@ -6,6 +6,24 @@
     "overrides": [
         {
             "predicate": {
+                "custom_model_data": 10
+            },
+            "model": "chill:low/fall_dmg_1_greyscale"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 11
+            },
+            "model": "chill:low/fall_dmg_3_greyscale"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 12
+            },
+            "model": "chill:low/fall_dmg_5_greyscale"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 13
             },
             "model": "chill:low/fire_dmg_1_greyscale"
