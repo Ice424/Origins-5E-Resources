@@ -56,7 +56,7 @@ function ui:minecart/as_player {{cmd:'execute if score @s predicate matches {pre
                     path = f"chill:class/{classes}/{types}/{power["id"]}/secondary"
                     secondary.append(template.format(predicate=power["predicate"], key="secondary", path=path))
                 else:
-                    if power["completed"]:
+                    if power["completed"] and types != "passive":
                         path = f"class/{classes}/{types}/{power["id"]}"
                         equip.append(general_template.format(predicate=power["predicate"], path=path))
 

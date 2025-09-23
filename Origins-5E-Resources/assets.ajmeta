@@ -1,0 +1,15 @@
+{
+	"formatVersion": "1.0.0",
+	"rigs": {
+		"sheild": {
+			"coreFiles": ["assets/minecraft/atlases/blocks.json", "pack.mcmeta"],
+			"versionedFiles": [
+				"assets/animated_java/models/blueprint/sheild/bone.json",
+				"assets/animated_java/models/blueprint/sheild/center.json",
+				"assets/animated_java/models/empty.json",
+				"assets/animated_java/textures/blueprint/sheild/sheild.png",
+				"assets/minecraft/models/item/white_dye.json"
+			]
+		}
+	}
+}

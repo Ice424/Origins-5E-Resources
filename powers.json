@@ -806,7 +806,7 @@
                     "id": "resistance",
                     "predicate": 105,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Nourished",
@@ -814,7 +814,7 @@
                     "id": "saturation",
                     "predicate": 106,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ]
         },

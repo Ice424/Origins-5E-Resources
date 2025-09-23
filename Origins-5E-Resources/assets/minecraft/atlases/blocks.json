@@ -1,9 +1,9 @@
 {
-    "sources": [
-        {
-            "type": "single",
-            "resource": "entity/chest/normal"
-        }
-        
-    ]
+	"sources": [
+		{
+			"type": "directory",
+			"source": "blueprint",
+			"prefix": "blueprint/"
+		}
+	]
 }

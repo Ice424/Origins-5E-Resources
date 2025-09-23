@@ -1,0 +1,500 @@
+{
+	"meta": {
+		"format": "animated_java_blueprint",
+		"format_version": "1.7.3",
+		"uuid": "92296cf8-92f8-31a3-3021-9b53adb033b3",
+		"save_location": "/home/ice424/.local/share/PrismLauncher/instances/Origins 5E Pack prism/minecraft/resourcepacks/sheild.ajblueprint",
+		"last_used_export_namespace": "sheild"
+	},
+	"blueprint_settings": {
+		"export_namespace": "sheild",
+		"show_bounding_box": false,
+		"auto_bounding_box": true,
+		"bounding_box": [48, 48],
+		"enable_plugin_mode": false,
+		"resource_pack_export_mode": "raw",
+		"data_pack_export_mode": "raw",
+		"target_minecraft_versions": ["1.21.0"],
+		"display_item": "minecraft:white_dye",
+		"custom_model_data_offset": 0,
+		"enable_advanced_resource_pack_settings": false,
+		"resource_pack": "/home/ice424/.local/share/PrismLauncher/instances/Origins 5E Pack prism/minecraft/resourcepacks/Origins-5E-Resources",
+		"enable_advanced_data_pack_settings": false,
+		"data_pack": "/home/ice424/.local/share/PrismLauncher/instances/Origins 5E Pack prism/minecraft/saves/New World/datapacks/Origins-5E-Data",
+		"summon_commands": "",
+		"remove_commands": "",
+		"ticking_commands": "",
+		"interpolation_duration": 1,
+		"teleportation_duration": 1,
+		"use_storage_for_animation": false,
+		"show_function_errors": true,
+		"show_outdated_warning": true,
+		"baked_animations": true,
+		"json_file": ""
+	},
+	"resolution": {
+		"width": 128,
+		"height": 128
+	},
+	"elements": [
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-22, -12, -20],
+			"to": [22, 12, -18],
+			"autouv": 0,
+			"color": 5,
+			"origin": [0, 0, -19],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 44, 24],
+					"texture": 0
+				},
+				"east": {
+					"uv": [44, 4, 46, 28],
+					"texture": 0
+				},
+				"south": {
+					"uv": [0, 24, 44, 48],
+					"texture": 0
+				},
+				"west": {
+					"uv": [44, 28, 46, 52],
+					"texture": 0
+				},
+				"up": {
+					"uv": [88, 2, 44, 0],
+					"texture": 0
+				},
+				"down": {
+					"uv": [88, 2, 44, 4],
+					"texture": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "89a9817b-4b9c-7625-47a4-85f5e8dcbd2a"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [22, -12, -18],
+			"to": [24, 12, -16],
+			"autouv": 0,
+			"color": 4,
+			"origin": [23, 0, -17],
+			"faces": {
+				"north": {
+					"uv": [46, 4, 48, 28],
+					"texture": 0
+				},
+				"east": {
+					"uv": [46, 28, 48, 52],
+					"texture": 0
+				},
+				"south": {
+					"uv": [0, 48, 2, 72],
+					"texture": 0
+				},
+				"west": {
+					"uv": [2, 48, 4, 72],
+					"texture": 0
+				},
+				"up": {
+					"uv": [50, 33, 48, 31],
+					"texture": 0
+				},
+				"down": {
+					"uv": [50, 33, 48, 35],
+					"texture": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "6754f2cb-b341-e0cb-affb-0aeeb4a4f078"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-24, -12, -18],
+			"to": [-22, 12, -16],
+			"autouv": 0,
+			"color": 4,
+			"origin": [-23, 0, -17],
+			"faces": {
+				"north": {
+					"uv": [4, 48, 6, 72],
+					"texture": 0
+				},
+				"east": {
+					"uv": [48, 4, 50, 28],
+					"texture": 0
+				},
+				"south": {
+					"uv": [6, 48, 8, 72],
+					"texture": 0
+				},
+				"west": {
+					"uv": [8, 48, 10, 72],
+					"texture": 0
+				},
+				"up": {
+					"uv": [36, 50, 34, 48],
+					"texture": 0
+				},
+				"down": {
+					"uv": [50, 35, 48, 37],
+					"texture": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "eda1dcfd-6887-a18a-36f3-a7523e971049"
+		},
+		{
+			"name": "cube",
+			"box_uv": false,
+			"rescale": false,
+			"locked": false,
+			"light_emission": 0,
+			"render_order": "default",
+			"allow_mirror_modeling": true,
+			"from": [-2.82843, -3.10051, -21],
+			"to": [3.17157, 2.89949, -18.25],
+			"autouv": 0,
+			"color": 0,
+			"rotation": [0, 0, -45],
+			"origin": [0, 0, -19],
+			"faces": {
+				"north": {
+					"uv": [10, 48, 16, 54],
+					"texture": 0
+				},
+				"east": {
+					"uv": [22, 48, 25, 54],
+					"texture": 0
+				},
+				"south": {
+					"uv": [16, 48, 22, 54],
+					"texture": 0
+				},
+				"west": {
+					"uv": [25, 48, 28, 54],
+					"texture": 0
+				},
+				"up": {
+					"uv": [34, 51, 28, 48],
+					"texture": 0
+				},
+				"down": {
+					"uv": [54, 28, 48, 31],
+					"texture": 0
+				}
+			},
+			"type": "cube",
+			"uuid": "c4c477ef-3842-42c5-574d-26212fe814fe"
+		}
+	],
+	"outliner": [
+		{
+			"name": "bone",
+			"origin": [0, 0, -18],
+			"color": 0,
+			"configs": {
+				"variants": {}
+			},
+			"uuid": "02f74437-fc82-ae5a-67e7-c5d81441b63c",
+			"export": true,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"selected": true,
+			"children": ["89a9817b-4b9c-7625-47a4-85f5e8dcbd2a", "6754f2cb-b341-e0cb-affb-0aeeb4a4f078", "eda1dcfd-6887-a18a-36f3-a7523e971049"]
+		},
+		{
+			"name": "center",
+			"origin": [0, -1, -19.625],
+			"color": 0,
+			"configs": {
+				"variants": {}
+			},
+			"uuid": "ce5e9158-9453-f487-eade-9f899ce7f7bf",
+			"export": true,
+			"mirror_uv": false,
+			"isOpen": true,
+			"locked": false,
+			"visibility": true,
+			"autouv": 0,
+			"selected": false,
+			"children": ["c4c477ef-3842-42c5-574d-26212fe814fe"]
+		}
+	],
+	"textures": [
+		{
+			"path": "/home/ice424/.local/share/PrismLauncher/instances/Origins 5E Pack prism/minecraft/resourcepacks/sheild.png",
+			"name": "sheild.png",
+			"folder": "block",
+			"namespace": "",
+			"id": "0",
+			"group": "",
+			"width": 128,
+			"height": 128,
+			"uv_width": 128,
+			"uv_height": 128,
+			"particle": false,
+			"use_as_default": false,
+			"layers_enabled": false,
+			"sync_to_project": "",
+			"render_mode": "default",
+			"render_sides": "auto",
+			"pbr_channel": "color",
+			"frame_time": 1,
+			"frame_order_type": "loop",
+			"frame_order": "",
+			"frame_interpolate": false,
+			"visible": true,
+			"internal": true,
+			"saved": true,
+			"uuid": "b3b4ddf9-f1ac-abf3-212e-c662bfac8d15",
+			"relative_path": "sheild.png",
+			"source": "data:image/png;base64,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"
+		}
+	],
+	"variants": {
+		"default": {
+			"name": "default",
+			"display_name": "Default",
+			"uuid": "4d9d47a1-660e-637c-ce0c-a9cfb19cca20",
+			"texture_map": {},
+			"excluded_nodes": [],
+			"is_default": true
+		},
+		"list": []
+	},
+	"animations": [
+		{
+			"uuid": "530caad1-2356-7a17-e656-ba3f0c3cf567",
+			"name": "deploy",
+			"loop": "hold",
+			"override": false,
+			"length": 0.75,
+			"snapping": 20,
+			"selected": true,
+			"saved": false,
+			"path": "/home/ice424/.local/share/PrismLauncher/instances/Origins 5E Pack prism/minecraft/resourcepacks/model.animation.json",
+			"anim_time_update": "",
+			"blend_weight": "",
+			"start_delay": "",
+			"loop_delay": "0",
+			"excluded_nodes": [],
+			"animators": {
+				"02f74437-fc82-ae5a-67e7-c5d81441b63c": {
+					"name": "bone",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "-0.55",
+									"y": "-27.75",
+									"z": "-2.25"
+								}
+							],
+							"uuid": "45366e17-61c7-41ed-5c27-8c74789c4cd5",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "-0.5",
+									"y": "-0.5",
+									"z": "-2.25"
+								}
+							],
+							"uuid": "479ea5e9-e078-66ba-e8a7-8f24677f452b",
+							"time": 0.5,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutBack",
+							"easingArgs": [1]
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "b27206e9-d61e-66ca-f9f9-b5c56ebdffb9",
+							"time": 0.75,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeOutQuad",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.1",
+									"y": "0.1",
+									"z": "0.1"
+								}
+							],
+							"uuid": "9b705e01-f58c-77f8-ea16-9bf8f29e8581",
+							"time": 0,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "1",
+									"y": "1",
+									"z": "1"
+								}
+							],
+							"uuid": "b9764602-60f1-8e57-214b-a378f74314a1",
+							"time": 0.75,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "easeInOutBack",
+							"easingArgs": [1]
+						},
+						{
+							"channel": "scale",
+							"data_points": [
+								{
+									"x": "0.1",
+									"y": "0.1",
+									"z": "0.1"
+								}
+							],
+							"uuid": "0a0871a9-e615-9114-e25f-9ad1ab0876a4",
+							"time": 0.5,
+							"color": -1,
+							"uniform": true,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						}
+					]
+				},
+				"ce5e9158-9453-f487-eade-9f899ce7f7bf": {
+					"name": "center",
+					"type": "bone",
+					"keyframes": [
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "-45"
+								}
+							],
+							"uuid": "8fd04152-4437-6ea6-e30e-4ae14e32c2ca",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "-45"
+								}
+							],
+							"uuid": "f9942406-b4bf-9792-5780-ea4f4124bca9",
+							"time": 0.5,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "rotation",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "b57ac527-07df-6fd5-fa29-1a539df9a673",
+							"time": 0.75,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutBack",
+							"easingArgs": [1]
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "-27",
+									"z": "0"
+								}
+							],
+							"uuid": "2980a41b-e4a4-f6e0-af4b-9b0b9b636564",
+							"time": 0,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "linear",
+							"easingArgs": []
+						},
+						{
+							"channel": "position",
+							"data_points": [
+								{
+									"x": "0",
+									"y": "0",
+									"z": "0"
+								}
+							],
+							"uuid": "df662048-3834-631b-2438-24854799e563",
+							"time": 0.5,
+							"color": -1,
+							"interpolation": "linear",
+							"easing": "easeInOutBack",
+							"easingArgs": [1]
+						}
+					]
+				}
+			}
+		}
+	],
+	"animation_controllers": []
+}
