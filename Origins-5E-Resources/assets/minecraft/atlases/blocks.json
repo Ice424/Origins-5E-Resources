@@ -4,6 +4,10 @@
 			"type": "directory",
 			"source": "blueprint",
 			"prefix": "blueprint/"
+		},
+		{
+			"type": "single",
+			"resource": "entity/chest/normal"
 		}
 	]
 }
