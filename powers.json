@@ -764,7 +764,7 @@
                     "id": "ground_pound",
                     "predicate": 100,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Chain Hook",
@@ -772,7 +772,7 @@
                     "id": "hook",
                     "predicate": 101,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Heavy",
@@ -792,7 +792,7 @@
                 },
                 {
                     "name": "Barbed Armour",
-                    "description": "Use ability to toggle thorns",
+                    "description": "You have thorns on all your Armour",
                     "id": "thorns",
                     "predicate": 104,
                     "key_activated": false,

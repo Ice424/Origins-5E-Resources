@@ -54,7 +54,8 @@ def add_power(powers, category, predicate, directory, group=None, types=None):
     """
     global num_completed
     directories = ["passive", "special", "high"]
-
+    if directory == '/home/ice424/.local/share/PrismLauncher/instances/1.21.1/minecraft/saves/New World/datapacks/Origins-5E-Data/data/chill/powers/class/rogue/high/grapple_hook/grapple_hook.json':
+        directory = '/home/ice424/.local/share/PrismLauncher/instances/1.21.1/minecraft/saves/New World/datapacks/Origins-5E-Data/data/chill/powers/class/rogue/high/grapple_hook/primary.json'
     # Remove primary and secondary.json from the end of the directory if they exist
     if "\\low\\" in directory or "/low/" in directory:
         Id = (Path(directory).parts[-2] + "_" +
