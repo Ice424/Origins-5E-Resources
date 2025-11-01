@@ -780,11 +780,11 @@
                     "id": "knockback",
                     "predicate": 102,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
-                    "name": "Warrior\\\\\\'s Protection",
-                    "description": "Able to deploy a shield that blocks projectiles",
+                    "name": "shield",
+                    "description": "none",
                     "id": "shield",
                     "predicate": 103,
                     "key_activated": false,
@@ -796,7 +796,7 @@
                     "id": "thorns",
                     "predicate": 104,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ],
             "passive": [
