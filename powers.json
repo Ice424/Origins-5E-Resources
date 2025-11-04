@@ -709,8 +709,8 @@
         "tank": {
             "special": [
                 {
-                    "name": "Unshakeable",
-                    "description": "Become invincible for a short period",
+                    "name": "block",
+                    "description": "none",
                     "id": "block",
                     "predicate": 94,
                     "key_activated": false,
@@ -722,7 +722,7 @@
                     "id": "damage",
                     "predicate": 95,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Born From Flame",
@@ -730,7 +730,7 @@
                     "id": "fire_res",
                     "predicate": 96,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Ring Of Fire",
@@ -764,7 +764,7 @@
                     "id": "ground_pound",
                     "predicate": 100,
                     "key_activated": false,
-                    "completed": true
+                    "completed": false
                 },
                 {
                     "name": "Chain Hook",
@@ -783,12 +783,12 @@
                     "completed": true
                 },
                 {
-                    "name": "shield",
-                    "description": "none",
+                    "name": "Warrior\\\\\\'s Protection",
+                    "description": "Able to deploy a shield that blocks damage from any source you can see",
                     "id": "shield",
                     "predicate": 103,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Barbed Armour",
@@ -837,12 +837,12 @@
                     "completed": true
                 },
                 {
-                    "name": "Glide",
-                    "description": "Crouch mid air gives slow falling",
+                    "name": "slow_fall",
+                    "description": "none",
                     "id": "slow_fall",
                     "predicate": 109,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Deteriorate",
@@ -910,7 +910,7 @@
                     "id": "pearl",
                     "predicate": 117,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ]
         }
