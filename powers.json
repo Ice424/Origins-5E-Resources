@@ -722,7 +722,7 @@
                     "id": "damage",
                     "predicate": 95,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Born From Flame",
@@ -730,7 +730,7 @@
                     "id": "fire_res",
                     "predicate": 96,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Ring Of Fire",
@@ -837,12 +837,12 @@
                     "completed": true
                 },
                 {
-                    "name": "Glide",
-                    "description": "Crouch mid air gives slow falling",
+                    "name": "slow_fall",
+                    "description": "none",
                     "id": "slow_fall",
                     "predicate": 109,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Deteriorate",
@@ -910,7 +910,7 @@
                     "id": "pearl",
                     "predicate": 117,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 }
             ]
         }
