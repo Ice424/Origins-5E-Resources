@@ -709,12 +709,12 @@
         "tank": {
             "special": [
                 {
-                    "name": "block",
-                    "description": "none",
+                    "name": "Unshakeable",
+                    "description": "Become invincible for a short period",
                     "id": "block",
                     "predicate": 94,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 },
                 {
                     "name": "Warrior\\\\\\'s Defence",
