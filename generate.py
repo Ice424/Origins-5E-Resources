@@ -160,7 +160,7 @@ def generate_json():
             },
         }}
     with open("./saves/New World/datapacks/Origins-5E-Data/TODO.md", "w") as f:
-                f.write("##TO DO\n")
+                f.write("## TO DO\n")
     for path, subdirs, files in os.walk(DATA):
         for name in files:
             if os.name == "nt":
