@@ -764,14 +764,14 @@
                     "id": "ground_pound",
                     "predicate": 100,
                     "key_activated": false,
-                    "completed": false
+                    "completed": true
                 },
                 {
                     "name": "Chain Hook",
                     "description": "Throws a hook at a target, pulling them towards you when it connects",
                     "id": "hook",
                     "predicate": 101,
-                    "key_activated": false,
+                    "key_activated": true,
                     "completed": true
                 },
                 {
