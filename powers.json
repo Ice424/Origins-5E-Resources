@@ -883,8 +883,8 @@
                     "description": "Push all mobs back 5 blocks in a 10 block radius",
                     "id": "push",
                     "predicate": 114,
-                    "key_activated": false,
-                    "completed": false
+                    "key_activated": true,
+                    "completed": true
                 }
             ],
             "passive": [
