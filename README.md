@@ -4,7 +4,7 @@
 
 ## About
 
-This is a resource pack for Minecraft java edition that utilises the [origins mod](https://github.com/apace100/origins-fabric) for fabric it relies on this [data pack](https://github.com/Ice424/Origins-V5-Data)
+This is a resource pack for Minecraft java edition that utilises the [origins mod](https://github.com/apace100/origins-fabric) for fabric it relies on this [data pack](https://github.com/Ice424/Origins-5E-Data)
 
 also requires [pehkui](https://github.com/Virtuoel/Pehkui)
 
@@ -44,3 +44,4 @@ Specific Grass - Texture Concepts
 Cloud Wolf for the [Chest Menu/GUI Tutorial in Minecraft 1.21+](https://youtu.be/Sxnaah2SPzw?si=zF8PXbQSoNzrp9PX), [repo](https://github.com/CloudWolfYT/MC-GUIFramework)
 
 Misode for [invisible minecarts](https://gist.github.com/misode/57dca050fbe2a0a8232c0c3fbab04e35) and Cloud Wolf's tutorial on the implementation
+
